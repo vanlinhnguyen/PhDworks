@@ -1,0 +1,23 @@
+taper : 
+edit classpath.txt
+
+ajouter à la fin : 
+$matlabroot/toolsUI-4.0.49.jar
+$matlabroot/njTools-2.0.12_jre1.5.jar
+
+DANGER : java 1.5 !!!!
+
+enlever :
+$matlabroot/java/jarext/mwucarunits.jar
+
+add path avec sous dossier :
+matlab-njTbx-2.0.05
+
+restart matlab
+
+nc = mDataset(fich);
+dims = nc('dim').itsDimsize; %dim = nom dim dans nc : idem netcdf
+
+%récupérer des données :
+var = nc{'var'}(:,:,:,:); %idem netcdf
+close(nc);
