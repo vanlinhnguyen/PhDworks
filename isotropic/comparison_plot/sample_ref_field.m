@@ -1,3 +1,5 @@
+% Copyright (C) Linh Van Nguyen (linh.van.nguyen@hotmail.com) 2016
+
 %% LOAD TO NETCDF
 clear all; close all; clc;
 

@@ -1,3 +1,5 @@
+% Copyright (C) Linh Van Nguyen (linh.van.nguyen@hotmail.com) 2016
+
 close all; clc;
 addpath('../../missingfuncs/isotropic');
 
