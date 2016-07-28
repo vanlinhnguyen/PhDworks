@@ -1,6 +1,7 @@
 % Copyright (C) Linh Van Nguyen (linh.van.nguyen@hotmail.com) 2016
 
 close all; clc;
+addpath('./funcs/')
 
 %% INITIAL PARAMS
 space_spacing=4;
@@ -24,7 +25,8 @@ err = @(x1,x2) sqrt(sum((x1(:)-x2(:)).^2))/sqrt(sum(x2(:).^2)); % NRMSE
 fprintf(['SR(feature) improves ',num2str(100-100*err_SR3_feas_mean/err_interp_mean,'%.3f'),' percents compared to interpolation\n']);
 fprintf(['SR(interpolated LR) improves ',num2str(100-100*err_SR2_HRLRinterp_mean/err_interp_mean,'%.3f'),' percents compared to interpolation\n']);
 fprintf(['SR(LR) improves ',num2str(100-100*err_SR1_HRLR_mean/err_interp_mean,'%.3f'),' percents compared to interpolation\n']);
-%%
+
+%% Plot comparison of errors 
 fsize=24;
 fname='CMU Serif';
 

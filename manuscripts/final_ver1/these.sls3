@@ -1,0 +1,36 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossentry{argmax}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{argmin}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{det}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossentry{normEdist}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{normMdist}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{normp}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{prob}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{probcond}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{probexpectation}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{probGauss}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{probposterioridist}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{pseu_inv}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossentry{timecompl}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\glossentry{trans}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xvi}}}%
+\end{theglossary}\glossarypostamble

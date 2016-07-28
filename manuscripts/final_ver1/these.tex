@@ -1,0 +1,173 @@
+% NOTE: remember to makeglossary after compile to make lists of symbol appear
+
+\documentclass[12pt,space=onehalf,version=final,mainlanguage=english]{yathesis}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} % À proscrire dans un vrai mémoire de thèse !
+\usepackage{kpfonts}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\usepackage{floatrow}	
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage{varioref}
+\usepackage[xindy,quiet]{imakeidx}
+\usepackage[autostyle]{csquotes}
+\usepackage{hyperref}
+\usepackage[acronyms,symbols,nonumberlist,sort=standard]{glossaries}
+
+\usepackage{geometry}
+\usepackage{tikz}
+%\usepackage{graphicx}
+\usepackage{subfigure}
+
+\usepackage{algorithmicx}
+\usepackage[ruled]{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{amsfonts}
+\usepackage[mathscr]{euscript}
+\usepackage{amsfonts}
+\usepackage{dsfont}
+
+\usepackage{colortbl}
+  \newcommand{\myrowcolour}{\rowcolor[gray]{0.925}}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{morewrites}%Always room for a new write stream, permet de creer de nouveau glossaire avec la commande newglossary sinon ca ne marche pas
+
+\usepackage[backend=bibtex,safeinputenc,style=authoryear-comp, maxnames=2, natbib=true, dashed=false]{biblatex}
+
+% DEFINE MATH OPERATORS
+
+
+% Génération de l'index :
+\makeindex
+
+% (Facultatif) Spécification de la ou des ressources terminologiques :
+
+%\loadglsentries{auxiliaires/acronymes}
+%\loadglsentries{auxiliaires/symboles}
+
+\addbibresource{auxiliaires/bibliographie.bib}
+
+% % % % GLOSSARIES
+\renewcommand*{\glspostdescription}{}
+\newglossary[slg1]{gloss-abbre}{sls1}{slo1}{Abbreviations}
+\newglossary[slg2]{gloss-latin}{sls2}{slo2}{Latin symbols}
+\newglossary[slg3]{gloss-math}{sls3}{slo3}{Math symbols}
+
+\makeglossaries
+\newcommand{\mynewglssymbol}[6][]{%
+  \ifthenelse{\isempty{#1}}{%
+    \newglossaryentry{#2}{%
+      type={#6},%
+      symbol={#5},%
+      name={#3},%
+      description={#4},%
+      sort={#2}%
+    }%
+  }{%
+    \newglossaryentry{#2}{%
+      type={#6},%
+      symbol={#5},%
+      name={#3},%
+      description={#4},%
+      sort={#1}%
+    }%
+  }%
+}
+
+\input{auxiliaires/symboles}
+\input{auxiliaires/glossaire}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début du document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Caractéristiques du document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Préparation des pages de couverture et de titre
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Les caractéristiques de la thèse sont saisies dans le fichier
+% « characteristics.tex » (situé dans le dossier « configuration »).
+
+% Production des pages de couverture et de titre
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début de la partie liminaire de la thèse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \makekeywords
+\makelaboratory
+
+%\input{liminaires/dedicaces}
+%\input{liminaires/epigraphes}
+\input{liminaires/resumes}
+%\include{liminaires/remerciements}
+%\include{liminaires/avertissement}
+
+
+%\printacronyms
+\glsaddall
+\printglossary[type=gloss-abbre,style=super2]% imprime symb1 seul
+\printglossary[type=gloss-latin,style=super2]% imprime symb1 seul
+\printglossary[type=gloss-math,style=super2]% imprime symb2 seul
+
+
+\tableofcontents[depth=section,name=Table of contents]
+\listoftables
+\listoffigures
+% \lstlistoflistings
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début de la partie principale (du « corps ») de la thèse
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newgeometry{bottom=1in}
+\mainmatter
+
+\include{corps/motivation}
+\include{corps/introduction}
+\include{corps/linearregression}
+\include{corps/dictionarylearning}
+\include{corps/NLM}
+\include{corps/Bayesianfusion}
+\include{corps/comparisons}
+\include{corps/conclusions}
+
+\printbibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début de la partie annexe éventuelle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\include{appendixes/Bayesianfusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début de la partie finale
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\restoregeometry
+\backmatter
+
+% (Facultatif) Index :
+\printindex
+%
+% Table des matières
+\tableofcontents
+%
+% (Facultatif) Production de la 4e de couverture :
+\makebackcover
+%
+\end{document}

@@ -1,0 +1,209 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Non-local similarity-based propagation model}{69}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap_NLM}{{4}{69}{Non-local similarity-based propagation model}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Non-local means}{69}{section.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces  Image denoising using non-local means. Four sample patches in red extracted from noisy image and centered at blue dots. The estimate of each point are weighted average of its neighbors, and weights are computed as the similarity of the moving patches compared to the reference patch. Photo credit: \citet {foi2016foveated}.\relax }}{70}{figure.caption.68}}
+\newlabel{fig:lena}{{4.1}{70}{Image denoising using non-local means. Four sample patches in red extracted from noisy image and centered at blue dots. The estimate of each point are weighted average of its neighbors, and weights are computed as the similarity of the moving patches compared to the reference patch. Photo credit: \citet {foi2016foveated}.\relax }{figure.caption.68}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Non-local means filter for denoising}{70}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Generalized non-local means for super-resolution}{71}{subsection.4.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces  A sketch of \textit  {greedy} and \textit  {non-greedy} propagation models. The two LTHS planes are at the border including small scales $ \ensuremath  {\operatorname  {\boldsymbol  {b}}}_{t_\knot } = \ensuremath  {\operatorname  {\boldsymbol  {h}}}_0 $ and $ \ensuremath  {\operatorname  {\boldsymbol  {b}}}_{t_\knot +1} = \ensuremath  {\operatorname  {\boldsymbol  {h}}}_{N/M} $ defined in equation \ref  {eq:greddy1}. All small scales to be estimated from other planes $ \ensuremath  {\operatorname  {\boldsymbol  {h}}}_1, \ensuremath  {\operatorname  {\boldsymbol  {h}}}_2,...,\ensuremath  {\operatorname  {\boldsymbol  {h}}}_{P/Q-1} $ will be propagated either directly from LTHS planes (greedy, red arrows) or in a plane-by-plane manner (non-greedy, blue arrows). To simplify the plot, the propagation is shown from LTHS planes till the central plane only.\relax }}{72}{figure.caption.69}}
+\newlabel{fig:propagation_scheme}{{4.2}{72}{A sketch of \textit {greedy} and \textit {non-greedy} propagation models. The two LTHS planes are at the border including small scales $ \boundHF _{t_\knot } = \h _0 $ and $ \boundHF _{t_\knot +1} = \h _{\dimth /\dimtl } $ defined in equation \ref {eq:greddy1}. All small scales to be estimated from other planes $ \h _1, \h _2,...,\h _{\dimsh /\dimsl -1} $ will be propagated either directly from LTHS planes (greedy, red arrows) or in a plane-by-plane manner (non-greedy, blue arrows). To simplify the plot, the propagation is shown from LTHS planes till the central plane only.\relax }{figure.caption.69}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Similarity-based model to propagate small scales}{72}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Greedy propagation of small scales from key planes}{72}{subsection.4.2.1}}
+\newlabel{eq:greddy1}{{4.5}{73}{Greedy propagation of small scales from key planes}{equation.4.2.5}{}}
+\newlabel{eq:greddy2}{{4.6}{73}{Greedy propagation of small scales from key planes}{equation.4.2.6}{}}
+\newlabel{eq:greddy3}{{4.7}{73}{Greedy propagation of small scales from key planes}{equation.4.2.7}{}}
+\newlabel{eq:greddy4}{{4.8}{73}{Greedy propagation of small scales from key planes}{equation.4.2.8}{}}
+\newlabel{eq:greddy5}{{4.9}{74}{Greedy propagation of small scales from key planes}{equation.4.2.9}{}}
+\newlabel{eq:greddy6}{{4.10}{74}{Greedy propagation of small scales from key planes}{equation.4.2.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Non-greedy propagation of small scales}{74}{subsection.4.2.2}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Estimating small scales of $ N/M- 1 $ planes by non-greedy NLM propagation from the two key frames at $ t_\knot $ and $ t_\knot +1 $\relax }}{75}{algorithm.caption.70}}
+\newlabel{algo_NLM_timepropagation}{{5}{75}{Estimating small scales of $ \dimth /\dimtl - 1 $ planes by non-greedy NLM propagation from the two key frames at $ t_\knot $ and $ t_\knot +1 $\relax }{algorithm.caption.70}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces  Set of parameters to do simple grid search (try out all possible combinations from this set): the global filter parameter $ \sigma $, size of similarity patches $ p$, size of accumulation patches $ r$, and size of searching region $ s$. The search is performed on the DNS data of isotropic turbulence, with the subsampling ratios are $ P/Q= 3 \times 3 $ in space and $ N/M= 4 $ in time.\relax }}{75}{table.caption.71}}
+\newlabel{tab:NLMparams}{{4.1}{75}{Set of parameters to do simple grid search (try out all possible combinations from this set): the global filter parameter $ \sigma $, size of similarity patches $ \dimpsh $, size of accumulation patches $ \dimpacc $, and size of searching region $ \dimpsr $. The search is performed on the DNS data of isotropic turbulence, with the subsampling ratios are $ \dimsh /\dimsl = 3 \times 3 $ in space and $ \dimth /\dimtl = 4 $ in time.\relax }{table.caption.71}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Applying the propagation model to isotropic turbulence}{75}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}The choice of model parameters}{75}{subsection.4.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces  Average NRMSEs over the whole dataset: each estimate of NRMSE is computed by comparing the reconstructed plane with the reference at each $ t/\delta t $. The bars show the average NRMSEs, while the error bars are standard deviations of NRMSE estimates.\relax }}{77}{figure.caption.72}}
+\newlabel{fig:NLM_various_params_NRMSE}{{4.3}{77}{Average NRMSEs over the whole dataset: each estimate of NRMSE is computed by comparing the reconstructed plane with the reference at each $ t/\delta t $. The bars show the average NRMSEs, while the error bars are standard deviations of NRMSE estimates.\relax }{figure.caption.72}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces  Normalized error spectra of reconstructed planes at $ t/\delta t = 2 $ (the most remote from the two neighboring LTHS planes). Three cases of varying $ p$, $r$ and $s$, all curves are almost collapsed.\relax }}{78}{figure.caption.73}}
+\newlabel{fig:NLM_various_params_spectra}{{4.4}{78}{Normalized error spectra of reconstructed planes at $ t/\delta t = 2 $ (the most remote from the two neighboring LTHS planes). Three cases of varying $ \dimpsh $, $\dimpacc $ and $\dimpsr $, all curves are almost collapsed.\relax }{figure.caption.73}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Comparing to spline interpolation}{78}{subsection.4.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces  Comparison of averaged NRMSEs as functions of time distances to the previous bounded LTHS plane by spatial/temporal interpolation, greedy and non-greedy propagation for the configuration where subsampling ratios are $ 3 \times 3 $ in space and $ 4 $ in time.\relax }}{79}{figure.caption.74}}
+\newlabel{fig:NLmean_interps_sspacing3_tspacing4_NRMSE}{{4.5}{79}{Comparison of averaged NRMSEs as functions of time distances to the previous bounded LTHS plane by spatial/temporal interpolation, greedy and non-greedy propagation for the configuration where subsampling ratios are $ 3 \times 3 $ in space and $ 4 $ in time.\relax }{figure.caption.74}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces  Comparison of energy spectra and error spectra for various reconstructions by spatial/temporal interpolation, greedy and non-greedy propagation. Subsampling ratios are $ 3 \times 3 $ in space and $ 4 $ in time. The spectra are averaged over all planes of the same distance to the closest LTHS plane, i.e. $ t/\delta t= 1 $ (left) or $t/\delta t= 2 $ (right).\relax }}{80}{figure.caption.75}}
+\newlabel{fig:NLmean_interps_sspacing3_tspacing4_spectra2d}{{4.6}{80}{Comparison of energy spectra and error spectra for various reconstructions by spatial/temporal interpolation, greedy and non-greedy propagation. Subsampling ratios are $ 3 \times 3 $ in space and $ 4 $ in time. The spectra are averaged over all planes of the same distance to the closest LTHS plane, i.e. $ t/\delta t= 1 $ (left) or $t/\delta t= 2 $ (right).\relax }{figure.caption.75}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Model performances in various configurations}{80}{subsection.4.3.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces  Configuration parameters of six testing cases. The subsampling ratios of HTLS measurements are $ \sqrt  {P/Q} $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ N/M$. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in Eq.~(\ref  {eq:RMS_losses}).\relax }}{81}{table.caption.76}}
+\newlabel{tab:NLM_various_cases}{{4.2}{81}{Configuration parameters of six testing cases. The subsampling ratios of HTLS measurements are $ \sqrt {\dimsh /\dimsl } $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ \dimth /\dimtl $. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in Eq.~(\ref {eq:RMS_losses}).\relax }{table.caption.76}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces  Averaged NRMSEs of reconstruction by spatial/temporal interpolation, greedy and non-greedy propagation models. The errors are shown for three cases, with a fixed ratio in space $ (P/Q= 3 \times 3) $ and varied ratios in time $(N/M=4,6,8) $. The reference plane is chosen to be the mid-plane, and $ \Delta t_c/\delta t $ is the distance of each other plane from the reference one. Different colors refer to different methods, while the marker shapes vary for different $ N/M$.\relax }}{82}{figure.caption.77}}
+\newlabel{fig:NLmean_interps_NRMSE_vary_timespacing}{{4.7}{82}{Averaged NRMSEs of reconstruction by spatial/temporal interpolation, greedy and non-greedy propagation models. The errors are shown for three cases, with a fixed ratio in space $ (\dimsh /\dimsl = 3 \times 3) $ and varied ratios in time $(\dimth /\dimtl =4,6,8) $. The reference plane is chosen to be the mid-plane, and $ \Delta t_c/\delta t $ is the distance of each other plane from the reference one. Different colors refer to different methods, while the marker shapes vary for different $ \dimth /\dimtl $.\relax }{figure.caption.77}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Concluding remarks}{82}{section.4.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces  Averaged NRMSEs of reconstruction by spatial/temporal interpolation, greedy and non-greedy propagation models. The errors are shown for different space spacing $ (P/Q=3 \times , 4 \times 4, 6 \times 6) $, while in time the ratio is fixed $ (N/M=4) $. The reference plane is chosen to be the mid-plane, and $ \Delta t_c/\delta t $ is the distance of each other plane from the reference one. Different colors refer to different methods, while the marker shapes vary for different $ P/Q$.\relax }}{83}{figure.caption.78}}
+\newlabel{fig:NLmean_interps_NRMSE_vary_spacespacing}{{4.8}{83}{Averaged NRMSEs of reconstruction by spatial/temporal interpolation, greedy and non-greedy propagation models. The errors are shown for different space spacing $ (\dimsh /\dimsl =3 \times , 4 \times 4, 6 \times 6) $, while in time the ratio is fixed $ (\dimth /\dimtl =4) $. The reference plane is chosen to be the mid-plane, and $ \Delta t_c/\delta t $ is the distance of each other plane from the reference one. Different colors refer to different methods, while the marker shapes vary for different $ \dimsh /\dimsl $.\relax }{figure.caption.78}{}}
+\@setckpt{corps/NLM}{
+\setcounter{page}{85}
+\setcounter{equation}{10}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{YAD@abstracts}{2}
+\setcounter{YAD@warnings}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{8}
+\setcounter{table}{2}
+\setcounter{tcbbreakpart}{1}
+\setcounter{tcblayer}{0}
+\setcounter{max@tocdepth}{2}
+\setcounter{max@secnumdepth}{2}
+\setcounter{su@anzahl}{0}
+\setcounter{parentequation}{0}
+\setcounter{DTLrowi}{2}
+\setcounter{DTLrowii}{2}
+\setcounter{DTLrowiii}{0}
+\setcounter{DTLrow}{20}
+\setcounter{lips@count}{0}
+\setcounter{float@type}{32}
+\setcounter{FBl@b}{0}
+\setcounter{FRobj}{0}
+\setcounter{FRsobj}{0}
+\setcounter{FBcnt}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lstnumber}{1}
+\setcounter{vrcnt}{0}
+\setcounter{Item}{0}
+\setcounter{bookmark@seq@number}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{ALG@line}{13}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{algorithm}{5}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{211}
+\setcounter{maxnames}{2}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextrayear}{2}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{textcitecount}{1}
+\setcounter{textcitetotal}{1}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{FBLTpage}{0}
+\setcounter{lstlisting}{0}
+\setcounter{section@level}{1}
+}

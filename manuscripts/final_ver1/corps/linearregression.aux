@@ -1,0 +1,219 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Velocity reconstruction using regression}{23}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap_linearregression}{{2}{23}{Velocity reconstruction using regression}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Regression in turbulence studies}{23}{section.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Ordinary least squares (OLS)}{24}{section.2.2}}
+\newlabel{eq:LSE2}{{2.4}{25}{Ordinary least squares (OLS)}{equation.2.2.4}{}}
+\newlabel{eq:LSE5}{{2.6}{25}{Ordinary least squares (OLS)}{equation.2.2.6}{}}
+\newlabel{eq:LSE6}{{2.7}{25}{Ordinary least squares (OLS)}{equation.2.2.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Regularized linear regression}{25}{section.2.3}}
+\newlabel{sec:regularized_linear_regression}{{2.3}{25}{Regularized linear regression}{section.2.3}{}}
+\newlabel{eq:regularized_linear_regression1}{{2.8}{26}{Regularized linear regression}{equation.2.3.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Ridge Regression (RR): L2 penalty}{26}{subsection.2.3.1}}
+\newlabel{sec:l2_penalty}{{2.3.1}{26}{Ridge Regression (RR): L2 penalty}{subsection.2.3.1}{}}
+\newlabel{eq:RR1}{{2.9}{26}{Ridge Regression (RR): L2 penalty}{equation.2.3.9}{}}
+\newlabel{eq:RR2}{{2.10}{26}{Ridge Regression (RR): L2 penalty}{equation.2.3.10}{}}
+\newlabel{eq:RR3}{{2.11}{26}{Ridge Regression (RR): L2 penalty}{equation.2.3.11}{}}
+\newlabel{eq:RR6}{{2.12}{26}{Ridge Regression (RR): L2 penalty}{equation.2.3.12}{}}
+\newlabel{eq:RR8}{{2.13}{26}{Ridge Regression (RR): L2 penalty}{equation.2.3.13}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Iterative shrinkage-thresholding algorithm (ISTA)\relax }}{27}{algorithm.caption.37}}
+\newlabel{algo_ISTA}{{1}{27}{Iterative shrinkage-thresholding algorithm (ISTA)\relax }{algorithm.caption.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}LASSO: L1 penalty}{27}{subsection.2.3.2}}
+\newlabel{sec:l1_penalty}{{2.3.2}{27}{LASSO: L1 penalty}{subsection.2.3.2}{}}
+\newlabel{eq: LASSO1}{{2.14}{27}{LASSO: L1 penalty}{equation.2.3.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Nonlinear regression}{28}{section.2.4}}
+\newlabel{sec:nonlinear_regression}{{2.4}{28}{Nonlinear regression}{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Feature mapping}{28}{subsection.2.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Kernel ridge regression}{29}{subsection.2.4.2}}
+\newlabel{eq:RRdual1}{{2.21}{29}{Dual form of ridge regression}{equation.2.4.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Common basis functions for kernel methods.\relax }}{30}{table.caption.40}}
+\newlabel{tab_basisfunctions}{{2.1}{30}{Common basis functions for kernel methods.\relax }{table.caption.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}A framework to select model and parameters}{30}{section.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Bias-variance trade-off}{31}{subsection.2.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces  Typical behavior of prediction error for testing (red) and training (blue) dataset as a function of a hyper-parameter \citep {hastie2009elements}. Different curves are for various datasets. The solid ones are expected errors (average of all curves). From left to right can be the direction of decreasing regularization or increasing model complexity.\relax }}{32}{figure.caption.41}}
+\newlabel{fig:bias-variance_tradeoff}{{2.1}{32}{Typical behavior of prediction error for testing (red) and training (blue) dataset as a function of a hyper-parameter \citep {hastie2009elements}. Different curves are for various datasets. The solid ones are expected errors (average of all curves). From left to right can be the direction of decreasing regularization or increasing model complexity.\relax }{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces  Schematic view of the behavior of bias and variance \citep {hastie2009elements}. The blue-shaded, centered at the truth, is the realization space, where maximum distance is the irreducible error. All possible models are bounded by the red/magenta model space curves. Bias is shown by the black lines as the distance to the truth. Best models are shown as black dots, and circled by model variances. \relax }}{33}{figure.caption.42}}
+\newlabel{fig:bias-variance}{{2.2}{33}{Schematic view of the behavior of bias and variance \citep {hastie2009elements}. The blue-shaded, centered at the truth, is the realization space, where maximum distance is the irreducible error. All possible models are bounded by the red/magenta model space curves. Bias is shown by the black lines as the distance to the truth. Best models are shown as black dots, and circled by model variances. \relax }{figure.caption.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Cross-validation}{33}{subsection.2.5.2}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces K-fold cross-validation for set of L parameters $ \gamma _1, \gamma _2, ..., \gamma _L $\relax }}{34}{algorithm.caption.43}}
+\newlabel{algo_kfold}{{2}{34}{K-fold cross-validation for set of L parameters $ \gamma _1, \gamma _2, ..., \gamma _L $\relax }{algorithm.caption.43}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Regression models for reconstruction of isotropic turbulence}{34}{section.2.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces  Shrinkage effect: coefficients of OLS (left) vs RR (right) models correspond to an input LR measurement at the center of the field. The coefficients, which are rearranged in a 2D field of the size $ 96 \times 96 $, can be interpreted as the contributions of this input to the reconstruction of all other high-resolution points. The higher the coefficient, the stronger the impact.\relax }}{35}{figure.caption.44}}
+\newlabel{fig:RR_LSE_coefficients}{{2.3}{35}{Shrinkage effect: coefficients of OLS (left) vs RR (right) models correspond to an input LR measurement at the center of the field. The coefficients, which are rearranged in a 2D field of the size $ 96 \times 96 $, can be interpreted as the contributions of this input to the reconstruction of all other high-resolution points. The higher the coefficient, the stronger the impact.\relax }{figure.caption.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Regularization parameter and shrinkage effect}{35}{subsection.2.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces  Shrinkage effects of L2 (top) and L1 (bottom) penalty: coefficients corresponding to eight high-resolution outputs (in eight different colors) as functions of regularization parameters $ \lambda $. Higher $ \lambda $ shrink the coefficients toward zeros differently depending on the penalty terms.\relax }}{36}{figure.caption.45}}
+\newlabel{fig:coeffs_lambda}{{2.4}{36}{Shrinkage effects of L2 (top) and L1 (bottom) penalty: coefficients corresponding to eight high-resolution outputs (in eight different colors) as functions of regularization parameters $ \lambda $. Higher $ \lambda $ shrink the coefficients toward zeros differently depending on the penalty terms.\relax }{figure.caption.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Optimizing regularization parameters and model complexity via ten-fold cross-validation}{36}{subsection.2.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces  RR validation curve: errors as functions of regularization parameter $ \lambda $ (left), and learning curve: errors as functions of training data size (right). Red curves are for the prediction, while blue ones are for the training data\relax }}{37}{figure.caption.46}}
+\newlabel{fig:RR_validationcurve}{{2.5}{37}{RR validation curve: errors as functions of regularization parameter $ \lambda $ (left), and learning curve: errors as functions of training data size (right). Red curves are for the prediction, while blue ones are for the training data\relax }{figure.caption.46}{}}
+\newlabel{eq:NRMSE}{{2.28}{37}{Optimizing regularization parameters and model complexity via ten-fold cross-validation}{equation.2.6.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces  KRR validation curve (RBF kernel), with parameters are kernel parameter $ \gamma $ and regulartization parameter $ \lambda $. Red curves are for the prediction, while blue ones are for the training data\relax }}{38}{figure.caption.47}}
+\newlabel{fig:KRR_validationcurve}{{2.6}{38}{KRR validation curve (RBF kernel), with parameters are kernel parameter $ \gamma $ and regulartization parameter $ \lambda $. Red curves are for the prediction, while blue ones are for the training data\relax }{figure.caption.47}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Concluding remarks}{38}{section.2.7}}
+\@setckpt{corps/linearregression}{
+\setcounter{page}{40}
+\setcounter{equation}{28}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{YAD@abstracts}{2}
+\setcounter{YAD@warnings}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{6}
+\setcounter{table}{1}
+\setcounter{tcbbreakpart}{1}
+\setcounter{tcblayer}{0}
+\setcounter{max@tocdepth}{2}
+\setcounter{max@secnumdepth}{2}
+\setcounter{su@anzahl}{0}
+\setcounter{parentequation}{0}
+\setcounter{DTLrowi}{2}
+\setcounter{DTLrowii}{2}
+\setcounter{DTLrowiii}{0}
+\setcounter{DTLrow}{20}
+\setcounter{lips@count}{0}
+\setcounter{float@type}{32}
+\setcounter{FBl@b}{0}
+\setcounter{FRobj}{0}
+\setcounter{FRsobj}{0}
+\setcounter{FBcnt}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lstnumber}{1}
+\setcounter{vrcnt}{0}
+\setcounter{Item}{0}
+\setcounter{bookmark@seq@number}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{ALG@line}{9}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{algorithm}{2}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{108}
+\setcounter{maxnames}{2}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextrayear}{2}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{textcitecount}{1}
+\setcounter{textcitetotal}{1}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{FBLTpage}{0}
+\setcounter{lstlisting}{0}
+\setcounter{section@level}{1}
+}

@@ -1,0 +1,261 @@
+\chapter{Bayesian framework}
+\label{apx_BayesGausvars}
+
+\section{Derivation of Linear Gaussian models}
+\label{apx_BayesGausvars_1}
+\subsection{Bayes' theorem for Gaussian variables}
+Let $ \mybold{v} $ is the measurement, then the probability $ p(\mybold{v}) $ is known. Let $ \mybold{u} $ is the desired variable, with the prior distribution $ p(\mybold{u}) $. Suppose also there exists a linear observation model:
+\begin{equation}
+	\mybold{v}=A\mybold{u}+\mybold{n}
+\label{eq:LG5}
+\end{equation}
+where $ \mybold{n} $ is a zero-mean random vectors and independent on $ \mybold{u} $ and $ \mybold{v} $ and has a precision matrix denoted as $ \Lambda_{\mybold{v}|\mybold{u}}= \Sigma_{\mybold{v}|\mybold{u}}^{-1}$. One can express the joint probability $ p(\mybold{w})$ as the product of the prior probability $ p(\mybold{u}) $ and the likelihood function of the measurement given the variable $ p(\mybold{v}|\mybold{u})$ as:
+\begin{eqnarray}
+	p(\mybold{u})=&&\distr(\mybold{u}|\mybold{\mu}_{\mybold{u}},\Lambda^{-1}_{\mybold{u}}) \\
+	p(\mybold{v}|\mybold{u})=&&\distr(\mybold{v}|A\mybold{\mu}_{\mybold{u}},\Lambda_{\mybold{v}|\mybold{u}}^{-1})
+\label{eq:LG6}
+\end{eqnarray}
+To derive, let take the natural logarithm of both sides, using also the symmetrical shape of precision matrices,  the left hand side gives:
+\begin{eqnarray}
+	ln \: p(\mybold{w}) =&& -\frac{1}{2} \left(\mybold{w}-\mybold{\mu}_{\mybold{w}} \right)^T \Lambda_{\mybold{w}} \left(\mybold{w}-\mybold{\mu}_{\mybold{w}} \right) + const \nonumber\\
+	=&& -\frac{1}{2} \mybold{w}^T \Lambda_{\mybold{w}} \mybold{w} +\mybold{w}^T \Lambda_{\mybold{w}} \mybold{\mu}_{\mybold{w}} \nonumber\\
+	&& - \frac{1}{2} \mybold{\mu}_{\mybold{w}} \Lambda_{\mybold{w}} \mybold{\mu}_{\mybold{w}} + const
+	\label{eq:LG7}
+\end{eqnarray}
+and the right hand side gives:
+\begin{eqnarray}
+	ln \left(p(\mybold{u}) p(\mybold{v}|\mybold{u}) \right) =&& \left(\mybold{u}-\mybold{\mu}_{\mybold{u}} \right)^T \Lambda_{\mybold{u}} \left(\mybold{u}-\mybold{\mu}_{\mybold{u}} \right) \nonumber\\
+	&&- \frac{1}{2} \left( \mybold{v}-A\mybold{u} \right)^T \Lambda_{\mybold{v}|\mybold{u}} \left( \mybold{v}-A\mybold{u} \right) \nonumber\\
+	&&+ const
+\label{eq:LG8}
+\end{eqnarray}
+In above equations, $ const $ represents all the terms that are independent on $ \mybold{u} $ and $\mybold{v}$. The first order terms in the above equation include:
+\begin{eqnarray}
+	1^{st} \: order \: terms =&& \mybold{u}^T  \Lambda_{\mybold{u}} \mybold{\mu}_{\mybold{u}} - \mybold{u}^T A^T\Lambda_{\mybold{v}|\mybold{u}} \nonumber\\
+	=&&  \left(\begin{matrix}\mybold{u}\\\mybold{v} \end{matrix}\right)^T  \left(\begin{matrix}\Lambda_{\mybold{u}}{\mu}_{\mybold{u}} \\ 0 \end{matrix}\right)
+\label{eq:LG9}
+\end{eqnarray}
+and the second order terms are:
+\begin{eqnarray}
+	2^{nd} \: order \: terms = && -\frac{1}{2} \mybold{u}^T \left( \Lambda_{\mybold{u}}+A^T \Lambda_{\mybold{v}|\mybold{u}} A \right)\mybold{u}  - \frac{1}{2} \mybold{v}^T \Lambda_{\mybold{v}|\mybold{u}} \mybold{v} \nonumber\\
+	&& + \frac{1}{2} \mybold{v}^T \Lambda_{\mybold{v}|\mybold{u}} A \mybold{u} + \mybold{u}^T A^T \Lambda_{\mybold{v}|\mybold{u}} \mybold{v} \nonumber\\
+	=&& -\frac{1}{2} \left(\begin{matrix}\mybold{u}\\\mybold{v} \end{matrix}\right)^T  \left(\begin{matrix}A^T\Lambda_{\mybold{v}|\mybold{u}}A+\Lambda_{\mybold{u}} & A^T\Lambda_{\mybold{v}|\mybold{u}} \nonumber\\ -\Lambda_{\mybold{v}|\mybold{u}} A & \Lambda_{\mybold{v}|\mybold{u}}\end{matrix}\right) \left(\begin{matrix}\mybold{u}\\\mybold{v} \end{matrix}\right) \\
+	=&& -\frac{1}{2} \mybold{w}^T \Lambda_{\mybold{w}} \mybold{w}
+\label{eq:LG10}
+\end{eqnarray}
+Comparing above equations \ref{eq:LG10}, \ref{eq:LG9} and \ref{eq:LG7}, Gaussian distribution of $ \mybold{w} $ takes the precision matrix $ \Lambda_{\mybold{w}} $ of the form:
+\begin{equation}
+	\Lambda_{\mybold{w}}= \left(\begin{matrix}\Lambda_{\mybold{u}\mybold{u}} & \Lambda_{\mybold{u}\mybold{v}} \\ \Lambda_{\mybold{v}\mybold{u}} & \Lambda_{\mybold{v}\mybold{v}}\end{matrix}\right) = \left(\begin{matrix}A^T\Lambda_{\mybold{v}|\mybold{u}}A+\Lambda_{\mybold{u}} & A^T\Lambda_{\mybold{v}|\mybold{u}} \\ -\Lambda_{\mybold{v}|\mybold{u}} A & \Lambda_{\mybold{v}|\mybold{u}}\end{matrix}\right)
+\label{eq:LG11}
+\end{equation}
+and the mean $ \mybold{\mu}_{\mybold{w}} $ is:
+\begin{equation}
+	\mybold{\mu}_{\mybold{w}} = \left(\begin{matrix}\mybold{\mu}_{\mybold{u}} \\ \mybold{\mu}_{\mybold{v}} \end{matrix}\right) = \Lambda_{\mybold{w}}^{-1}\left(\begin{matrix}\Lambda_{\mybold{u}}\mybold{\mu}_{\mybold{u}} \\ 0 \end{matrix}\right) =\Sigma_{\mybold{w}} \left(\begin{matrix}\Lambda_{\mybold{u}}\mybold{\mu}_{\mybold{u}} \\ 0 \end{matrix}\right)
+\label{eq:LG12}
+\end{equation}
+The covariance matrix is obtained by taking the inverse of above:
+\begin{equation}
+	\Sigma_{\mybold{w}}=\left(\begin{matrix}\Sigma_{\mybold{u}\mybold{u}} & \Sigma_{\mybold{u}\mybold{v}} \\ \Sigma_{\mybold{v}\mybold{u}} & \Sigma_{\mybold{v}\mybold{v}}\end{matrix}\right) = \left(\begin{matrix}A^T\Lambda_{\mybold{v}|\mybold{u}}A+\Lambda_{\mybold{u}} & A^T\Lambda_{\mybold{v}|\mybold{u}} \\ -\Lambda_{\mybold{v}|\mybold{u}} A & \Lambda_{\mybold{v}|\mybold{u}}\end{matrix}\right)^{-1} 
+\label{eq:LG13}
+\end{equation}
+Using the inversion lemma:
+\begin{equation}
+	\left(\begin{matrix} A & B \\ C & D \end{matrix}\right)^{-1}= \left(\begin{matrix}M & -MBD^{-1} \\ D^{-1}+D^{-1}CM & D^{-1}CMBD^{-1}\end{matrix}\right)
+\label{eq:LG14}
+\end{equation}
+where $ M=(A-BD^{-1}C)^{-1} $ is the \textit{Schur complement} of the matrix inversion with respect to $ D $. The covariance matrix is finally given as:
+\begin{equation}
+	\Sigma_{\mybold{w}}= \left(\begin{matrix}\Sigma_{\mybold{u}\mybold{u}} & \Sigma_{\mybold{u}\mybold{v}} \\ \Sigma_{\mybold{v}\mybold{u}} & \Sigma_{\mybold{v}\mybold{v}}\end{matrix}\right) =\left(\begin{matrix}\Lambda^{-1}_{\mybold{u}} & \Lambda^{-1}_{\mybold{u}}A^T \\ A \Lambda^{-1}_{\mybold{u}} &\Lambda^{-1}_{\mybold{v}|\mybold{u}} + A\Lambda^{-1}_{\mybold{u}}A^T\end{matrix}\right)
+\label{eq:LG15}
+\end{equation}
+Replacing this covariance matrix to equation (\ref{eq:LG13}), the expectation of $ \mybold{w} $ is given as:
+\begin{equation}
+	\mybold{\mu}_{\mybold{w}} = \left(\begin{matrix}\mybold{\mu}_{\mybold{u}} \\ \mybold{\mu}_{\mybold{v}} \end{matrix}\right) =\left(\begin{matrix}\Lambda^{-1}_{\mybold{u}} & \Lambda^{-1}_{\mybold{u}}A^T \\ A \Lambda^{-1}_{\mybold{u}} & \Lambda^{-1}_{\mybold{v}|\mybold{u}} + A\Lambda^{-1}_{\mybold{u}}A^T\end{matrix}\right) \left(\begin{matrix}\Lambda_{\mybold{u}}\mybold{\mu}_{\mybold{u}} \\ 0 \end{matrix}\right) = \left(\begin{matrix}\mybold{\mu}_{\mybold{u}} \\ A\mybold{\mu}_{\mybold{u}} \end{matrix}\right)
+\label{eq:LG16} 
+\end{equation}
+From equation \ref{eq:LG15} and \ref{eq:LG16}, the Gaussian distribution of $ \mybold{v} = \distr(\mybold{v}| \mybold{\mu}_{\mybold{v}},\Sigma_{\mybold{v}}) $ is:
+\begin{eqnarray}
+	\mybold{\mu}_{\mybold{v}} =&& A\mybold{\mu}_{\mybold{u}} \nonumber\\
+	\Sigma_{\mybold{v}} =&& \Lambda^{-1}_{\mybold{v}|\mybold{u}} + A\Lambda^{-1}_{\mybold{u}}A^T
+\label{eq:LG17}
+\end{eqnarray}
+Using results of conditional Gaussian distribution as in equation \ref{eq:LG4}, the posterior ditribution $ \mybold{u}|\mybold{v} $ is $ \distr \left(\mybold{u}|\mybold{\mu}_{\mybold{u}|\mybold{v}}, \Sigma_{\mybold{u}|\mybold{v}} \right) $ where:
+\begin{eqnarray}
+	\mybold{\mu}_{\mybold{u}|\mybold{v}} =&& \mybold{\mu}_{\mybold{u}}-\Lambda^{-1}_{\mybold{u}\mybold{u}} \Lambda_{\mybold{u}\mybold{v}} (\mybold{u}-\mybold{\mu}_{\mybold{u}}) \nonumber\\
+	\Sigma_{\mybold{u}|\mybold{v}} =&& \Lambda^{-1}_{\mybold{u}\mybold{u}}
+\label{eq:LG18}
+\end{eqnarray}
+Taking the partial precision matrices from equation \ref{eq:LG11}, covariance matrix $ \Sigma_{\mybold{u}|\mybold{v}} $ is given as:
+\begin{equation}
+	\Sigma_{\mybold{u}|\mybold{v}}= \left(A^T\Lambda_{\mybold{v}|\mybold{u}}A+\Lambda_{\mybold{u}}\right)^{-1} 
+\label{eq:LG19}	
+\end{equation}
+and conditional mean $ \mybold{\mu}_{\mybold{u}|\mybold{v}} $ is as:
+\begin{eqnarray}
+	\mybold{\mu}_{\mybold{u}|\mybold{v}} =&& \mybold{\mu}_{\mybold{u}}- \left(	A^T\Lambda_{\mybold{v}|\mybold{u}}A+\Lambda_{\mybold{u}} \right) ^{-1} \left( -A^T\Lambda_{\mybold{v}|\mybold{u}} \right) \left( \mybold{v}- A\mybold{\mu}_{\mybold{u}} \right) \nonumber\\
+	=&& \left(	A^T\Lambda_{\mybold{v}|\mybold{u}}A+\Lambda_{\mybold{u}} \right)^{-1} \left(	A^T\Lambda_{\mybold{v}|\mybold{u}} \mybold{v} +\Lambda_{\mybold{u}}\mybold{\mu}_{\mybold{u}} \right)
+\label{eq:LG20}
+\end{eqnarray}
+Final results written in covariance matrices notation, given:
+\begin{eqnarray}
+	\mybold{v} =&& A\mybold{u} \nonumber\\
+	p(\mybold{u}) =&& \distr \left( \mybold{u}| \mybold{\mu}_{\mybold{u}},\Sigma_{\mybold{u}} \right) \nonumber\\
+	p(\mybold{v}|\mybold{u}) =&& \distr \left( \mybold{v}| A\mybold{u},\Sigma_{\mybold{v}|\mybold{u}} \right)
+\label{eq:LG21}	
+\end{eqnarray}
+one gets:
+\begin{eqnarray}
+	p(\mybold{v}) =&& \distr \left( \mybold{v}| A\mybold{\mu}_{\mybold{u}},\Sigma_{\mybold{v}|\mybold{u}} +A\Sigma_{\mybold{u}}  A^T \right) \nonumber\\
+	p(\mybold{u}|\mybold{v}) =&& \distr \left( \mybold{u}| \Sigma_{\mybold{u}|\mybold{v}} \left(	A^T\Lambda_{\mybold{v}|\mybold{u}} \mybold{v} +\Lambda_{\mybold{u}}\mybold{\mu}_{\mybold{u}} \right),\Sigma_{\mybold{u}|\mybold{v}} \right) \nonumber\\
+	\Sigma_{\mybold{u}|\mybold{v}} =&& \left(A^T\Sigma_{\mybold{v}|\mybold{u}}^{-1}A+\Sigma_{\mybold{u}}^{-1}\right)^{-1}
+\label{eq:LG22}	
+\end{eqnarray}
+
+\subsection{ The model}
+As one of the example linear Gaussian model in \cite{roweis1999unifying} and restated in \cite{bishop2006pattern}, given the Gaussian distribution of measurements $p(\mybold{u}) $ and posterior distribution $ p(\mybold{u}|\mybold{v}) $:
+\begin{eqnarray}
+	p(\mybold{u}) =&& \distr \left( \mybold{u}| \mybold{\mu}_{\mybold{u}},\Sigma_{\mybold{u}} \right) \nonumber\\
+	p(\mybold{v}|\mybold{u}) =&& \distr \left( \mybold{v}| A\mybold{u}+\mybold{b},\Sigma_{\mybold{v}|\mybold{u}} \right)
+\label{eq:bishop_linear_gaussian_1}	
+\end{eqnarray}
+where $ \mu_{\mybold{u}} $, $ A $ and $ b $ are parameters governing the mean of the distributions; $ \Sigma_{\mybold{v}|\mybold{u}} $ is not a function of $ \mybold{u} $. Applying Bayes's theorem for these Gaussian variables, the joint distribution can be written using the prior and likelihood distributions given as:
+\begin{eqnarray}
+	p(\mybold{v}) =&& \distr \left( \mybold{v}| A\mybold{\mu}_{\mybold{u}} + \mybold{b},\Sigma_{\mybold{v}|\mybold{u}} +A\Sigma_{\mybold{u}}  A^T \right) \nonumber\\
+	p(\mybold{u}|\mybold{v}) =&& \distr \left( \mybold{u}| \Sigma_{\mybold{u}|\mybold{v}} \left(	A^T\Lambda_{\mybold{v}|\mybold{u}} \left( \mybold{v} - \mybold{b} \right) +\Lambda_{\mybold{u}}\mybold{\mu}_{\mybold{u}} \right),\Sigma_{\mybold{u}|\mybold{v}} \right) \nonumber\\
+	\Sigma_{\mybold{u}|\mybold{v}} =&& \left(A^T\Sigma_{\mybold{v}|\mybold{u}}^{-1}A+\Sigma_{\mybold{u}}^{-1}\right)^{-1}
+\label{eq:bishop_linear_gaussian_2}	
+\end{eqnarray}
+
+Using results in equation \ref{eq:bishop_linear_gaussian_2}, given the posterior distributions $ \distr(\mybold{z}|\varmathbb{I}_t\mybold{x},\Sigma_{\mybold{h}_t}) $ and $ \distr(\mybold{z}|\varmathbb{I}_s\mybold{y},\Sigma_{\mybold{h}_s}) $ in equations \ref{eq:Bayes21} and \ref{eq:Bayes22}, and known distributions of measurements $ \distr \left( \varmathbb{I}_t\mybold{x} |0, \Sigma_{\varmathbb{I}_t\mybold{x}} \right)$ and $ \distr \left( \varmathbb{I}_s\mybold{y} |0, \Sigma_{\varmathbb{I}_s\mybold{y}} \right)$. Results of above section show that one can get the likelihood functions and the prior distribution as:
+\begin{eqnarray}
+		\varmathbb{I}_t \mybold{x}|\mybold{z} :&& \distr \left(\varmathbb{I}_t \mybold{x}|\Sigma_t \Sigma_{\mybold{h}_t}^{-1} \mybold{z},\Sigma_t \right) \nonumber\\
+		\varmathbb{I}_s \mybold{y}|\mybold{z} :&& \distr \left(\varmathbb{I}_s \mybold{y}|\Sigma_s \Sigma_{\mybold{h}_s}^{-1} \mybold{z},\Sigma_s \right) \nonumber\\
+		\mybold{z} :&& \distr \left(\mybold{z}|0, \Sigma_{\mybold{z}}\right) 
+\label{eq:bishop_linear_gaussian_3}	
+\end{eqnarray}
+where:
+\begin{eqnarray}
+		\Sigma_t^{-1} =&& \Sigma_{\mybold{h}_t}^{-1} + \Sigma_{\varmathbb{I}_t\mybold{x}}^{-1} \nonumber\\
+		\Sigma_s^{-1} =&& \Sigma_{\mybold{h}_s}^{-1} + \Sigma_{\varmathbb{I}_s\mybold{y}}^{-1} \nonumber\\
+		\Sigma_{\mybold{z}} =&& \Sigma_{\mybold{h}_t}+\Sigma_{\varmathbb{I}_t\mybold{x}} = \Sigma_{\mybold{h}_s}+\Sigma_{\varmathbb{I}_s\mybold{y}}
+\label{eq:bishop_linear_gaussian_4}	
+\end{eqnarray}
+Using above resulting Gaussian distributions, The MAP estimation of $ \mybold{z} $ is given as:
+\begin{eqnarray}
+	\hat{\mybold{z}} =&& \underset{\mybold{z}}{argmax} \left\lbrace  p(\varmathbb{I}_t\mybold{x}|\mybold{z})p(\varmathbb{I}_s\mybold{y}|\mybold{z})p(\mybold{z}) \right\rbrace \nonumber\\
+	=&& \underset{\mybold{z}}{argmin} \left\lbrace -\ln p(\varmathbb{I}_t\mybold{x}|\mybold{z}) -\ln p(\varmathbb{I}_s\mybold{y}|\mybold{z}) -\ln p(\mybold{z}) \right\rbrace
+\label{eq:bishop_linear_gaussian_5}
+\end{eqnarray}
+Logarithm of above probabilities are given as:
+\begin{eqnarray*}
+	-2\ln p(\varmathbb{I}_t\mybold{x}|\mybold{z}) =&& \left(\varmathbb{I}_t\mybold{x}-\Sigma_t \Sigma_{\mybold{h}_t}^{-1}\mybold{z} \right)^T \Sigma^{-1}_t \left(\varmathbb{I}_t\mybold{x}-\Sigma_t \Sigma_{\mybold{h}_t}^{-1}\mybold{z}\right) \\
+	=&& \Arrowvert \Sigma_t \Sigma_{\mybold{h}_t}^{-1}\mybold{z}-\varmathbb{I}_t\mybold{x} \Arrowvert^2_{\Sigma_t}\\
+	-2\ln p(\varmathbb{I}_s\mybold{y}|\mybold{z}) =&&  \left(\varmathbb{I}_s\mybold{y}-\Sigma_s \Sigma_{\mybold{h}_s}^{-1}\mybold{z} \right)^T \Sigma^{-1}_s \left(\varmathbb{I}_s\mybold{y}-\Sigma_s \Sigma_{\mybold{h}_s}^{-1}\mybold{z}\right)\\
+	=&& \Arrowvert \Sigma_s \Sigma_{\mybold{h}_s}^{-1}\mybold{z}-\varmathbb{I}_s\mybold{y} \Arrowvert^2_{\Sigma_s}\\
+	-2\ln p(\mybold{z}) =&& \mybold{z}^T \Sigma^{-1}_z \mybold{z} = \Arrowvert \mybold{z} \Arrowvert^2_{\Sigma_{\mybold{z}}}
+\label{eq:bishop_linear_gaussian_6}
+\end{eqnarray*}
+The cost function $ C(\mybold{z}) $ is defined as the sum of above terms:
+\begin{equation}
+	C(\mybold{z}) =\Arrowvert \Sigma_t \Sigma_{\mybold{h}_t}^{-1}\mybold{z}-\varmathbb{I}_t\mybold{x} \Arrowvert^2_{\Sigma_t}  + \Arrowvert \Sigma_s \Sigma_{\mybold{h}_s}^{-1}\mybold{z}-\varmathbb{I}_s\mybold{y} \Arrowvert^2_{\Sigma_s} \Arrowvert \mybold{z} \Arrowvert^2_{\Sigma_{\mybold{z}}}
+\label{eq:bishop_linear_gaussian_7}
+\end{equation}
+ The gradient of $ C(\mybold{z}) $ is computed as:
+\begin{eqnarray}
+	\frac{\partial C(\mybold{z})}{2\partial \mybold{z}} =&& \Sigma^{-1}_t \left( \Sigma_t \Sigma_{\mybold{h}_t}^{-1}\mybold{z}-\varmathbb{I}_t\mybold{x} \right) + \Sigma^{-1}_s \left( \Sigma_s \Sigma_{\mybold{h}_s}^{-1}\mybold{z}-\varmathbb{I}_s\mybold{y} \right) +\Sigma^{-1}_{\mybold{z}} \mybold{z} \nonumber\\
+	=&& \left( \Sigma_{\mybold{h}_t}^{-1} + \Sigma_{\mybold{h}_s}^{-1} + \Sigma^{-1}_{\mybold{z}} \right) \mybold{z} - \left( \Sigma^{-1}_t\varmathbb{I}_t\mybold{x} + \Sigma^{-1}_s\varmathbb{I}_s\mybold{y} \right)
+\label{eq:bishop_linear_gaussian_8}	
+\end{eqnarray}
+The estimation of optimized $ \hat{\mybold{z}} $ is obtained when setting this gradient to zeros:
+\begin{equation}
+	\hat{\mybold{z}}=\left( \Sigma_{\mybold{h}_t}^{-1} + \Sigma_{\mybold{h}_s}^{-1} + \Sigma^{-1}_{\mybold{z}} \right)^{-1} \left(\Sigma^{-1}_t\varmathbb{I}_t\mybold{x} +\Sigma^{-1}_s\varmathbb{I}_s\mybold{y}\right)
+\label{eq:bishop_linear_gaussian_9}
+\end{equation}
+
+\section{Derivation of generalized Millman formula}
+\label{apx_BayesGausvars_2}
+Let denote $ \left\lbrace \hat{\mybold{z}}_1,...,\hat{\mybold{z}}_K \right\rbrace  $ be K estimates of an unknown random vector $ \mybold{z} \in R^n $. The objective of the fusion model is to find the best linear estimate via a set of coefficient matrices $ C_i $ (i=1,...,K):
+\begin{equation}
+\hat{\mybold{z}}=\sum\limits_{i=1}^{K}{C_i\hat{\mybold{z}}_i} \:\:\:\:\:\:\:\:\: s.t \:\:\:\:\:\:\:\:\: \sum\limits_{i=1}^{K}{C_i}=I_n
+\end{equation}
+where the weighting matrices are estimated as:
+\begin{equation}
+\left\lbrace C_i \right\rbrace_{i=1,...,K}=\argmin_{C_i} \left\| \mybold{z}-\sum_{i=1}^{K}{C_i\hat{\mybold{z}}_i} \right\|^2_2 \:\:\:\:\:\:\:\:\: s.t \:\:\:\:\:\:\:\:\: \sum_{i=1}^{K}{C_i}=I_n
+\end{equation}
+Define the loss function $ J $ as the error expectation:
+\begin{equation}
+J=E\left\lbrace \left\|  \mybold{z}-\sum\limits_{i=1}^{K}{C_i\hat{\mybold{z}}_i} \right\| ^2_2 \right\rbrace 
+\end{equation}
+Define also the total error covariance:
+\begin{align}
+	\Sigma &\triangleq \cov{ \mybold{z}-\hat{\mybold{z}}}  \\ 
+	&= \E {\left(   \mybold{z}-\sum\limits_{i=1}^{K}{C_i\hat{\mybold{z}}_i} \right) \left(   \mybold{z}-\sum\limits_{j=1}^{K}{C_j\hat{\mybold{z}}_j} \right)^T}
+\end{align}
+Since $ \sum_{i=1}^{K}{C_i}=I_n $, the total error covariance is given as:
+\begin{equation}
+	\Sigma = \E{ \sum\limits_{i=1}^{K}{C_i\left(\mybold{z}-\hat{\mybold{z}}_i \right)}  \sum\limits_{j=1}^{K}{C_j\left(\mybold{z}-\hat{\mybold{z}}_j\right)^T}}
+\end{equation}
+Define the local error term as $ \tilde{\mybold{z}}_i \triangleq \mybold{z}-\hat{\mybold{z}}_i $ and the local error covariance as $ \Sigma_{ij}\triangleq \cov{\tilde{\mybold{z}}_i,\tilde{\mybold{z}}_j} $, the total error covariance becomes:
+\begin{align}
+	\Sigma &= \E{\sum\limits_{i,j=1}^{K}{C_i\tilde{\mybold{z}}_i \left(C_j\tilde{\mybold{z}}_j\right)^T}} \\
+	&= \sum\limits_{i,j=1}^{K}{C_i\Sigma_{ij}C_j^T}
+\end{align}
+The loss function $ J $ is rewritten as:
+\begin{align}
+	J &= E\left\lbrace \left\|  \mybold{z}-\sum\limits_{i=1}^{K}{C_i\hat{\mybold{z}}_i} \right\| ^2_2 \right\rbrace \\
+	&= \tr{\sum\limits_{i,j=1}^{K}{C_i\Sigma_{ij}C_j^T}}
+\end{align}
+Substituting $ C_K=I_n-C_1-C_2-...-C_{K-1} $ into above equation, one gets:
+\begin{equation}
+\begin{aligned}
+J= & \tr{\sum\limits_{i,j=1}^{K-1}{C_i\Sigma_{ij}C_j^T}+\sum\limits_{i,j=1}^{K-1}{\left(C_i\Sigma_{iK}+\Sigma_{Ki}C_i^T\right)}-\sum\limits_{i,j=1}^{K-1}{\left(C_i\Sigma_{iK}C_j^T+C_j\Sigma_{Ki}C_j^T\right)}} \\
+& +\tr{\Sigma_{KK}-\left(\sum\limits_{i,j=1}^{K-1}{C_i}\right)\Sigma_{KK}-\Sigma_{KK}\left(\sum\limits_{i,j=1}^{K-1}{C_j^T}\right)+\sum\limits_{i,j=1}^{K-1}{C_i\Sigma_{KK}C_j^T}}
+\end{aligned}
+\end{equation}
+Using the symmetric property of covariance matrices, i.e. $ \Sigma_{ij}=\Sigma_{ji}^T $ and $ \Sigma_{ii}=\Sigma_{ii}^T $, one gets:
+\begin{align}
+	\frac{\partial}{\partial C_i} \left(\tr{C_i\Sigma} \right) &= \Sigma^T \\
+	\frac{\partial}{\partial C_i} \left(\tr{\Sigma C_i^T} \right) &= \Sigma \\
+	\frac{\partial}{\partial C_i} \left(\tr{C_i \Sigma C_i^T} \right) &= C_i \left(\Sigma+\Sigma^T \right)
+\end{align}
+Taking partial derivative $ \partial J / \partial C_i $ and set to zero, one gets:
+\begin{equation}
+	\sum\limits_{i,j=1}^{K-1}{C_i} \left(\Sigma_{ij}-\Sigma_{iK}\right)+C_K\left(\Sigma_{Kj}-\Sigma_{KK}\right) = 0 \:\:\:\:\: s.t. \:\:\:\:\: \sum\limits_{i,j=1}^{K}{C_i}=I_n, \:\: j=1,...,K-1
+\end{equation}
+The final GMF of fusing $ \mybold{z} $ from $ \left\lbrace \hat{\mybold{z}}_1,...,\hat{\mybold{z}}_K \right\rbrace  $ is: 
+\begin{equation}
+\hat{\mybold{z}}=\sum\limits_{i=1}^{K}{C_i\hat{\mybold{z}}_i} \:\:\:\:\: s.t. \:\:\:\:\: \begin{cases}
+\sum\limits_{i=1}^{K}{C_i}=I_n\\
+\sum\limits_{i,j=1}^{K-1}{C_i} \left(\Sigma_{ij}-\Sigma_{iK}\right)+C_K\left(\Sigma_{Kj}-\Sigma_{KK}\right) = 0, \:\: j=1,...,K-1
+\end{cases}
+\end{equation} 
+with a total error covariance of:
+\begin{equation}
+\Sigma=\sum\limits_{i,j=1}^{K}{C_i\Sigma_{ij}C_j^T}
+\end{equation}
+
+\subsubsection*{Bar-Shalom and Campo (1986)}
+In the case of fusing two estimates ($ K=2 $), the GMF becomes Bar-Shalom-Campo formula:
+\begin{equation}
+\hat{\mybold{z}}=C_1\hat{\mybold{z}}_1+C_2\hat{\mybold{z}}_2
+\end{equation}
+Weighting matrices $ C_1 $ and $ C_2 $ satisfy:
+\begin{equation}
+\begin{cases}
+C_1+C_2=I_n\\
+C_1\left(\Sigma_{11}-\Sigma_{12}\right)+C_2\left(\Sigma_{21}-\Sigma_{22}\right)=0 \\
+C_1\left(\Sigma_{12}-\Sigma_{12}\right)+C_2\left(\Sigma_{22}-\Sigma_{22}\right)=0
+\end{cases}
+\end{equation}
+which lead to:
+\begin{equation}
+\begin{cases}
+C_1 = \left(\Sigma_{22}-\Sigma_{21}\right)\left(\Sigma_{11}+\Sigma_{22}-\Sigma_{12}-\Sigma_{21}\right)^{-1}\\
+C_2 = \left(\Sigma_{11}-\Sigma_{12}\right)\left(\Sigma_{11}+\Sigma_{22}-\Sigma_{12}-\Sigma_{21}\right)^{-1}
+\end{cases}
+\end{equation}
+In case $ \tilde{\mybold{z}}_1 $ and $ \tilde{\mybold{z}}_2 $ are uncorrelated, i.e. $ \Sigma_{12}=\Sigma_{21}=0 $, the fusion formula is known as the Millman's formula:
+\begin{equation}
+\hat{\mybold{z}}=\Sigma_{22}\left(\Sigma_{11}+\Sigma_{22}\right)^{-1}\hat{\mybold{z}}_1+\Sigma_{11}\left(\Sigma_{11}+\Sigma_{22}\right)^{-1}\hat{\mybold{z}}_2
+\end{equation}
+This formula is identical to the Bayesian fusion model assuming a non-informative prior on $ \mybold{z} $.

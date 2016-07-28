@@ -1,0 +1,1304 @@
+%%%%%%%%% INTRODUCTION (TURBULENCE) %%%%%%%%
+@article{sreenivasan1999fluid,
+  title={Fluid turbulence},
+  author={K. R. Sreenivasan},
+  journal={Reviews of Modern Physics},
+  volume={71},
+  number={2},
+  pages={S383},
+  year={1999},
+  publisher={APS}
+}
+
+@article{townsend1956properties,
+  title={The properties of equilibrium boundary layers},
+  author={A. A. Townsend},
+  journal={Journal of Fluid Mechanics},
+  volume={1},
+  number={06},
+  pages={561--573},
+  year={1956},
+  publisher={Cambridge University Press}
+}
+
+@article{corrsin1961turbulent,
+  title={Turbulent flow},
+  author={S. Corrsin},
+  journal={American Scientist},
+  pages={300--325},
+  year={1961},
+  publisher={JSTOR}
+}
+
+@book{pope2000turbulent,
+  title={Turbulent flows},
+  author={S. B. Pope},
+  year={2000},
+  publisher={Cambridge University Press}
+}
+
+@book{davidson2015turbulence,
+  title={Turbulence: an introduction for scientists and engineers},
+  author={P. Davidson and others},
+  year={2015},
+  publisher={Oxford University Press, USA}
+}
+
+@book{tennekes1972first,
+  title={A first course in turbulence},
+  author={H. Tennekes and J. L. Lumley},
+  year={1972},
+  publisher={MIT Press}
+}
+
+@book{frisch1995turbulence,
+  title={Turbulence: the legacy of A.N. Kolmogorov},
+  author={U. Frisch},
+  year={1995},
+  publisher={Cambridge University Press}
+}
+
+@book{batchelor1953theory,
+  title={The theory of homogeneous turbulence},
+  author={G. K. Batchelor},
+  year={1953},
+  publisher={Cambridge University Press}
+}
+
+@book{chapman1985observations,
+  title={Observations, Theoretical Ideas, and Modeling of Turbulent Flows—Past, Present, and Future},
+  author={G. T. Chapman and M. Tobak},
+  year={1985},
+  publisher={Springer}
+}
+
+@article{reynolds1883experimental,
+  title={An experimental investigation of the circumstances which determine whether the motion of water shall be direct or sinuous, and of the law of resistance in parallel channels},
+  author={O. Reynolds},
+  journal={Proceedings of the royal society of London},
+  volume={35},
+  number={224-226},
+  pages={84--99},
+  year={1883},
+  publisher={The Royal Society}
+}
+
+@article{reynolds1894dynamical,
+  title={On the Dynamical Theory of Incompressible Viscous Fluids and the Determination of the Criterion.},
+  author={O. Reynolds},
+  journal={Proceedings of the Royal Society of London},
+  volume={56},
+  number={336-339},
+  pages={40--45},
+  year={1894},
+  publisher={The Royal Society}
+}
+
+@inproceedings{kolmogorov1941dissipation,
+  title={Dissipation of energy in locally isotropic turbulence},
+  author={A. N. Kolmogorov},
+  booktitle={Dokl. Akad. Nauk SSSR},
+  volume={32},
+  number={1},
+  pages={16--18},
+  year={1941}
+}
+
+@inproceedings{taylor1935statistical,
+  title={Statistical theory of turbulence},
+  author={G. I. Taylor},
+  booktitle={Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
+  volume={151},
+  number={873},
+  pages={421--444},
+  year={1935},
+  organization={The Royal Society}
+}
+
+@book{boussinesq1877essai,
+  title={Essai sur la th{\'e}orie des eaux courantes},
+  author={J. Boussinesq},
+  volume={2},
+  year={1877},
+  publisher={Imprimerie nationale}
+}
+
+
+%%%%%%%%% REVIEWS ON EXPERIMENTAL TECHNIQUES %%%%%%%%%%
+
+%% HWA
+@article{king1914convection,
+  title={On the convection of heat from small cylinders in a stream of fluid: determination of the convection constants of small platinum wires with applications to hot-wire anemometry},
+  author={King, Louis Vessot},
+  journal={Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character},
+  pages={373--432},
+  year={1914},
+  publisher={JSTOR}
+}
+
+@article{bruun1996hot,
+  title={Hot-wire anemometry: principles and signal analysis},
+  author={Bruun, Hans H},
+  journal={Measurement Science and Technology},
+  volume={7},
+  number={10},
+  pages={null},
+  year={1996},
+  publisher={IOP Publishing}
+}
+
+@article{comte1976hot,
+  title={Hot-wire anemometry},
+  author={Comte-Bellot, Genevieve},
+  journal={Annual review of fluid mechanics},
+  volume={8},
+  number={1},
+  pages={209--231},
+  year={1976}
+}
+
+@article{hutchins2009hot,
+  title={Hot-wire spatial resolution issues in wall-bounded turbulence},
+  author={Hutchins, N and Nickels, Timothy B and Marusic, I and Chong, MS},
+  journal={Journal of Fluid Mechanics},
+  volume={635},
+  pages={103--136},
+  year={2009},
+  publisher={Cambridge Univ Press}
+}
+
+%% PIV
+@article{barker1977measuring,
+  title={Measuring fluid velocities with speckle patterns},
+  author={Barker, DB and Fourney, ME},
+  journal={Optics letters},
+  volume={1},
+  number={4},
+  pages={135--137},
+  year={1977},
+  publisher={Optical Society of America}
+}
+
+@article{barker1977three,
+  title={Three-dimensional speckle interferometric investigation of the stress-intensity factor along a crack front},
+  author={Barker, DB and Fourney, ME},
+  journal={Experimental Mechanics},
+  volume={17},
+  number={7},
+  pages={241--247},
+  year={1977},
+  publisher={Springer}
+}
+
+@article{dudderar1977laser,
+  title={Laser speckle photography in a fluid medium},
+  author={Dudderar, TD and Simpkins, PG},
+  journal={Nature},
+  volume={270},
+  number={5632},
+  pages={45--47},
+  year={1977},
+  publisher={Nature Publishing Group}
+}
+
+@article{grousson1977study,
+  title={Study of flow pattern in a fluid by scattered laser light},
+  author={Grousson, R and Mallick, S},
+  journal={Applied Optics},
+  volume={16},
+  number={9},
+  pages={2334--2336},
+  year={1977},
+  publisher={Optical Society of America}
+}
+
+@article{meynart1980equal,
+  title={Equal velocity fringes in a Rayleigh-Benard flow by a speckle method},
+  author={Meynart, Roland},
+  journal={Applied optics},
+  volume={19},
+  number={9},
+  pages={1385--1386},
+  year={1980}
+}
+
+@inproceedings{meynart1980flow,
+  title={Flow velocity measurement by a speckle method},
+  author={Meynart, Roland},
+  booktitle={2nd European Congress on Optics Applied to Metrology},
+  pages={25--28},
+  year={1980},
+  organization={International Society for Optics and Photonics}
+}
+
+@article{meynart1982convective,
+  title={Convective flow field measurement by speckle velocimetry},
+  author={Meynart, R},
+  journal={Revue de Physique Appliqu{\'e}e},
+  volume={17},
+  number={5},
+  pages={301--305},
+  year={1982},
+  publisher={Soci{\'e}t{\'e} Fran{\c{c}}aise de Physique}
+}
+
+@article{meynart1983instantaneous,
+  title={Instantaneous velocity field measurements in unsteady gas flow by speckle velocimetry},
+  author={Meynart, Roland and others},
+  journal={Applied Optics},
+  volume={22},
+  number={4},
+  pages={535--540},
+  year={1983},
+  publisher={Optical Society of America}
+}
+
+@article{meynart1983speckle,
+  title={Speckle velocimetry study of vortex pairing in a low-Re unexcited jet},
+  author={Meynart, Roland},
+  journal={Physics of Fluids (1958-1988)},
+  volume={26},
+  number={8},
+  pages={2074--2079},
+  year={1983},
+  publisher={AIP Publishing}
+}
+
+@article{sutton1983determination,
+  title={Determination of displacements using an improved digital correlation method},
+  author={Sutton, MA and Wolters, WJ and Peters, WH and Ranson, WF and McNeill, SR},
+  journal={Image and vision computing},
+  volume={1},
+  number={3},
+  pages={133--139},
+  year={1983},
+  publisher={Elsevier}
+}
+
+@article{lauterborn1984modern,
+  title={Modern optical techniques in fluid mechanics},
+  author={Lauterborn, Werner and Vogel, Alfred},
+  journal={Annual Review of Fluid Mechanics},
+  volume={16},
+  number={1},
+  pages={223--244},
+  year={1984}
+}
+
+@article{adrian1986image,
+  title={Image shifting technique to resolve directional ambiguity in double-pulsed velocimetry},
+  author={R. J. Adrian},
+  journal={Applied Optics},
+  volume={25},
+  number={21},
+  pages={3855--3858},
+  year={1986},
+  publisher={Optical Society of America}
+}
+
+@article{adrian1991particle,
+  title={Particle-imaging techniques for experimental fluid mechanics},
+  author={Adrian, Ronald J},
+  journal={Annual review of fluid mechanics},
+  volume={23},
+  number={1},
+  pages={261--304},
+  year={1991}
+}
+
+@article{keane1992theory,
+  title={Theory of cross-correlation analysis of PIV images},
+  author={R. D. Keane and R. J. Adrian},
+  journal={Applied scientific research},
+  volume={49},
+  number={3},
+  pages={191--215},
+  year={1992},
+  publisher={Springer}
+}
+
+@article{willert1997stereoscopic,
+  title={Stereoscopic digital particle image velocimetry for application in wind tunnel flows},
+  author={Willert, Christian},
+  journal={Measurement science and technology},
+  volume={8},
+  number={12},
+  pages={1465},
+  year={1997},
+  publisher={IOP Publishing}
+}
+
+@article{brucker19973d,
+  title={3D scanning PIV applied to an air flow in a motored engine using digital high-speed video},
+  author={Br{\"u}cker, Ch},
+  journal={Measurement Science and Technology},
+  volume={8},
+  number={12},
+  pages={1480},
+  year={1997},
+  publisher={IOP Publishing}
+}
+
+@article{prasad2000stereoscopic,
+  title={Stereoscopic particle image velocimetry},
+  author={Prasad, Ajay K},
+  journal={Experiments in fluids},
+  volume={29},
+  number={2},
+  pages={103--116},
+  year={2000},
+  publisher={Springer}
+}
+
+@article{stanislas2003main,
+  title={Main results of the first international PIV challenge},
+  author={M. Stanislas and K. Okamoto and C. J. K{\"a}hler},
+  journal={Measurement Science and Technology},
+  volume={14},
+  number={10},
+  pages={R63},
+  year={2003},
+  publisher={IOP Publishing}
+}
+
+@article{stanislas2005main,
+  title={Main results of the second international PIV challenge},
+  author={M. Stanislas and K. Okamoto and C. J. K{\"a}hler and J. Westerweel},
+  journal={Experiments in Fluids},
+  volume={39},
+  number={2},
+  pages={170--191},
+  year={2005},
+  publisher={Springer}
+}
+
+@article{stanislas2008main,
+  title={Main results of the third international PIV challenge},
+  author={M. Stanislas and K. Okamoto and C. J. K{\"a}hler and J. Westerweel and F. Scarano},
+  journal={Experiments in Fluids},
+  volume={45},
+  number={1},
+  pages={27--71},
+  year={2008},
+  publisher={Springer}
+}
+
+@inproceedings{elsinga2005assessment,
+  title={Assessment of Tomo-PIV for three-dimensional flows},
+  author={Elsinga, GE and Wieneke, B and Scarano, F and Van Oudheusden, BW},
+  booktitle={6th International Symposium on Particle Image Velocimetry, Pasadena, California, USA},
+  year={2005}
+}
+
+
+@article{adrian2005twenty,
+  title={Twenty years of particle image velocimetry},
+  author={Adrian, Ronald J},
+  journal={Experiments in fluids},
+  volume={39},
+  number={2},
+  pages={159--169},
+  year={2005},
+  publisher={Springer}
+}
+
+
+@article{kahler2006wall,
+  title={Wall-shear-stress and near-wall turbulence measurements up to single pixel resolution by means of long-distance micro-PIV},
+  author={C. J. K{\"a}hler and U. Scholz and J. Ortmanns},
+  journal={Experiments in Fluids},
+  volume={41},
+  number={2},
+  pages={327--341},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{van2007mu,
+  title={$\mu$-PIV study of the formation of segmented flow in microfluidic T-junctions},
+  author={van Steijn, Volkert and Kreutzer, Michiel T and Kleijn, Chris R},
+  journal={Chemical Engineering Science},
+  volume={62},
+  number={24},
+  pages={7505--7514},
+  year={2007},
+  publisher={Elsevier}
+}
+@article{pan2009two,
+  title={Two-dimensional digital image correlation for in-plane displacement and strain measurement: a review},
+  author={Pan, Bing and Qian, Kemao and Xie, Huimin and Asundi, Anand},
+  journal={Measurement science and technology},
+  volume={20},
+  number={6},
+  pages={062001},
+  year={2009},
+  publisher={IOP Publishing}
+}
+
+@article{wereley2010recent,
+  title={Recent advances in micro-particle image velocimetry},
+  author={Wereley, Steven T and Meinhart, Carl D},
+  journal={Annual Review of Fluid Mechanics},
+  volume={42},
+  pages={557--576},
+  year={2010},
+  publisher={Annual Reviews}
+}
+
+% more updated
+@article{willert2015high,
+  title={High-speed particle image velocimetry for the efficient measurement of turbulence statistics},
+  author={Willert, Christian E},
+  journal={Experiments in Fluids},
+  volume={56},
+  number={1},
+  pages={1--17},
+  year={2015},
+  publisher={Springer}
+}
+
+@article{scarano2013tomographic,
+  title={Tomographic PIV: principles and practice},
+  author={Scarano, F},
+  journal={Measurement Science and Technology},
+  volume={24},
+  number={1},
+  pages={012001},
+  year={2013},
+  publisher={IOP Publishing}
+}
+
+@article{elsinga2006tomographic,
+  title={Tomographic particle image velocimetry},
+  author={Elsinga, Gerrit E and Scarano, Fulvio and Wieneke, Bernhard and van Oudheusden, Bas W},
+  journal={Experiments in fluids},
+  volume={41},
+  number={6},
+  pages={933--947},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{cierpka2012particle,
+  title={Particle imaging techniques for volumetric three-component (3D3C) velocity measurements in microfluidics},
+  author={Cierpka, C and K{\"a}hler, CJ},
+  journal={Journal of visualization},
+  volume={15},
+  number={1},
+  pages={1--31},
+  year={2012},
+  publisher={Springer}
+}
+
+%%%%%%%%% RANS and LES %%%%%%%%%%%%%%%%%%%%%
+@article{speziale1998turbulence,
+  title={Turbulence modeling for time-dependent RANS and VLES: a review},
+  author={Speziale, C},
+  journal={AIAA journal},
+  volume={36},
+  number={2},
+  pages={173--184},
+  year={1998}
+}
+
+@article{patel1985turbulence,
+  title={Turbulence models for near-wall and low Reynolds number flows-a review},
+  author={Patel, Virendra C and Rodi, Wolfgang and Scheuerer, Georg},
+  journal={AIAA journal},
+  volume={23},
+  number={9},
+  pages={1308--1319},
+  year={1985}
+}
+
+
+%%%%%%%%%%%%%%% DNS %%%%%%%%%%%%%%%%%%%%%%%%
+@article{fox1972numerical,
+  title={Numerical simulation of turbulent flows},
+  author={Fox, Douglas G and Lilly, Douglas K},
+  journal={Reviews of Geophysics},
+  volume={10},
+  number={1},
+  pages={51--72},
+  year={1972},
+  publisher={Wiley Online Library}
+}
+
+@article{orszag1972numerical,
+  title={Numerical simulation of three-dimensional homogeneous isotropic turbulence},
+  author={Orszag, Steven A and Patterson Jr, GS},
+  journal={Physical Review Letters},
+  volume={28},
+  number={2},
+  pages={76},
+  year={1972},
+  publisher={APS}
+}
+
+@article{spalart1986numerical,
+  title={Numerical study of sink-flow boundary layers},
+  author={Spalart, Philippe R},
+  journal={Journal of Fluid Mechanics},
+  volume={172},
+  pages={307--328},
+  year={1986},
+  publisher={Cambridge Univ Press}
+}
+
+
+@article{kim1987turbulence,
+  title={Turbulence statistics in fully developed channel flow at low Reynolds number},
+  author={Kim, John and Moin, Parviz and Moser, Robert},
+  journal={Journal of fluid mechanics},
+  volume={177},
+  pages={133--166},
+  year={1987},
+  publisher={Cambridge Univ Press}
+}
+
+@article{moser1987effects,
+  title={The effects of curvature in wall-bounded turbulent flows},
+  author={Moser, Robert D and Moin, Parviz},
+  journal={Journal of Fluid Mechanics},
+  volume={175},
+  pages={479--510},
+  year={1987},
+  publisher={Cambridge Univ Press}
+}
+
+@article{spalart1988direct,
+  title={Direct simulation of a turbulent boundary layer up to R $\theta$= 1410},
+  author={Spalart, Philippe R},
+  journal={Journal of Fluid Mechanics},
+  volume={187},
+  pages={61--98},
+  year={1988},
+  publisher={Cambridge Univ Press}
+}
+
+@article{eswaran1988direct,
+  title={Direct numerical simulations of the turbulent mixing of a passive scalar},
+  author={Eswaran, V and Pope, SB},
+  journal={Physics of Fluids (1958-1988)},
+  volume={31},
+  number={3},
+  pages={506--520},
+  year={1988},
+  publisher={AIP Publishing}
+}
+
+@article{eswaran1988examination,
+  title={An examination of forcing in direct numerical simulations of turbulence},
+  author={Eswaran, V and Pope, SB},
+  journal={Computers \& Fluids},
+  volume={16},
+  number={3},
+  pages={257--278},
+  year={1988},
+  publisher={Elsevier}
+}
+
+@article{eggels1994fully,
+  title={Fully developed turbulent pipe flow: a comparison between direct numerical simulation and experiment},
+  author={Eggels, JGM and Unger, F and Weiss, MH and Westerweel, J and Adrian, RJ and Friedrich, R and Nieuwstadt, FTM},
+  journal={Journal of Fluid Mechanics},
+  volume={268},
+  pages={175--210},
+  year={1994},
+  publisher={Cambridge Univ Press}
+}
+
+@article{coleman1995numerical,
+  title={A numerical study of turbulent supersonic isothermal-wall channel flow},
+  author={Coleman, Gary N and Kim, John and Moser, RD},
+  journal={Journal of Fluid Mechanics},
+  volume={305},
+  pages={159--183},
+  year={1995},
+  publisher={Cambridge Univ Press}
+}
+
+@article{tam1995computational,
+  title={Computational aeroacoustics-Issues and methods},
+  author={Tam, Christopher KW},
+  journal={AIAA journal},
+  volume={33},
+  number={10},
+  pages={1788--1796},
+  year={1995}
+}
+
+@article{lee1997application,
+  title={Application of neural networks to turbulence control for drag reduction},
+  author={Lee, Changhoon and Kim, John and Babcock, David and Goodman, Rodney},
+  journal={Physics of Fluids (1994-present)},
+  volume={9},
+  number={6},
+  pages={1740--1747},
+  year={1997},
+  publisher={AIP Publishing}
+}
+
+@article{vreman1996compressible,
+  title={Compressible mixing layer growth rate and turbulence characteristics},
+  author={Vreman, AW and Sandham, ND and Luo, KH},
+  journal={Journal of Fluid Mechanics},
+  volume={320},
+  pages={235--258},
+  year={1996},
+  publisher={Cambridge Univ Press}
+}
+
+
+@article{le1997direct,
+  title={Direct numerical simulation of turbulent flow over a backward-facing step},
+  author={Le, Hung and Moin, Parviz and Kim, John},
+  journal={Journal of fluid mechanics},
+  volume={330},
+  pages={349--374},
+  year={1997},
+  publisher={Cambridge Univ Press}
+}
+
+@article{moin1998direct,
+  title={Direct numerical simulation: a tool in turbulence research},
+  author={Moin, Parviz and Mahesh, Krishnan},
+  journal={Annual review of fluid mechanics},
+  volume={30},
+  number={1},
+  pages={539--578},
+  year={1998}
+}
+
+@article{moser1999direct,
+  title={Direct numerical simulation of turbulent channel flow up to Re= 590},
+  author={Moser, Robert D and Kim, John and Mansour, Nagi N},
+  journal={Phys. Fluids},
+  volume={11},
+  number={4},
+  pages={943--945},
+  year={1999}
+}
+
+%%%%%%%%% LINEAR REGRESSION %%%%%%%%%%%%%%%%
+@article{tibshirani1996regression,
+  title={Regression shrinkage and selection via the lasso},
+  author={Tibshirani, Robert},
+  journal={Journal of the Royal Statistical Society. Series B (Methodological)},
+  pages={267--288},
+  year={1996},
+  publisher={JSTOR}
+}
+
+@article{chen1998atomic,
+  title={Atomic decomposition by basis pursuit},
+  author={Chen, Scott Shaobing and Donoho, David L and Saunders, Michael A},
+  journal={SIAM journal on scientific computing},
+  volume={20},
+  number={1},
+  pages={33--61},
+  year={1998},
+  publisher={SIAM}
+}
+
+@article{chambolle1998nonlinear,
+  title={Nonlinear wavelet image processing: variational problems, compression, and noise removal through wavelet shrinkage},
+  author={Chambolle, Antonin and De Vore, Ronald A and Lee, Nam-Yong and Lucier, Bradley J},
+  journal={Image Processing, IEEE Transactions on},
+  volume={7},
+  number={3},
+  pages={319--335},
+  year={1998},
+  publisher={IEEE}
+}
+
+@article{daubechies2004iterative,
+  title={An iterative thresholding algorithm for linear inverse problems with a sparsity constraint},
+  author={Daubechies, I and Defrise, M and De Mol, C},
+  journal={Communications on Pure and Applied Mathematics},
+  volume={57},
+  number={11},
+  pages={1413--1457},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+
+@article{vonesch2008fast,
+  title={A fast thresholded Landweber algorithm for wavelet-regularized multidimensional deconvolution},
+  author={Vonesch, C{\'e}dric and Unser, Michael},
+  journal={Image Processing, IEEE Transactions on},
+  volume={17},
+  number={4},
+  pages={539--549},
+  year={2008},
+  publisher={IEEE}
+}
+
+@article{figueiredo2003algorithm,
+  title={An EM algorithm for wavelet-based image restoration},
+  author={Figueiredo, M{\'a}rio AT and Nowak, Robert D},
+  journal={Image Processing, IEEE Transactions on},
+  volume={12},
+  number={8},
+  pages={906--916},
+  year={2003},
+  publisher={IEEE}
+}
+
+@book{hastie2009elements,
+	title={The elements of statistical learning},
+	author={T. Hastie and R. Tibshirani and J. H. Friedman},
+	edition={2},
+	year={2009},
+	isbn = {0387848576, 978-0387848570},
+	publisher={Springer},
+	address = { New York, NY, USA}
+}
+@article{jolliffe1982note,
+  title={A note on the use of principal components in regression},
+  author={Jolliffe, Ian T},
+  journal={Applied Statistics},
+  pages={300--303},
+  year={1982},
+  publisher={JSTOR}
+}
+
+
+%%%%%%%%% SAMPLING THEOREM %%%%%%%%%%%%%%%%%
+@article{unser2000sampling,
+  title={Sampling-50 years after Shannon},
+  author={Unser, Michael},
+  journal={Proceedings of the IEEE},
+  volume={88},
+  number={4},
+  pages={569--587},
+  year={2000},
+  publisher={IEEE}
+}
+%%%%%%%%% DATA FUSION %%%%%%%%%%%%%%%%%%%%%%
+@book{mitchell2007multi,
+  title={Multi-sensor data fusion: an introduction},
+  author={Mitchell, Harvey B},
+  year={2007},
+  publisher={Springer Science \& Business Media}
+}
+
+%%%%%%%%% BAYESIAN FUSION %%%%%%%%%%%%%%%%%%
+@article{coudert2011double,
+	title={Double large field stereoscopic PIV in a high Reynolds number turbulent boundary layer},
+	author={S. Coudert and J. M. Foucaut and J. Kostas and M. Stanislas and P. Braud and C. Fourment and J. Delville and M. Tutkun and F. Mehdi and P. Johansson and W. K. George},
+	journal={Experiments in Fluids},
+	volume={50},
+	number={1},
+	pages={1--12},
+	year={2011},
+	publisher={Springer}
+}
+
+@inproceedings{adrian1977role,
+	title={On the role of conditional averages in turbulence theory},
+	author={R. J. Adrian},
+	booktitle={Turbulence in Liquids},
+	volume={1},
+	pages={323--332},
+	year={1977}
+}
+
+@article{adrian1979conditional,
+	title={Conditional eddies in isotropic turbulence},
+	author={R. J. Adrian},
+	journal={Physics of Fluids},
+	volume={22},
+	pages={2065--2070},
+	year={1979},
+	publisher={AMER INST PHYSICS, CIRCULATION FULFILLMENT DIV}
+}
+
+@article{guezennec1989stochastic,
+	title={Stochastic estimation of coherent structures in turbulent boundary layers},
+	author={Y. G. Guezennec},
+	journal={Physics of Fluids A: Fluid Dynamics (1989-1993)},
+	volume={1},
+	number={6},
+	pages={1054--1060},
+	year={1989},
+	publisher={AMER INST PHYSICS, CIRCULATION FULFILLMENT DIV}
+}
+
+@inproceedings{adrian1992stochastic,
+	title={Stochastic estimation of conditional structure: a review},
+	author={R. J. Adrian},
+	booktitle={Applied scientific research},
+	volume={53},
+	pages={291--303},
+	year={1992},
+	publisher={Kluwer Academic Publ}
+}
+
+
+@inproceedings{ewing1999examination,
+	title={Examination of a LSE/POD complementary technique using single and multi-time information in the axisymmetric shear layer},
+	author={D. Ewing and J. H. Citriniti},
+	booktitle={IUTAM Symposium on Simulation and Identification of Organized Structures in Flows Fluid Mechanics and Its Applications},
+	volume={52},
+	pages={375--384},
+	year={1999},
+	publisher={Springer}
+}
+
+@article{mokhasi2009predictive,
+	title={Predictive flow-field estimation},
+	author={P. Mokhasi and D. Rempfer and S. Kandala},
+	journal={Physica D: Nonlinear Phenomena},
+	volume={238},
+	number={3},
+	pages={290--308},
+	year={2009},
+	publisher={ELSEVIER SCIENCE BV}
+}
+
+@article{durgesh2010multi,
+	title={Multi-time-delay LSE-POD complementary approach applied to unsteady high-Reynolds-number near wake flow},
+	author={V. Durgesh and J. W. Naughton},
+	journal={Experiments in fluids},
+	volume={49},
+	number={3},
+	pages={571--583},
+	year={2010},
+	publisher={Springer}
+}
+
+@article{nguyen2010proper,
+	title={Proper orthogonal decomposition-based estimations of the flow field from particle image velocimetry wall-gradient measurements in the backward-facing step flow},
+	author={T. D. Nguyen and J. C. Wells and P. Mokhasi and D. Rempfer},
+	journal={Measurement Science and Technology},
+	volume={21},
+	number={11},
+	pages={115406},
+	year={2010},
+	publisher={IOP PUBLISHING LTD}
+}
+
+@article{meyer2014provide,
+	title={Provide detailed and real-time indoor environmental information using POD--LSE and limited measurements},
+	author={R. D. Meyer and G. Tan},
+	journal={Energy and Buildings},
+	volume={73},
+	pages={59--68},
+	year={2014},
+	publisher={Elsevier Science}
+}
+
+@article{bonnet1994stochastic,
+	title={Stochastic estimation and proper orthogonal decomposition: complementary techniques for identifying structure},
+	author={J. P. Bonnet and D. R. Cole and J. Delville and M. N. Glauser and L. S. Ukeiley},
+	journal={Experiments in fluids},
+	volume={17},
+	number={5},
+	pages={307--314},
+	year={1994},
+	publisher={Springer}
+}
+
+@inproceedings {melnick2012experimental,
+	title={Experimental Investigation of a Turbulent Boundary Layer Using Simultaneous 3-D Flow Visualization and 2-D PIV},
+	author={M. B. Melnick and B. S. Thurow},
+	booktitle={50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
+	pages={07--52},
+	year={2012}
+}
+
+@article{tu2013integration,
+	title={Integration of non-time-resolved PIV and time-resolved velocity point sensors for dynamic estimation of velocity fields},
+	author={J. H. Tu and J. Griffin and A. Hart and C. W. Rowley and L. N. Cattafesta and L. S. Ukeiley},
+	journal={Experiments in fluids},
+	volume={54},
+	number={2},
+	pages={1--20},
+	year={2013},
+	publisher={Springer}
+}
+
+@techreport{moser1990statistical,
+	title={Statistical analysis of near-wall structures in turbulent channel flow},
+	author={R. D. Moser},
+	institution ={NASA Ames Research Center},
+	pages={45--62},
+	year={1990}
+}
+
+@book{kay1993fundamentals,
+	author = {S. M. Kay},
+	title = {Fundamentals of Statistical Signal Processing: Estimation Theory},
+	year = {1993},
+	isbn = {0-13-345711-7},
+	publisher = {Prentice-Hall, Inc.},
+	address = {Upper Saddle River, NJ, USA}
+} 
+
+@article{hardie2004map,
+	title={MAP estimation for hyperspectral image resolution enhancement using an auxiliary sensor},
+	author={R. C. Hardie and M. T. Eismann and G. L. Wilson},
+	journal={IEEE Transactions on Image Processing},
+	volume={13},
+	number={9},
+	pages={1174--1184},
+	year={2004},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}
+}
+
+@book{van1967detection,
+	title={Detection, estimation, and modulation theory, optimum array processing},
+	author={H. L. Van Trees},
+	year={1967},
+	Volume    = {1},
+	Address   = {NY, USA},
+	publisher={John Wiley \& Sons}
+}
+
+@techreport{sage1971estimation,
+	title={Estimation theory with applications to communications and control},
+	author={A. P. Sage and J. L. Melsa},
+	year={1971},
+	institution={DTIC Document}
+}
+
+@article{levitan1987maximum,
+	title={A maximum a posteriori probability expectation maximization algorithm for image reconstruction in emission tomography},
+	author={E. Levitan and G. T. Herman},
+	journal={IEEE Transactions on Medical Imaging},
+	volume={6},
+	number={3},
+	pages={185--192},
+	year={1987},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}
+}
+
+@article{ma2000simultaneous,
+	title={Simultaneous detection of lane and pavement boundaries using model-based multisensor fusion},
+	author={B. Ma and S. Lakshmanan and A. O. Hero},
+	journal={IEEE Transactions on Intelligent Transportation Systems},
+	volume={1},
+	number={3},
+	pages={135--147},
+	year={2000},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+	adress={445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA}
+}
+
+@article{challa2004bayesian,
+	title={Bayesian and dempster-shafer fusion},
+	author={S. Challa and D. Koks},
+	journal={Sadhana - Academy Proceedings in Engineering Sciences },
+	volume={29},
+	number={2},
+	pages={145--174},
+	year={2004},
+	publisher={Indian Academy Sciences},
+	adress={C V RAMAN AVENUE, SADASHIVANAGAR, BANGALORE 560 080, INDIA}
+}
+
+@techreport{koks2003introduction,
+	title={An introduction to bayesian and dempster-shafer data fusion},
+	author={D. Koks and S. Challa},
+	year={2003},
+	institution={DSTO Systems Sciences Laboratory},
+	adress={Edinburgh, SA 5111,  Australia}
+}
+
+@incollection{durrant2008multisensor,
+	title={Multisensor data fusion},
+	author={H. Durrant-Whyte and T. C. Henderson},
+	booktitle={Springer handbook of robotics},
+	pages={585--610},
+	year={2008},
+	publisher={Springer}
+}
+
+@article{zhang2009noise,
+	title={Noise-resistant wavelet-based Bayesian fusion of multispectral and hyperspectral images},
+	author={Y. Zhang and S. De Backer and P. Scheunders},
+	journal={IEEE Transactions on Geoscience and Remote Sensing},
+	volume={47},
+	number={11},
+	pages={3834--3843},
+	year={2009},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}
+}
+
+@article{joshi2010map,
+	title={MAP estimation for multiresolution fusion in remotely sensed images using an IGMRF prior model},
+	author={M. Joshi and A. Jalobeanu},
+	journal={ IEEE Transactions on Geoscience and Remote Sensing},
+	volume={48},
+	number={3},
+	pages={1245--1255},
+	year={2010},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}
+}
+
+@article{unser1999splines,
+	title={Splines: A perfect fit for signal and image processing},
+	author={M. Unser},
+	journal={IEEE Signal Processing Magazine},
+	volume={16},
+	number={6},
+	pages={22--38},
+	year={1999},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+	adress={345 E 47TH ST, NEW YORK, NY 10017-2394 USA}
+}
+
+@article{thevenaz2000interpolation,
+	title={Interpolation revisited [medical images application]},
+	author={P. Thevenaz and T. Blu and M. Unser},
+	journal={IEEE Transactions on Medical Imaging},
+	volume={19},
+	number={7},
+	pages={739--758},
+	year={2000},
+	publisher={IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC},
+	adress={345 E 47TH ST, NEW YORK, NY 10017-2394 USA}
+}
+
+@article{reinsch1967smoothing,
+	title={Smoothing by spline functions},
+	author={C. H. Reinsch},
+	journal={Numerische Mathematik},
+	volume={10},
+	number={3},
+	pages={177--183},
+	year={1967},
+	publisher={SPRINGER VERLAG},
+	adress={175 FIFTH AVE, NEW YORK, NY 10010}
+}
+
+@incollection{cook1981smoothing,
+	title={The smoothing spline: a new approach to standardizing forest interior tree-ring width series for dendroclimatic studies},
+	author={E. R. Cook and K. Peters},
+	booktitle={Tree-ring bulletin},
+	volume={41},
+	pages={45--53},
+	year={1981},
+	publisher={Tree-Ring Society}
+}
+
+@book{kendall1987kendall,
+	editor = {M. G. Kendall and A. Stuart and J. K. Ord},
+	title = {Kendall's Advanced Theory of Statistics},
+	year = {1987},
+	isbn = {0-195-20561-8},
+	publisher = {Oxford University Press, Inc.},
+	address = {New York, NY, USA}
+} 
+
+@book{bishop2006pattern,
+	title={Pattern Recognition and Machine Learning (Information Science and Statistics)},
+	author={C. M. Bishop},
+	year={2006},
+	isbn = {0387310738},
+	publisher={Springer-Verlag New York, Inc.},
+	address = {Secaucus, NJ, USA}
+}
+
+@book{gelman2014bayesian,
+	title={Bayesian data analysis},
+	author={A. Gelman and J. B. Carlin and H. S. Stern and D. B. Rubin},
+	edition = {3},
+	year={2013},
+	isbn = {1439840954, 978-1439840955},
+	publisher={Chapman and Hall/CRC}
+}
+
+@article{marquillie2008direct,
+	title={Direct numerical simulation of a separated channel flow with a smooth profile},
+	author={M. Marquillie and J. P. Laval and R. Dolganov},
+	journal={Journal of Turbulence},
+	pages={1--23},
+	volume = {9},
+	number={1},
+	year={2008},
+	publisher={Taylor \& Francis}
+}
+
+@incollection{de1978practical,
+	title={A practical guide to splines},
+	author={C. De Boor},
+	booktitle={Mathematics of Computation},
+	volume={27},
+	year={1978},
+	publisher={Springer-Verlag}
+}
+
+
+@article{cordier2010calibration,
+	title={Calibration of POD reduced-order models using Tikhonov regularization},
+	author={L. Cordier and B. Abou El Majd and J. Favier},
+	journal={International Journal for Numerical Methods in Fluids},
+	volume={63},
+	number={2},
+	pages={269--296},
+	year={2010},
+	publisher={JOHN WILEY \& SONS LTD}
+}
+
+@book{geisser1993predictive,
+	title={Predictive inference},
+	author={S. Geisser},
+	year={1993},
+	isbn = {0412034719, 978-0412034718},
+	publisher={Chapman and Hall/CRC}
+}
+
+%%%%%%% DICTIONARY LEARNING %%%%%%%%%%%%%%%%%%%%
+@incollection{zeyde2012single,
+  title={On single image scale-up using sparse-representations},
+  author={Zeyde, Roman and Elad, Michael and Protter, Matan},
+  booktitle={Curves and Surfaces},
+  pages={711--730},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{elad2010on,
+Author = {Elad, Michael and Figueiredo, Mario A. T. and Ma, Yi},
+Title = {On the Role of Sparse and Redundant Representations in Image Processing},
+journal = {Proceedings of the IEEE- Special issue on applications of sparse representation and compressive sensing},
+Year = {2010},
+Volume = {98},
+Number = {6},
+Pages = {972-982},
+Month = {JUN},
+DOI = {10.1109/JPROC.2009.2037655},
+ISSN = {0018-9219}
+}
+
+@article{yang2010image,
+Author = {Yang, Jianchao and Wright, John and Huang, Thomas S. and Ma, Yi},
+Title = {Image Super-Resolution Via Sparse Representation},
+Journal = {IEEE transactions on image processing},
+Year = {2010},
+Volume = {19},
+Number = {11},
+Pages = {2861-2873},
+Month = {NOV},
+DOI = {10.1109/TIP.2010.2050625},
+ISSN = {1057-7149}
+}
+
+@article{yang2012coupled,
+Author = {Yang, Jianchao and Wang, Zhaowen and Lin, Zhe and Cohen, Scott and
+   Huang, Thomas},
+Title = {Coupled Dictionary Training for Image Super-Resolution},
+Journal = {IEEE transactions on image processing},
+Year = {2012},
+Volume = {21},
+Number = {8},
+Pages = {3467-3478},
+Month = {AUG},
+DOI = {10.1109/TIP.2012.2192127},
+ISSN = {1057-7149},
+Unique-ID = {ISI:000306598100011}
+}
+
+
+@article{mairal2010online,
+Author = {Mairal, Julien and Bach, Francis and Ponce, Jean and Sapiro, Guillermo},
+Title = {Online Learning for Matrix Factorization and Sparse Coding},
+Journal = {Journal of machine learning research},
+Year = {2010},
+Volume = {11},
+Pages = {19-60},
+Month = {JAN},
+ISSN = {1532-4435},
+Unique-ID = {ISI:000277186400002}
+}
+
+%%%%%%% NLM %%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{buades2005review,
+  title={A review of image denoising algorithms, with a new one},
+  author={Buades, Antoni and Coll, Bartomeu and Morel, Jean-Michel},
+  journal={Multiscale Modeling \& Simulation},
+  volume={4},
+  number={2},
+  pages={490--530},
+  year={2005},
+  publisher={SIAM}
+}
+
+@article{protter2009generalizing,
+  title={Generalizing the nonlocal-means to super-resolution reconstruction},
+  author={Protter, Matan and Elad, Michael and Takeda, Hiroyuki and Milanfar, Peyman},
+  journal={Image Processing, IEEE Transactions on},
+  volume={18},
+  number={1},
+  pages={36--51},
+  year={2009},
+  publisher={IEEE}
+}
+
+
+
+
+%%%%%%% REGRESSION %%%%%%%%%%%%%%%%%%%%
+
+@book{hastie2009unsupervised,
+  title={Unsupervised learning},
+  author={Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{hastie2005elements,
+  title={The elements of statistical learning: data mining, inference and prediction},
+  author={Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome and Franklin, James},
+  journal={The Mathematical Intelligencer},
+  volume={27},
+  number={2},
+  pages={83--85},
+  year={2005},
+  publisher={Springer}
+}
+@article{chen2001atomic,
+  title={Atomic decomposition by basis pursuit},
+  author={Chen, Scott Shaobing and Donoho, David L and Saunders, Michael A},
+  journal={SIAM review},
+  volume={43},
+  number={1},
+  pages={129--159},
+  year={2001},
+  publisher={SIAM}
+}
+
+@article{beck2009fast,
+  title={A fast iterative shrinkage-thresholding algorithm for linear inverse problems},
+  author={Beck, Amir and Teboulle, Marc},
+  journal={SIAM journal on imaging sciences},
+  volume={2},
+  number={1},
+  pages={183--202},
+  year={2009},
+  publisher={SIAM}
+}
+
+
+@incollection{bect20041,
+  title={A l 1-unified variational framework for image restoration},
+  author={Bect, Julien and Blanc-F{\'e}raud, Laure and Aubert, Gilles and Chambolle, Antonin},
+  booktitle={Computer Vision-ECCV 2004},
+  pages={1--13},
+  year={2004},
+  publisher={Springer}
+}
+
+%%%%%%% APPENDIXES %%%%%%%%%%%%%%%%%%%%
+@article{roweis1999unifying,
+  title={A unifying review of linear Gaussian models},
+  author={Roweis, Sam and Ghahramani, Zoubin},
+  journal={Neural computation},
+  volume={11},
+  number={2},
+  pages={305--345},
+  year={1999},
+  publisher={MIT Press}
+}

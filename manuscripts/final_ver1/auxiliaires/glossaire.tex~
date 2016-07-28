@@ -1,0 +1,77 @@
+% Shift+Alt+F1 before to compile glossary
+
+% % % % % % % % % % % % % % % % ABBREVIATIONS % % % % % % % % % % % % % % % % % %
+\mynewglssymbol{dns}{DNS}{\textbf{D}irect \textbf{N}umerical \textbf{S}imulation}{}{gloss-abbre}
+\mynewglssymbol{piv}{PIV}{\textbf{P}article \textbf{I}mage \textbf{V}elocimetry}{}{gloss-abbre}
+\mynewglssymbol{spiv}{SPIV}{\textbf{S}tereo \textbf{P}article \textbf{I}mage \textbf{V}elocimetry}{}{gloss-abbre}
+\mynewglssymbol{stb}{STB}{\textbf{S}hake-\textbf{T}he-\textbf{B}ox PIV calibration}{}{gloss-abbre}
+\mynewglssymbol{hwa}{HWA}{\textbf{H}ot \textbf{W}ire \textbf{A}nemometer}{}{gloss-abbre}
+\mynewglssymbol{hr}{HR}{\textbf{H}igh \textbf{R}esolution}{}{gloss-abbre}
+\mynewglssymbol{lr}{LR}{\textbf{L}ow \textbf{R}esolution  }{}{gloss-abbre}
+\mynewglssymbol{hf}{HF}{\textbf{H}igh \textbf{F}requency}{}{gloss-abbre}
+\mynewglssymbol{lf}{LF}{\textbf{L}ow \textbf{F}requency  }{}{gloss-abbre}
+\mynewglssymbol{hths}{HTHS}{\textbf{H}igh-\textbf{T}ime-\textbf{H}igh-\textbf{S}pace resolution}{}{gloss-abbre}
+\mynewglssymbol{lths}{LTHS}{\textbf{L}ow-\textbf{T}ime-\textbf{H}igh-\textbf{S}pace resolution}{}{gloss-abbre}
+\mynewglssymbol{htls}{HTLS}{\textbf{H}igh-\textbf{T}ime-\textbf{L}ow-\textbf{S}pace resolution}{}{gloss-abbre}
+\mynewglssymbol{nlm}{NLM}{\textbf{N}on- \textbf{L}ocal \textbf{M}eans}{}{gloss-abbre}
+\mynewglssymbol{dl}{DL}{\textbf{D}ictionary \textbf{L}earning}{}{gloss-abbre}
+\mynewglssymbol{sr}{SR}{\textbf{S}uper- \textbf{R}esolution}{}{gloss-abbre}
+\mynewglssymbol{nrmse_symbol}{NRMSE}{\textbf{N}ormalized \textbf{R}oot \textbf{M}ean \textbf{S}quare \textbf{E}rror}{}{gloss-abbre}
+\mynewglssymbol{rmse}{RMSE}{\textbf{R}oot \textbf{M}ean \textbf{S}quare \textbf{E}rror}{}{gloss-abbre}
+\mynewglssymbol{mse}{MSE}{\textbf{M}ean \textbf{S}quare \textbf{E}rror}{}{gloss-abbre}
+\mynewglssymbol{lse}{LSE}{\textbf{L}inear \textbf{S}tochastic \textbf{E}stimation or  \textbf{L}east \textbf{S}quare \textbf{E}stimation  }{}{gloss-abbre}
+\mynewglssymbol{rr}{RR}{\textbf{R}idge \textbf{R}egression }{}{gloss-abbre}
+\mynewglssymbol{krr}{KRR}{\textbf{K}ernel \textbf{R}idge \textbf{R}egression \textbf{}  }{}{gloss-abbre}
+\mynewglssymbol{lasso}{Lasso}{\textbf{L}east \textbf{A}bsolute \textbf{S}hrinkage and \textbf{S}election \textbf{O}perator }{}{gloss-abbre}
+\mynewglssymbol{re}{Re}{\textbf{Re}ynolds number}{}{gloss-abbre}
+\mynewglssymbol{ns}{N-S}{\textbf{Navier}-\textbf{S}tokes}{}{gloss-abbre}
+\mynewglssymbol{svd}{SVD}{\textbf{S}ingular \textbf{V}alue \textbf{D}ecomposition}{}{gloss-abbre}
+\mynewglssymbol{pod}{POD}{\textbf{P}roper \textbf{O}rthogonal \textbf{D}ecomposition}{}{gloss-abbre}
+\mynewglssymbol{cv}{CV}{\textbf{C}ross \textbf{V}alidation}{}{gloss-abbre}
+\mynewglssymbol{loocv}{LOOCV}{\textbf{L}eave \textbf{O}ne \textbf{O}ut \textbf{C}ross \textbf{V}alidation}{}{gloss-abbre}
+\mynewglssymbol{mle}{MLE}{\textbf{M}aximum \textbf{L}ikelihood \textbf{E}stimator}{}{gloss-abbre}
+\mynewglssymbol{map}{MAP}{\textbf{M}aximum \textbf{A} \textbf{P}osteriori}{}{gloss-abbre}
+
+% % % % % % % % % % % % % % % % LATIN SYMBOLS % % % % % % % % % % % % % % % % % % 
+\mynewglssymbol{coor_z}{$ z $}{(coordinate in) spanwise direction}{}{gloss-latin}
+\mynewglssymbol{coor_y}{$ y $}{(coordinate in) vertical direction}{}{gloss-latin}
+\mynewglssymbol{coor_x}{$ x $}{(coordinate in) streamwise direction}{}{gloss-latin}
+\mynewglssymbol{coor_t}{$ t $}{(coordinate in) time}{}{gloss-latin}
+
+\mynewglssymbol{dims_h}{$ D_h $}{spatial dimension of one high resolution field}{}{gloss-latin}
+\mynewglssymbol{dims_l}{$ \Dl $}{spatial dimension of one low resolution field}{}{gloss-latin}
+\mynewglssymbol{dimt_h}{$ \Th $}{total number of snapshots at high temporal resolution}{}{gloss-latin}
+\mynewglssymbol{dimt_l}{$ \Tl $}{total number of snapshots at low temporal resolution}{}{gloss-latin}
+
+\mynewglssymbol{vel_z}{$ \z $}{velocity vector at HTHS resolution of size $ \Dh\Th \times 1$ }{}{gloss-latin}
+\mynewglssymbol{vel_y}{$ \y $}{velocity vector at HTLS resolution of size $ \Dl\Th \times 1$}{}{gloss-latin}
+\mynewglssymbol{vel_x}{$ \x $}{velocity vector at LTHS resolution of size $ \Dh\Tl \times 1$}{}{gloss-latin}
+\mynewglssymbol{velmat_z}{$ \Z $}{velocity at HTHS resolution of size $ \Th \times \Dh $ }{}{gloss-latin}
+\mynewglssymbol{velmat_y}{$ \Y $}{velocity at HTLS resolution of size $ \Th \times \Dl $}{}{gloss-latin}
+\mynewglssymbol{velmat_x}{$ \X $}{velocity at LTHS resolution of size $ \Tl \times \Dh $}{}{gloss-latin}
+\mynewglssymbol{velsnap_z}{$ \z^{(t)} $}{a velocity snapshot of $ \Z $ at time $ t $ of size $ \Dh \times 1 $ }{}{gloss-latin}
+\mynewglssymbol{velsnap_y}{$ \y^{(t)} $}{a velocity snapshot of $ \Y $ at time $ t $ of size $ \Dl \times 1 $ }{}{gloss-latin}
+\mynewglssymbol{velsnap_x}{$ \x^{(t)} $}{a velocity snapshot of $ \X $ at time $ t $ of size $ \Dh \times 1 $ }{}{gloss-latin}
+\mynewglssymbol{vel_hf}{$ \x_{hf} $}{a velocity vector of high-frequency content}{}{gloss-latin}
+\mynewglssymbol{vel_lf}{$ \x_{lf} $}{a velocity vector of low-frequency content}{}{gloss-latin}
+
+\mynewglssymbol{interp_t}{$ \Interp_t $}{1D cubic spline interpolator in time}{}{gloss-latin}
+\mynewglssymbol{interp_s}{$ \Interp_s $}{ 2D cubic spline interpolator in space}{}{gloss-latin}
+\mynewglssymbol{sub_t}{$ \Sub_t $}{subsampling in time from $ \Th $ to $ \Tl $ snapshots, $ \S_t \z = \x$}{}{gloss-latin}
+\mynewglssymbol{sub_s}{$ \Sub_s $}{subsampling in space from $ \Dh $ to $ \Dl $ snapshots, $ \S_s \z = \y$}{}{gloss-latin}
+\mynewglssymbol{lowpass_t}{$ \LPF_t $}{1D low-pass filter, either ideal Fourier or 5th-order least-square spline}{}{gloss-latin}
+\mynewglssymbol{lowpass_s}{$ \LPF_s $}{2D low-pass filter, either ideal Fourier or 5th-order least-square spline}{}{gloss-latin}
+\mynewglssymbol{loss_energy}{$ \Delta\kappa $}{loss of kinetic energy due to the subsampling or downsampling}{}{gloss-latin}
+\mynewglssymbol{nrmse_latin}{$ \epsilon $}{normalized root mean square error}{}{gloss-latin}
+
+% % % % % % % % % % % % % % % % MATH SYMBOLS % % % % % % % % % % % % % % % % % % 
+\mynewglssymbol{det}{$ \detmat{.} $}{matrix determinant}{}{gloss-math}
+\mynewglssymbol{trans}{$ \boldsymbol{u}^T $}{transpose of vector $ \boldsymbol{u} $}{}{gloss-math}
+\mynewglssymbol{pseu_inv}{$ \boldsymbol{u}^{\dagger} $}{pseudo-inverse of $ \boldsymbol{u} $, defined as $ \boldsymbol{u}^T(\boldsymbol{u}\boldsymbol{u}^T)^{-1} $ }{}{gloss-math}
+\mynewglssymbol{argmax}{$ \argmax_{x}(f(x)) $}{argument of the maximum,  which is $ x $ for which the function $ f(x) $ attains its maximum}{}{gloss-math}
+\mynewglssymbol{argmin}{$ \argmin_{x}(f(x)) $}{argument of the minimum,  which is $ x $ for which the function $ f(x) $ attains its minimum}{}{gloss-math}
+\mynewglssymbol{Edist}{$ \Edist{\boldsymbol{u}} $}{square of a Euclidean distance: $ \Arrowvert \boldsymbol{u} \Arrowvert^2_2 = \boldsymbol{u}^T \boldsymbol{u}$}{}{gloss-math}
+\mynewglssymbol{Mdist}{$ \Mdist{ \boldsymbol{u}}_{\Sigma} $}{square of a Mahalanobis distance: $ \Mdist{ \boldsymbol{u}}_{\Sigma} = \boldsymbol{u}^T \Sigma^{-1} \boldsymbol{u}$}{}{gloss-math}
+\mynewglssymbol{Gauss}{$ \boldsymbol{u} \sim \distr (\boldsymbol{\mu}_{\boldsymbol{u}},\Sigma_{\boldsymbol{u}}) $}{Gaussian distribution of variable $ \boldsymbol{u} $ that takes the mean $\boldsymbol{\mu}_{\boldsymbol{u}} $ and fluctuates due to covariance $ \Sigma_{\boldsymbol{u}} $}{}{gloss-math}
+\mynewglssymbol{posteriori_dist}{$ \distr (\boldsymbol{u}|\boldsymbol{v}) $}{distribution of $ \boldsymbol{u} $ conditioning on $ \boldsymbol{v} $}{}{gloss-math}
+\mynewglssymbol{expectation}{$ \E{.} $}{expectation value}{}{gloss-math}

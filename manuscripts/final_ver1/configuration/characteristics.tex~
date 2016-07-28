@@ -1,0 +1,106 @@
+% Auteur de la thèse : prénom (1er argument obligatoire), nom (2e argument
+% obligatoire) et éventuel courriel (argument optionnel). Les éventuels accents
+% devront figurer et le nom /ne/ doit /pas/ être saisi en capitales.
+\author[nvlpfiev@gmail.com]{Van-Linh}{Nguyen}
+%
+% Titre de la thèse dans la langue principale (argument obligatoire) et dans la
+% langue secondaire (argument optionnel).
+\title[Reconstruction fine de champ de vitesses d'un écoulement turbulent à l'aide de données expérimentales faiblements résolues]{Reconstruction of finely resolved velocity vector fields in turbulent flows from low resolution measurements}
+%
+% Sous-titre de la thèse dans la langue principale (argument obligatoire) et
+% dans la langue secondaire (argument optionnel). Facultatif.
+%\subtitle[...]{...}
+%
+% Champ disciplinaire dans la langue principale (argument obligatoire) et dans
+% la langue secondaire (argument optionnel).
+\academicfield[Mecanique de fluid]{Fluid Mechanics}
+%
+% Spécialité dans la langue principale (argument obligatoire) et dans la langue
+% secondaire (argument optionnel). Facultatif.
+\speciality[Turbulence]{Turbulence}
+%
+% Date de la soutenance, au format {jour}{mois}{année} donnés sous forme de
+% nombres.
+\date{30}{9}{2016}
+%
+% Sujet pour les méta-données du PDF. Facultatif.
+\subject[Reconstruction fine de champ de vitesses d'un écoulement turbulent à l'aide de données expérimentales faiblements résolues]{Reconstruction of finely resolved velocity vector fields in turbulent flows from low resolution measurements}
+%
+% Nom (argument obligatoire) du PRES. Facultatif.
+\pres[logo=./images/pres]{Université Lille Nord de France}
+%
+% Nom (argument obligatoire) de l'institut (principal en cas de cotutelle).
+\institute[logo=./images/LILLE1,url=http://www.univ-lille1.fr/]{Université Lille 1}
+%
+% En cas de cotutelle (normalement, seulement dans le cas de cotutelle
+% internationale), nom (argument obligatoire) du second institut. Facultatif.
+\coinstitute[logo=./images/ECLILLE,url=http://www.ec-lille.fr/en/index.html/]{Ecole Central de Lille}
+%\coinstitute[logo=./images/CNRS,url=http://www.cnrs.fr/]{CNRS}
+
+%
+% Nom (argument obligatoire) de l'école doctorale. Facultatif.
+\doctoralschool[url=http://edspi.univ-lille1.fr/]{SPI 72}
+%
+% Nom (1er argument obligatoire) et adresse (2e argument obligatoire) du
+% laboratoire (ou de l'unité) où la thèse a été préparée, à utiliser /autant de
+% fois que nécessaire/.
+
+\laboratory[
+logo=./images/LML,
+logoheight=1.25cm,
+telephone=(33)(0) 3 20 33 71 52,
+fax=(33)(0) 3 20 33 71 53,
+email=lml-doct@univ-lille1.fr,
+url=http://lml.univ-lille1.fr/lml/
+]{LML}{%
+  Laboratoire de Mécanique de Lille \\
+  CNRS UMR 8107            \\
+  Bvd Paul Langevin         \\
+  59655 Villeneuve d'Ascq,Cedex   \\
+  France}
+
+\laboratory[
+logo=./images/LAGIS,
+logoheight=1.25cm,
+telephone=33 (0)3 20 67 60 70,
+fax=33 (0)3 20 33 54 18,
+email=lagis.direction@cnrs.fr,
+url=http://lagis.cnrs.fr/
+]{LAGIS}{%
+  Laboratoire d’Automatique, Génie Informatique et Signal  \\
+  UMR CNRS 8219            \\
+  Bvd Paul Langevin         \\
+  59655 Villeneuve d'Ascq,Cedex   \\
+  France}
+  
+  
+%
+% Membres du jury, saisis au moyen des commandes \supervisor, \cosupervisor,
+% \comonitor, \referee, \committeepresident, \examiner, \guest, à utiliser
+% /autant de fois que nécessaire/ et /seulement si nécessaire/. Toutes basées sur
+% le même modèle, ces commandes ont 2 arguments obligatoires, successivement les
+% prénom et nom de chaque personne. Si besoin est, on peut apporter certaines
+% précisions en argument optionnel, au moyen des clés suivantes :
+% - « professor », « seniorresearcher », « mcf », « mcf* »,
+%   « juniorresearcher », « juniorresearcher* » (qui peuvent ne pas prendre de
+%   valeur) pour stipuler le corps auquel appartient la personne ;
+% - « affiliation » pour stipuler l'institut auquel est affiliée la personne.
+%
+\supervisor[mcf*,affiliation=ULCO]{Jean-Philippe}{Laval}
+\cosupervisor[mcf*,affiliation=ULCO]{Pierre}{Chainais}
+\referee[professor,affiliation=IHP]{René}{Descartes}
+\referee[seniorresearcher,affiliation=CNRS]{Denis}{Diderot}
+\committeepresident[professor,affiliation=ENS Lyon]{Victor}{Hugo}
+\examiner[mcf,affiliation=Université de Paris~13]{Sophie}{Germain}
+\examiner[juniorresearcher,affiliation=INRIA]{Joseph}{Fourier}
+\examiner[juniorresearcher*,affiliation=CNRS]{Paul}{Verlaine}
+\guest{George}{Sand}
+%
+% Mention du numéro d'ordre de la thèse (s'il est connu, ce numéro est
+% à spécifier en argument optionnel). Facultatif.
+\ordernumber[42]
+%
+% Préparation des mots clés dans la langue principale (1er argument) et dans la
+% langue secondaire (2e argument)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\keywords{chaos, rire}{chaos, laugh}

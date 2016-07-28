@@ -1,0 +1,108 @@
+\everymath{\displaystyle}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\prox}{prox}
+
+\newcommand{\mybold}[1]{\ensuremath{\operatorname{\boldsymbol{#1}}}}
+\newcommand{\mydef}{\triangleq}
+\newcommand{\mytrans}{\intercal}
+\newcommand{\mypseudo}{\dagger}
+\newcommand{\myhat}[1]{\ensuremath{\operatorname{\hat{#1}}}}
+\newcommand{\myexp}[1]{\ensuremath{\operatorname{\exp{ \left(#1\right)}}}}
+\newcommand{\mysign}[1]{\ensuremath{\operatorname{\sign{\left(#1\right)}}}}
+\newcommand{\mydot}{\cdot} 
+
+\newcommand{\R}{{\rm I\!R}}
+\newcommand{\subjectto}{\:\:\:\:\:\: s.t. \:\:\:\:\:\:}
+\newcommand{\Df}{D_f}
+\newcommand{\dimsh}{P}
+\newcommand{\dimsl}{Q}
+\newcommand{\dimth}{N}
+\newcommand{\dimtl}{M}
+\newcommand{\dimpsh}{p}
+\newcommand{\dimpsl}{q}
+\newcommand{\dimpth}{n}
+\newcommand{\dimptl}{m}
+\newcommand{\dimdict}{K}
+\newcommand{\dimtrunc}{L}
+
+\newcommand{\dimpacc}{r} % accumulative patch size
+\newcommand{\dimpsr}{s} % searching region size
+\newcommand{\nlmfilparam}{\sigma} % accumulative patch size \tau
+
+\newcommand{\neighbor}{\mathcal{N}}
+\newcommand{\mymapto}{\longmapsto}
+\newcommand{\mymapfrom}{\mathrel{\reflectbox{\ensuremath{\mymapto}}}}
+
+\newcommand{\z}{\mybold{z}}
+\newcommand{\y}{\mybold{y}}
+\newcommand{\x}{\mybold{x}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\Y}{\mathbf{Y}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\B}{\mathbf{B}}
+\newcommand{\I}{\mathbf{I}}
+\newcommand{\Diag}{\mathbf{D}}
+\newcommand{\Umat}{\mathbf{U}}
+\newcommand{\Vmat}{\mathbf{V}}
+
+\newcommand{\LR}{\y}
+\newcommand{\HR}{\z}
+\newcommand{\LF}{\z_{lf}}
+\newcommand{\HF}{\z_{hf}}
+\newcommand{\HFest}{\hat{\z }_{hf}}
+
+\newcommand{\h}{\mybold{h}}
+\newcommand{\n}{\mybold{n}}
+\newcommand{\boundHF}{\mybold{b}}
+
+\newcommand{\knot}{{\circ}}
+\newcommand{\ext}{{e}} % denote the generalization data for prediction
+
+\newcommand{\Interp}{\varmathbb{I}}
+\newcommand{\Sub}{\varmathbb{S}}
+\newcommand{\LPF}{\varmathbb{L}}
+
+\newcommand{\distr}{\mathscr{N}} 
+\newcommand{\loss}{\mathcal{L}}
+
+\newcommand{\normtwo}[1]{\ensuremath{\operatorname{\Arrowvert  \mathit{#1} \Arrowvert^2_2 }}}
+\newcommand{\Mdist}[2]{\ensuremath{\operatorname{\Arrowvert \mathit{#1} \Arrowvert^2_{\mathit{#2}} }}}
+\newcommand{\normone}[1]{\ensuremath{\operatorname{\Arrowvert \mathit{#1} \Arrowvert_1 }}}
+\newcommand{\normzero}[1]{\ensuremath{\operatorname{\Arrowvert  \mathit{#1} \Arrowvert_0 }}}
+\newcommand{\normp}[1]{\ensuremath{\operatorname{\Arrowvert  \mathit{#1} \Arrowvert_p }}}
+
+\newcommand{\detmat}[1]{\ensuremath{\operatorname{\left|  \mathit{#1} \right| }}}
+\newcommand{\cov}[1]{\ensuremath{\operatorname{cov \left\lbrace  \mathit{#1} \right\rbrace }}}
+\newcommand{\E}[1]{\ensuremath{\operatorname{E \left[  \mathit{#1} \right] }}}
+\newcommand{\tr}[1]{\ensuremath{\operatorname{tr \left\lbrace  \mathit{#1} \right\rbrace }}}
+\newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}
+
+\newcommand{\pinv}[1]{\ensuremath{\operatorname{  \mathit{#1} ^\dagger}}}
+%\newcommand{\featmap}[1]{\ensuremath{\operatorname{  \mathcal{F} \left(#1\right)}}}
+\newcommand{\featmap}[1]{\ensuremath{\operatorname{ \varphi \left(\mathit{#1}\right)}}}
+
+%\newcommand{\dict}{\mathds{D}}
+%\newcommand{\dictco}{\mathds{A}}
+\newcommand{\dict}{\mathbf{D}}
+\newcommand{\dictco}{\mathbf{A}}
+\newcommand{\adict}{\boldsymbol{d}}
+\newcommand{\adictco}{\boldsymbol{a}}
+
+\newcommand{\patchlow}[1]{\ensuremath{\operatorname{\mathit{\mybold{p}_{\ell}^{#1}}}}}
+\newcommand{\patchhigh}[1]{\ensuremath{\operatorname{\mathit{\mybold{p}_h^{#1}}}}}
+\newcommand{\dictlow}{\dict_\ell}
+\newcommand{\dicthigh}{\dict_h}
+\newcommand{\adictcolow}[1]{\ensuremath{\operatorname{\boldsymbol{a}_\ell^{\mathit{#1}}}}}
+\newcommand{\adictcohigh}[1]{\ensuremath{\operatorname{\mathit{\boldsymbol{a}_h^{#1}}}}}
+\newcommand{\adictlow}[1]{\ensuremath{\operatorname{\boldsymbol{d}_\ell^{\mathit{#1}}}}}
+\newcommand{\adicthigh}[1]{\ensuremath{\operatorname{\mathit{\boldsymbol{d}_h^{#1}}}}}
+
+\newcommand{\extractlow}[1]{\ensuremath{\operatorname{\mathcal{R}_{\ell}^{\mathit{#1}}}}}
+\newcommand{\extracthigh}[1]{\ensuremath{\operatorname{\mathit{\mathcal{R}_h^{#1}}}}}
+\newcommand{\extract}[1]{\ensuremath{\operatorname{\mathcal{R}^{\mathit{#1}}}}}
+
+
+\newcommand{\mytrace}[1]{\ensuremath{\operatorname{\text{Tr} \left( #1 \right)}}}

@@ -1,0 +1,3398 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{adrian1977role}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Adrian}{A.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ARJ1}
+  \strng{fullhash}{ARJ1}
+  \field{labelyear}{1977}
+  \field{sortinit}{A}
+  \field{booktitle}{Turbulence in Liquids}
+  \field{pages}{323\bibrangedash 332}
+  \field{title}{On the role of conditional averages in turbulence theory}
+  \field{volume}{1}
+  \field{year}{1977}
+\endentry
+
+\entry{adrian1979conditional}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Adrian}{A.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AMER INST PHYSICS, CIRCULATION FULFILLMENT DIV}%
+  }
+  \strng{namehash}{ARJ1}
+  \strng{fullhash}{ARJ1}
+  \field{labelyear}{1979}
+  \field{sortinit}{A}
+  \field{pages}{2065\bibrangedash 2070}
+  \field{title}{Conditional eddies in isotropic turbulence}
+  \field{volume}{22}
+  \field{journaltitle}{Physics of Fluids}
+  \field{year}{1979}
+\endentry
+
+\entry{adrian1992stochastic}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Adrian}{A.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Kluwer Academic Publ}%
+  }
+  \strng{namehash}{ARJ1}
+  \strng{fullhash}{ARJ1}
+  \field{labelyear}{1992}
+  \field{sortinit}{A}
+  \field{booktitle}{Applied scientific research}
+  \field{pages}{291\bibrangedash 303}
+  \field{title}{Stochastic estimation of conditional structure: a review}
+  \field{volume}{53}
+  \field{year}{1992}
+\endentry
+
+\entry{adrian2005twenty}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Adrian}{A.}%
+     {Ronald~J}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{ARJ2}
+  \strng{fullhash}{ARJ2}
+  \field{labelyear}{2005}
+  \field{sortinit}{A}
+  \field{number}{2}
+  \field{pages}{159\bibrangedash 169}
+  \field{title}{Twenty years of particle image velocimetry}
+  \field{volume}{39}
+  \field{journaltitle}{Experiments in fluids}
+  \field{year}{2005}
+\endentry
+
+\entry{aharon2006ksvd}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Aharon}{A.}%
+     {Michal}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elad}{E.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bruckstein}{B.}%
+     {Alfred}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{AM+1}
+  \strng{fullhash}{AMEMBA1}
+  \field{labelyear}{2006}
+  \field{sortinit}{A}
+  \field{number}{11}
+  \field{pages}{4311\bibrangedash 4322}
+  \field{title}{K-SVD: An Algorithm for Designing Overcomplete Dictionaries for
+  Sparse Representation}
+  \field{volume}{54}
+  \field{journaltitle}{Signal Processing, IEEE Transactions on}
+  \field{year}{2006}
+\endentry
+
+\entry{beck2009fast}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Beck}{B.}%
+     {Amir}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Teboulle}{T.}%
+     {Marc}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {SIAM}%
+  }
+  \strng{namehash}{BATM1}
+  \strng{fullhash}{BATM1}
+  \field{labelyear}{2009}
+  \field{sortinit}{B}
+  \field{number}{1}
+  \field{pages}{183\bibrangedash 202}
+  \field{title}{A fast iterative shrinkage-thresholding algorithm for linear
+  inverse problems}
+  \field{volume}{2}
+  \field{journaltitle}{SIAM journal on imaging sciences}
+  \field{year}{2009}
+\endentry
+
+\entry{bengio2013representation}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Bengio}{B.}%
+     {Yoshua}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Courville}{C.}%
+     {Aaron}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vincent}{V.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{BY+1}
+  \strng{fullhash}{BYCAVP1}
+  \field{labelyear}{2013}
+  \field{sortinit}{B}
+  \field{number}{8}
+  \field{pages}{1798\bibrangedash 1828}
+  \field{title}{Representation learning: A review and new perspectives}
+  \field{volume}{35}
+  \field{journaltitle}{Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on}
+  \field{year}{2013}
+\endentry
+
+\entry{bishop2006pattern}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Bishop}{B.}%
+     {C.~M.}{C.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer-Verlag New York, Inc.}%
+  }
+  \strng{namehash}{BCM1}
+  \strng{fullhash}{BCM1}
+  \field{labelyear}{2006}
+  \field{sortinit}{B}
+  \field{isbn}{0387310738}
+  \field{title}{Pattern Recognition and Machine Learning (Information Science
+  and Statistics)}
+  \list{location}{1}{%
+    {Secaucus, NJ, USA}%
+  }
+  \field{year}{2006}
+\endentry
+
+\entry{bonnet1994stochastic}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Bonnet}{B.}%
+     {J.~P.}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cole}{C.}%
+     {D.~R.}{D.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Delville}{D.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Glauser}{G.}%
+     {M.~N.}{M.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ukeiley}{U.}%
+     {L.~S.}{L.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{BJP+1}
+  \strng{fullhash}{BJPCDRDJGMNULS1}
+  \field{labelyear}{1994}
+  \field{sortinit}{B}
+  \field{number}{5}
+  \field{pages}{307\bibrangedash 314}
+  \field{title}{Stochastic estimation and proper orthogonal decomposition:
+  complementary techniques for identifying structure}
+  \field{volume}{17}
+  \field{journaltitle}{Experiments in fluids}
+  \field{year}{1994}
+\endentry
+
+\entry{boyd2011distributed}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Boyd}{B.}%
+     {Stephen}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Parikh}{P.}%
+     {Neal}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chu}{C.}%
+     {Eric}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Peleato}{P.}%
+     {Borja}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eckstein}{E.}%
+     {Jonathan}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Now Publishers Inc.}%
+  }
+  \strng{namehash}{BS+1}
+  \strng{fullhash}{BSPNCEPBEJ1}
+  \field{labelyear}{2011}
+  \field{sortinit}{B}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 122}
+  \field{title}{Distributed optimization and statistical learning via the
+  alternating direction method of multipliers}
+  \field{volume}{3}
+  \field{journaltitle}{Foundations and Trends{\textregistered} in Machine
+  Learning}
+  \field{year}{2011}
+\endentry
+
+\entry{breiman1992submodel}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Breiman}{B.}%
+     {Leo}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Spector}{S.}%
+     {Philip}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JSTOR}%
+  }
+  \strng{namehash}{BLSP1}
+  \strng{fullhash}{BLSP1}
+  \field{labelyear}{1992}
+  \field{sortinit}{B}
+  \field{pages}{291\bibrangedash 319}
+  \field{title}{Submodel selection and evaluation in regression. The X-random
+  case}
+  \field{journaltitle}{International statistical review/revue internationale de
+  Statistique}
+  \field{year}{1992}
+\endentry
+
+\entry{buades2005review}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Buades}{B.}%
+     {Antoni}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coll}{C.}%
+     {Bartomeu}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morel}{M.}%
+     {Jean-Michel}{J.-M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {SIAM}%
+  }
+  \strng{namehash}{BA+1}
+  \strng{fullhash}{BACBMJM1}
+  \field{labelyear}{2005}
+  \field{sortinit}{B}
+  \field{number}{2}
+  \field{pages}{490\bibrangedash 530}
+  \field{title}{A review of image denoising algorithms, with a new one}
+  \field{volume}{4}
+  \field{journaltitle}{Multiscale Modeling \& Simulation}
+  \field{year}{2005}
+\endentry
+
+\entry{burges2010dimension}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Burges}{B.}%
+     {Christopher~JC}{C.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Now Publishers Inc}%
+  }
+  \strng{namehash}{BCJ1}
+  \strng{fullhash}{BCJ1}
+  \field{labelyear}{2010}
+  \field{sortinit}{B}
+  \field{title}{Dimension reduction: A guided tour}
+  \field{year}{2010}
+\endentry
+
+\entry{challa2004bayesian}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Challa}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koks}{K.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Indian Academy Sciences}%
+  }
+  \strng{namehash}{CSKD1}
+  \strng{fullhash}{CSKD1}
+  \field{labelyear}{2004}
+  \field{sortinit}{C}
+  \field{number}{2}
+  \field{pages}{145\bibrangedash 174}
+  \field{title}{Bayesian and dempster-shafer fusion}
+  \field{volume}{29}
+  \field{journaltitle}{Sadhana - Academy Proceedings in Engineering Sciences}
+  \field{year}{2004}
+\endentry
+
+\entry{chemin2009wellposedness}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Chemin}{C.}%
+     {Jean-Yves}{J.-Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gallagher}{G.}%
+     {Isabelle}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CJYGI1}
+  \strng{fullhash}{CJYGI1}
+  \field{labelyear}{2009}
+  \field{sortinit}{C}
+  \field{booktitle}{Annales de l'Institut Henri Poincare (C) Non Linear
+  Analysis}
+  \field{number}{2}
+  \field{pages}{599\bibrangedash 624}
+  \field{title}{Wellposedness and stability results for the Navier--Stokes
+  equations in R3}
+  \field{volume}{26}
+  \field{year}{2009}
+\endentry
+
+\entry{chen1998atomic}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chen}{C.}%
+     {Scott~Shaobing}{S.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Donoho}{D.}%
+     {David~L}{D.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Saunders}{S.}%
+     {Michael~A}{M.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {SIAM}%
+  }
+  \strng{namehash}{CSS+1}
+  \strng{fullhash}{CSSDDLSMA1}
+  \field{labelyear}{1998}
+  \field{sortinit}{C}
+  \field{number}{1}
+  \field{pages}{33\bibrangedash 61}
+  \field{title}{Atomic decomposition by basis pursuit}
+  \field{volume}{20}
+  \field{journaltitle}{SIAM journal on scientific computing}
+  \field{year}{1998}
+\endentry
+
+\entry{coudert2011double}{article}{}
+  \name{author}{11}{}{%
+    {{}%
+     {Coudert}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Foucaut}{F.}%
+     {J.~M.}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kostas}{K.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stanislas}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Braud}{B.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fourment}{F.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Delville}{D.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tutkun}{T.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mehdi}{M.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johansson}{J.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {George}{G.}%
+     {W.~K.}{W.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{CS+1}
+  \strng{fullhash}{CSFJMKJSMBPFCDJTMMFJPGWK1}
+  \field{labelyear}{2011}
+  \field{sortinit}{C}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 12}
+  \field{title}{Double large field stereoscopic PIV in a high Reynolds number
+  turbulent boundary layer}
+  \field{volume}{50}
+  \field{journaltitle}{Experiments in Fluids}
+  \field{year}{2011}
+\endentry
+
+\entry{dang2016towards}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Dang}{D.}%
+     {Hong-Phuong}{H.-P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chainais}{C.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DHPCP1}
+  \strng{fullhash}{DHPCP1}
+  \field{labelyear}{2016}
+  \field{sortinit}{D}
+  \field{title}{Towards Dictionaries of Optimal Size: A Bayesian Non Parametric
+  Approach}
+  \field{journaltitle}{Journal of Signal Processing Systems}
+  \field{year}{2016}
+\endentry
+
+\entry{daubechies2004iterative}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Daubechies}{D.}%
+     {I}{I}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Defrise}{D.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {De~Mol}{D.~M.}%
+     {C}{C}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{DI+1}
+  \strng{fullhash}{DIDMDMC1}
+  \field{labelyear}{2004}
+  \field{sortinit}{D}
+  \field{number}{11}
+  \field{pages}{1413\bibrangedash 1457}
+  \field{title}{An iterative thresholding algorithm for linear inverse problems
+  with a sparsity constraint}
+  \field{volume}{57}
+  \field{journaltitle}{Communications on Pure and Applied Mathematics}
+  \field{year}{2004}
+\endentry
+
+\entry{davidson2015turbulence}{book}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Davidson}{D.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford University Press, USA}%
+  }
+  \strng{namehash}{DP+1}
+  \strng{fullhash}{DP+1}
+  \field{labelyear}{2015}
+  \field{sortinit}{D}
+  \field{title}{Turbulence: an introduction for scientists and engineers}
+  \field{year}{2015}
+\endentry
+
+\entry{dong2014image}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Dong}{D.}%
+     {Chao}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Loy}{L.}%
+     {Chen~Change}{C.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {He}{H.}%
+     {Kaiming}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tang}{T.}%
+     {Xiaoou}{X.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DC+1}
+  \strng{fullhash}{DCLCCHKTX1}
+  \field{labelyear}{2014}
+  \field{sortinit}{D}
+  \field{title}{Image super-resolution using deep convolutional networks}
+  \field{journaltitle}{arXiv preprint arXiv:1501.00092}
+  \field{year}{2014}
+\endentry
+
+\entry{donoho2003optimally}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Donoho}{D.}%
+     {David~L}{D.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elad}{E.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {National Acad Sciences}%
+  }
+  \strng{namehash}{DDLEM1}
+  \strng{fullhash}{DDLEM1}
+  \field{labelyear}{2003}
+  \field{sortinit}{D}
+  \field{number}{5}
+  \field{pages}{2197\bibrangedash 2202}
+  \field{title}{Optimally sparse representation in general (nonorthogonal)
+  dictionaries via l1 minimization}
+  \field{volume}{100}
+  \field{journaltitle}{Proceedings of the National Academy of Sciences}
+  \field{year}{2003}
+\endentry
+
+\entry{donoho2012sparse}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Donoho}{D.}%
+     {David~L}{D.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsaig}{T.}%
+     {Yaakov}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Drori}{D.}%
+     {Iddo}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Starck}{S.}%
+     {Jean-Luc}{J.-L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{DDL+1}
+  \strng{fullhash}{DDLTYDISJL1}
+  \field{labelyear}{2012}
+  \field{sortinit}{D}
+  \field{number}{2}
+  \field{pages}{1094\bibrangedash 1121}
+  \field{title}{Sparse solution of underdetermined systems of linear equations
+  by stagewise orthogonal matching pursuit}
+  \field{volume}{58}
+  \field{journaltitle}{Information Theory, IEEE Transactions on}
+  \field{year}{2012}
+\endentry
+
+\entry{durgesh2010multi}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Durgesh}{D.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Naughton}{N.}%
+     {J.~W.}{J.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{DVNJW1}
+  \strng{fullhash}{DVNJW1}
+  \field{labelyear}{2010}
+  \field{sortinit}{D}
+  \field{number}{3}
+  \field{pages}{571\bibrangedash 583}
+  \field{title}{Multi-time-delay LSE-POD complementary approach applied to
+  unsteady high-Reynolds-number near wake flow}
+  \field{volume}{49}
+  \field{journaltitle}{Experiments in fluids}
+  \field{year}{2010}
+\endentry
+
+\entry{durrant2008multisensor}{incollection}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Durrant-Whyte}{D.-W.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Henderson}{H.}%
+     {T.~C.}{T.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{DWHHTC1}
+  \strng{fullhash}{DWHHTC1}
+  \field{labelyear}{2008}
+  \field{sortinit}{D}
+  \field{booktitle}{Springer handbook of robotics}
+  \field{pages}{585\bibrangedash 610}
+  \field{title}{Multisensor data fusion}
+  \field{year}{2008}
+\endentry
+
+\entry{efron2004least}{article}{}
+  \true{moreauthor}
+  \name{author}{4}{}{%
+    {{}%
+     {Efron}{E.}%
+     {Bradley}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johnstone}{J.}%
+     {Iain}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Institute of Mathematical Statistics}%
+  }
+  \strng{namehash}{EB+1}
+  \strng{fullhash}{EBHTJITR+1}
+  \field{labelyear}{2004}
+  \field{sortinit}{E}
+  \field{number}{2}
+  \field{pages}{407\bibrangedash 499}
+  \field{title}{Least angle regression}
+  \field{volume}{32}
+  \field{journaltitle}{The Annals of statistics}
+  \field{year}{2004}
+\endentry
+
+\entry{elad2010on}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Elad}{E.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Figueiredo}{F.}%
+     {Mario A.~T.}{M.~A.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ma}{M.}%
+     {Yi}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EM+1}
+  \strng{fullhash}{EMFMATMY1}
+  \field{labelyear}{2010}
+  \field{sortinit}{E}
+  \verb{doi}
+  \verb 10.1109/JPROC.2009.2037655
+  \endverb
+  \field{issn}{0018-9219}
+  \field{number}{6}
+  \field{pages}{972\bibrangedash 982}
+  \field{title}{On the Role of Sparse and Redundant Representations in Image
+  Processing}
+  \field{volume}{98}
+  \field{journaltitle}{Proceedings of the IEEE- Special issue on applications
+  of sparse representation and compressive sensing}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{elsinga2005assessment}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Elsinga}{E.}%
+     {GE}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wieneke}{W.}%
+     {B}{B}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scarano}{S.}%
+     {F}{F}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Van~Oudheusden}{V.~O.}%
+     {BW}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EG+1}
+  \strng{fullhash}{EGWBSFVOB1}
+  \field{labelyear}{2005}
+  \field{sortinit}{E}
+  \field{booktitle}{6th International Symposium on Particle Image Velocimetry,
+  Pasadena, California, USA}
+  \field{title}{Assessment of Tomo-PIV for three-dimensional flows}
+  \field{year}{2005}
+\endentry
+
+\entry{elsinga2006tomographic}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Elsinga}{E.}%
+     {Gerrit~E}{G.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scarano}{S.}%
+     {Fulvio}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wieneke}{W.}%
+     {Bernhard}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Oudheusden}{O.}%
+     {Bas~W}{B.~W.}%
+     {van}{v.}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{EGE+1}
+  \strng{fullhash}{EGESFWBOBWv1}
+  \field{labelyear}{2006}
+  \field{sortinit}{E}
+  \field{number}{6}
+  \field{pages}{933\bibrangedash 947}
+  \field{title}{Tomographic particle image velocimetry}
+  \field{volume}{41}
+  \field{journaltitle}{Experiments in fluids}
+  \field{year}{2006}
+\endentry
+
+\entry{engan1999method}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Engan}{E.}%
+     {Kjersti}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aase}{A.}%
+     {Sven~Ole}{S.~O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hakon~Husoy}{H.~H.}%
+     {J}{J}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{EK+1}
+  \strng{fullhash}{EKASOHHJ1}
+  \field{labelyear}{1999}
+  \field{sortinit}{E}
+  \field{booktitle}{Acoustics, Speech, and Signal Processing, 1999.
+  Proceedings., 1999 IEEE International Conference on}
+  \field{pages}{2443\bibrangedash 2446}
+  \field{title}{Method of optimal directions for frame design}
+  \field{volume}{5}
+  \field{year}{1999}
+\endentry
+
+\entry{ewing1999examination}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ewing}{E.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Citriniti}{C.}%
+     {J.~H.}{J.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{EDCJH1}
+  \strng{fullhash}{EDCJH1}
+  \field{labelyear}{1999}
+  \field{sortinit}{E}
+  \field{booktitle}{IUTAM Symposium on Simulation and Identification of
+  Organized Structures in Flows Fluid Mechanics and Its Applications}
+  \field{pages}{375\bibrangedash 384}
+  \field{title}{Examination of a LSE/POD complementary technique using single
+  and multi-time information in the axisymmetric shear layer}
+  \field{volume}{52}
+  \field{year}{1999}
+\endentry
+
+\entry{foi2016foveated}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Foi}{F.}%
+     {Alessandro}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boracchi}{B.}%
+     {Giacomo}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FABG1}
+  \strng{fullhash}{FABG1}
+  \field{labelyear}{2016}
+  \field{sortinit}{F}
+  \verb{doi}
+  \verb 10.1007/s11263-016-0898-1
+  \endverb
+  \field{issn}{1573-1405}
+  \field{pages}{1\bibrangedash 33}
+  \field{title}{Foveated Nonlocal Self-Similarity}
+  \verb{url}
+  \verb http://dx.doi.org/10.1007/s11263-016-0898-1
+  \endverb
+  \field{journaltitle}{International Journal of Computer Vision}
+  \field{year}{2016}
+\endentry
+
+\entry{fox1972numerical}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Fox}{F.}%
+     {Douglas~G}{D.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lilly}{L.}%
+     {Douglas~K}{D.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{FDGLDK1}
+  \strng{fullhash}{FDGLDK1}
+  \field{labelyear}{1972}
+  \field{sortinit}{F}
+  \field{number}{1}
+  \field{pages}{51\bibrangedash 72}
+  \field{title}{Numerical simulation of turbulent flows}
+  \field{volume}{10}
+  \field{journaltitle}{Reviews of Geophysics}
+  \field{year}{1972}
+\endentry
+
+\entry{frisch1995turbulence}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Frisch}{F.}%
+     {U.}{U.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge University Press}%
+  }
+  \strng{namehash}{FU1}
+  \strng{fullhash}{FU1}
+  \field{labelyear}{1995}
+  \field{sortinit}{F}
+  \field{title}{Turbulence: the legacy of A.N. Kolmogorov}
+  \field{year}{1995}
+\endentry
+
+\entry{gallagher2015some}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Gallagher}{G.}%
+     {Isabelle}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GI1}
+  \strng{fullhash}{GI1}
+  \field{labelyear}{2015}
+  \field{sortinit}{G}
+  \field{number}{3}
+  \field{pages}{177\bibrangedash 184}
+  \field{title}{Some stability results on global solutions to the
+  Navier--Stokes equations}
+  \field{volume}{35}
+  \field{journaltitle}{Analysis}
+  \field{year}{2015}
+\endentry
+
+\entry{gallagher2003asymptotics}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Gallagher}{G.}%
+     {Isabelle}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Iftimie}{I.}%
+     {Dragos}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Planchon}{P.}%
+     {Fabrice}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GI+1}
+  \strng{fullhash}{GIIDPF1}
+  \field{labelyear}{2003}
+  \field{sortinit}{G}
+  \field{booktitle}{Annales de l'Institut fourier}
+  \field{number}{5}
+  \field{pages}{1387\bibrangedash 1424}
+  \field{title}{Asymptotics and stability for global solutions to the
+  Navier-Stokes equations}
+  \field{volume}{53}
+  \field{year}{2003}
+\endentry
+
+\entry{gelman2014bayesian}{book}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Gelman}{G.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carlin}{C.}%
+     {J.~B.}{J.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stern}{S.}%
+     {H.~S.}{H.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rubin}{R.}%
+     {D.~B.}{D.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {Chapman}%
+    {Hall/CRC}%
+  }
+  \strng{namehash}{GA+1}
+  \strng{fullhash}{GACJBSHSRDB1}
+  \field{labelyear}{2013}
+  \field{sortinit}{G}
+  \field{edition}{3}
+  \field{isbn}{1439840954, 978-1439840955}
+  \field{title}{Bayesian data analysis}
+  \field{year}{2013}
+\endentry
+
+\entry{george2009lectures}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {George}{G.}%
+     {William~K}{W.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GWK1}
+  \strng{fullhash}{GWK1}
+  \field{labelyear}{2009}
+  \field{sortinit}{G}
+  \field{title}{Lectures in Turbulence for the 21st Century}
+  \field{journaltitle}{Chalmers University of Technology}
+  \field{year}{2009}
+\endentry
+
+\entry{gordeyev2000coherent}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Gordeyev}{G.}%
+     {Stanislav~V}{S.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thomas}{T.}%
+     {Flint~O}{F.~O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{GSVTFO1}
+  \strng{fullhash}{GSVTFO1}
+  \field{labelyear}{2000}
+  \field{sortinit}{G}
+  \field{pages}{145\bibrangedash 194}
+  \field{title}{Coherent structure in the turbulent planar jet. Part 1.
+  Extraction of proper orthogonal decomposition eigenmodes and their
+  self-similarity}
+  \field{volume}{414}
+  \field{journaltitle}{Journal of Fluid Mechanics}
+  \field{year}{2000}
+\endentry
+
+\entry{guezennec1989stochastic}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Guezennec}{G.}%
+     {Y.~G.}{Y.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AMER INST PHYSICS, CIRCULATION FULFILLMENT DIV}%
+  }
+  \strng{namehash}{GYG1}
+  \strng{fullhash}{GYG1}
+  \field{labelyear}{1989}
+  \field{sortinit}{G}
+  \field{number}{6}
+  \field{pages}{1054\bibrangedash 1060}
+  \field{title}{Stochastic estimation of coherent structures in turbulent
+  boundary layers}
+  \field{volume}{1}
+  \field{journaltitle}{Physics of Fluids A: Fluid Dynamics (1989-1993)}
+  \field{year}{1989}
+\endentry
+
+\entry{hastie2009elements}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hastie}{H.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Friedman}{F.}%
+     {J.~H.}{J.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HT+1}
+  \strng{fullhash}{HTTRFJH1}
+  \field{labelyear}{2009}
+  \field{extrayear}{1}
+  \field{sortinit}{H}
+  \field{edition}{2}
+  \field{isbn}{0387848576, 978-0387848570}
+  \field{title}{The elements of statistical learning}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{year}{2009}
+\endentry
+
+\entry{hastie2005elements}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Friedman}{F.}%
+     {Jerome}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HT+2}
+  \strng{fullhash}{HTTRFJFJ1}
+  \field{labelyear}{2005}
+  \field{sortinit}{H}
+  \field{number}{2}
+  \field{pages}{83\bibrangedash 85}
+  \field{title}{The elements of statistical learning: data mining, inference
+  and prediction}
+  \field{volume}{27}
+  \field{journaltitle}{The Mathematical Intelligencer}
+  \field{year}{2005}
+\endentry
+
+\entry{hastie2009unsupervised}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Friedman}{F.}%
+     {Jerome}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HT+2}
+  \strng{fullhash}{HTTRFJ1}
+  \field{labelyear}{2009}
+  \field{extrayear}{2}
+  \field{sortinit}{H}
+  \field{title}{Unsupervised learning}
+  \field{year}{2009}
+\endentry
+
+\entry{hoyas2006scaling}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hoyas}{H.}%
+     {Sergio}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jim{\'e}nez}{J.}%
+     {Javier}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AIP Publishing}%
+  }
+  \strng{namehash}{HSJJ1}
+  \strng{fullhash}{HSJJ1}
+  \field{labelyear}{2006}
+  \field{sortinit}{H}
+  \field{number}{1}
+  \field{pages}{011702}
+  \field{title}{Scaling of the velocity fluctuations in turbulent channels up
+  to Re$\tau$= 2003}
+  \field{volume}{18}
+  \field{journaltitle}{Physics of Fluids (1994-present)}
+  \field{year}{2006}
+\endentry
+
+\entry{hutchins2007evidence}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hutchins}{H.}%
+     {N}{N}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marusic}{M.}%
+     {Ivan}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{HNMI1}
+  \strng{fullhash}{HNMI1}
+  \field{labelyear}{2007}
+  \field{sortinit}{H}
+  \field{pages}{1\bibrangedash 28}
+  \field{title}{Evidence of very long meandering features in the logarithmic
+  region of turbulent boundary layers}
+  \field{volume}{579}
+  \field{journaltitle}{Journal of Fluid Mechanics}
+  \field{year}{2007}
+\endentry
+
+\entry{ishihara2009study}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Ishihara}{I.}%
+     {Takashi}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gotoh}{G.}%
+     {Toshiyuki}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaneda}{K.}%
+     {Yukio}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Annual Reviews}%
+  }
+  \strng{namehash}{IT+1}
+  \strng{fullhash}{ITGTKY1}
+  \field{labelyear}{2009}
+  \field{sortinit}{I}
+  \field{pages}{165\bibrangedash 180}
+  \field{title}{Study of high-Reynolds number isotropic turbulence by direct
+  numerical simulation}
+  \field{volume}{41}
+  \field{journaltitle}{Annual Review of Fluid Mechanics}
+  \field{year}{2009}
+\endentry
+
+\entry{jolliffe2002principal}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jolliffe}{J.}%
+     {Ian}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{JI1}
+  \strng{fullhash}{JI1}
+  \field{labelyear}{2002}
+  \field{sortinit}{J}
+  \field{title}{Principal component analysis}
+  \field{year}{2002}
+\endentry
+
+\entry{jolliffe1982note}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jolliffe}{J.}%
+     {Ian~T}{I.~T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JSTOR}%
+  }
+  \strng{namehash}{JIT1}
+  \strng{fullhash}{JIT1}
+  \field{labelyear}{1982}
+  \field{sortinit}{J}
+  \field{pages}{300\bibrangedash 303}
+  \field{title}{A note on the use of principal components in regression}
+  \field{journaltitle}{Applied Statistics}
+  \field{year}{1982}
+\endentry
+
+\entry{joshi2010map}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Joshi}{J.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jalobeanu}{J.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}%
+  }
+  \strng{namehash}{JMJA1}
+  \strng{fullhash}{JMJA1}
+  \field{labelyear}{2010}
+  \field{sortinit}{J}
+  \field{number}{3}
+  \field{pages}{1245\bibrangedash 1255}
+  \field{title}{MAP estimation for multiresolution fusion in remotely sensed
+  images using an IGMRF prior model}
+  \field{volume}{48}
+  \field{journaltitle}{IEEE Transactions on Geoscience and Remote Sensing}
+  \field{year}{2010}
+\endentry
+
+\entry{kaneda2003energy}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Kaneda}{K.}%
+     {Yukio}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ishihara}{I.}%
+     {Takashi}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yokokawa}{Y.}%
+     {Mitsuo}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Itakura}{I.}%
+     {Ken'ichi}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Uno}{U.}%
+     {Atsuya}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Woodbury, NY: American Institute of Physics, c1994-}%
+  }
+  \strng{namehash}{KY+1}
+  \strng{fullhash}{KYITYMIKUA1}
+  \field{labelyear}{2003}
+  \field{sortinit}{K}
+  \field{number}{2}
+  \field{pages}{L21}
+  \field{title}{Energy dissipation rate and energy spectrum in high resolution
+  direct numerical simulations of turbulence in a periodic box}
+  \field{volume}{15}
+  \field{journaltitle}{Physics of Fluids}
+  \field{year}{2003}
+\endentry
+
+\entry{kay1993fundamentals}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kay}{K.}%
+     {S.~M.}{S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice-Hall, Inc.}%
+  }
+  \strng{namehash}{KSM1}
+  \strng{fullhash}{KSM1}
+  \field{labelyear}{1993}
+  \field{sortinit}{K}
+  \field{isbn}{0-13-345711-7}
+  \field{title}{Fundamentals of Statistical Signal Processing: Estimation
+  Theory}
+  \list{location}{1}{%
+    {Upper Saddle River, NJ, USA}%
+  }
+  \field{year}{1993}
+\endentry
+
+\entry{keane1992theory}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Keane}{K.}%
+     {R.~D.}{R.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Adrian}{A.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{KRDARJ1}
+  \strng{fullhash}{KRDARJ1}
+  \field{labelyear}{1992}
+  \field{sortinit}{K}
+  \field{number}{3}
+  \field{pages}{191\bibrangedash 215}
+  \field{title}{Theory of cross-correlation analysis of PIV images}
+  \field{volume}{49}
+  \field{journaltitle}{Applied scientific research}
+  \field{year}{1992}
+\endentry
+
+\entry{kendall1987kendall}{book}{}
+  \name{editor}{3}{}{%
+    {{}%
+     {Kendall}{K.}%
+     {M.~G.}{M.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stuart}{S.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ord}{O.}%
+     {J.~K.}{J.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford University Press, Inc.}%
+  }
+  \strng{namehash}{KMG+1}
+  \strng{fullhash}{KMGSAOJK1}
+  \field{labelyear}{1987}
+  \field{sortinit}{K}
+  \field{isbn}{0-195-20561-8}
+  \field{title}{Kendall's Advanced Theory of Statistics}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{year}{1987}
+\endentry
+
+\entry{king1914convection}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {King}{K.}%
+     {Louis~Vessot}{L.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JSTOR}%
+  }
+  \strng{namehash}{KLV1}
+  \strng{fullhash}{KLV1}
+  \field{labelyear}{1914}
+  \field{sortinit}{K}
+  \field{pages}{373\bibrangedash 432}
+  \field{title}{On the convection of heat from small cylinders in a stream of
+  fluid: determination of the convection constants of small platinum wires with
+  applications to hot-wire anemometry}
+  \field{journaltitle}{Philosophical Transactions of the Royal Society of
+  London. Series A, Containing Papers of a Mathematical or Physical Character}
+  \field{year}{1914}
+\endentry
+
+\entry{kohavi1995study}{inproceedings}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Kohavi}{K.}%
+     {Ron}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KR+1}
+  \strng{fullhash}{KR+1}
+  \field{labelyear}{1995}
+  \field{sortinit}{K}
+  \field{booktitle}{Ijcai}
+  \field{number}{2}
+  \field{pages}{1137\bibrangedash 1145}
+  \field{title}{A study of cross-validation and bootstrap for accuracy
+  estimation and model selection}
+  \field{volume}{14}
+  \field{year}{1995}
+\endentry
+
+\entry{koks2003introduction}{report}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Koks}{K.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Challa}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KDCS1}
+  \strng{fullhash}{KDCS1}
+  \field{labelyear}{2003}
+  \field{sortinit}{K}
+  \field{title}{An introduction to bayesian and dempster-shafer data fusion}
+  \list{institution}{1}{%
+    {DSTO Systems Sciences Laboratory}%
+  }
+  \field{type}{techreport}
+  \field{year}{2003}
+\endentry
+
+\entry{le1997direct}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Le}{L.}%
+     {Hung}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moin}{M.}%
+     {Parviz}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kim}{K.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{LH+1}
+  \strng{fullhash}{LHMPKJ1}
+  \field{labelyear}{1997}
+  \field{sortinit}{L}
+  \field{pages}{349\bibrangedash 374}
+  \field{title}{Direct numerical simulation of turbulent flow over a
+  backward-facing step}
+  \field{volume}{330}
+  \field{journaltitle}{Journal of fluid mechanics}
+  \field{year}{1997}
+\endentry
+
+\entry{lee2006efficient}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Lee}{L.}%
+     {Honglak}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Battle}{B.}%
+     {Alexis}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Raina}{R.}%
+     {Rajat}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ng}{N.}%
+     {Andrew~Y}{A.~Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LH+2}
+  \strng{fullhash}{LHBARRNAY1}
+  \field{labelyear}{2006}
+  \field{sortinit}{L}
+  \field{booktitle}{Advances in neural information processing systems}
+  \field{pages}{801\bibrangedash 808}
+  \field{title}{Efficient sparse coding algorithms}
+  \field{year}{2006}
+\endentry
+
+\entry{lee2014direct}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Lee}{L.}%
+     {Myoungkyu}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moser}{M.}%
+     {Robert~D}{R.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LMMRD1}
+  \strng{fullhash}{LMMRD1}
+  \field{labelyear}{2014}
+  \field{sortinit}{L}
+  \field{title}{Direct numerical simulation of turbulent channel flow up to Re
+  tau approx 5200}
+  \field{journaltitle}{arXiv preprint arXiv:1410.7809}
+  \field{year}{2014}
+\endentry
+
+\entry{lee2015direct}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Lee}{L.}%
+     {Myoungkyu}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moser}{M.}%
+     {Robert~D}{R.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{LMMRD1}
+  \strng{fullhash}{LMMRD1}
+  \field{labelyear}{2015}
+  \field{sortinit}{L}
+  \field{pages}{395\bibrangedash 415}
+  \field{title}{Direct numerical simulation of turbulent channel flow up to}
+  \field{volume}{774}
+  \field{journaltitle}{Journal of Fluid Mechanics}
+  \field{year}{2015}
+\endentry
+
+\entry{levitan1987maximum}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Levitan}{L.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Herman}{H.}%
+     {G.~T.}{G.~T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}%
+  }
+  \strng{namehash}{LEHGT1}
+  \strng{fullhash}{LEHGT1}
+  \field{labelyear}{1987}
+  \field{sortinit}{L}
+  \field{number}{3}
+  \field{pages}{185\bibrangedash 192}
+  \field{title}{A maximum a posteriori probability expectation maximization
+  algorithm for image reconstruction in emission tomography}
+  \field{volume}{6}
+  \field{journaltitle}{IEEE Transactions on Medical Imaging}
+  \field{year}{1987}
+\endentry
+
+\entry{lumley1967}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Lumley}{L.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LJ1}
+  \strng{fullhash}{LJ1}
+  \field{labelyear}{1967}
+  \field{sortinit}{L}
+  \field{booktitle}{Asmospheric turbulence and radio wave propagation}
+  \field{pages}{166\bibrangedash 178}
+  \field{title}{The structure of inhomogenous turbulent flows}
+  \field{year}{1967}
+\endentry
+
+\entry{ly2001modeling}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ly}{L.}%
+     {Hung~V}{H.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tran}{T.}%
+     {Hien~T}{H.~T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{LHVTHT1}
+  \strng{fullhash}{LHVTHT1}
+  \field{labelyear}{2001}
+  \field{sortinit}{L}
+  \field{number}{1}
+  \field{pages}{223\bibrangedash 236}
+  \field{title}{Modeling and control of physical processes using proper
+  orthogonal decomposition}
+  \field{volume}{33}
+  \field{journaltitle}{Mathematical and computer modelling}
+  \field{year}{2001}
+\endentry
+
+\entry{ma2000simultaneous}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Ma}{M.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lakshmanan}{L.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hero}{H.}%
+     {A.~O.}{A.~O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}%
+  }
+  \strng{namehash}{MB+1}
+  \strng{fullhash}{MBLSHAO1}
+  \field{labelyear}{2000}
+  \field{sortinit}{M}
+  \field{number}{3}
+  \field{pages}{135\bibrangedash 147}
+  \field{title}{Simultaneous detection of lane and pavement boundaries using
+  model-based multisensor fusion}
+  \field{volume}{1}
+  \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
+  \field{year}{2000}
+\endentry
+
+\entry{mairal2010online}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Mairal}{M.}%
+     {Julien}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bach}{B.}%
+     {Francis}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ponce}{P.}%
+     {Jean}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sapiro}{S.}%
+     {Guillermo}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MJ+1}
+  \strng{fullhash}{MJBFPJSG1}
+  \field{labelyear}{2010}
+  \field{sortinit}{M}
+  \field{issn}{1532-4435}
+  \field{pages}{19\bibrangedash 60}
+  \field{title}{Online Learning for Matrix Factorization and Sparse Coding}
+  \field{volume}{11}
+  \field{journaltitle}{Journal of machine learning research}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{mallat1999wavelet}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mallat}{M.}%
+     {St{\'e}phane}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Academic press}%
+  }
+  \strng{namehash}{MS1}
+  \strng{fullhash}{MS1}
+  \field{labelyear}{1999}
+  \field{sortinit}{M}
+  \field{title}{A wavelet tour of signal processing}
+  \field{year}{1999}
+\endentry
+
+\entry{mallat1989theory}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mallat}{M.}%
+     {Stephane~G}{S.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Ieee}%
+  }
+  \strng{namehash}{MSG1}
+  \strng{fullhash}{MSG1}
+  \field{labelyear}{1989}
+  \field{sortinit}{M}
+  \field{number}{7}
+  \field{pages}{674\bibrangedash 693}
+  \field{title}{A theory for multiresolution signal decomposition: the wavelet
+  representation}
+  \field{volume}{11}
+  \field{journaltitle}{Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on}
+  \field{year}{1989}
+\endentry
+
+\entry{marquillie2008direct}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Marquillie}{M.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Laval}{L.}%
+     {J.~P.}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dolganov}{D.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Taylor \& Francis}%
+  }
+  \strng{namehash}{MM+1}
+  \strng{fullhash}{MMLJPDR1}
+  \field{labelyear}{2008}
+  \field{sortinit}{M}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 23}
+  \field{title}{Direct numerical simulation of a separated channel flow with a
+  smooth profile}
+  \field{volume}{9}
+  \field{journaltitle}{Journal of Turbulence}
+  \field{year}{2008}
+\endentry
+
+\entry{mcdonough2004introductory}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {McDonough}{M.}%
+     {JM}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Citeseer}%
+  }
+  \strng{namehash}{MJ1}
+  \strng{fullhash}{MJ1}
+  \field{labelyear}{2004}
+  \field{sortinit}{M}
+  \field{title}{Introductory lectures on turbulence physics, mathematics and
+  modeling}
+  \field{year}{2004}
+\endentry
+
+\entry{melnick2012experimental}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Melnick}{M.}%
+     {M.~B.}{M.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thurow}{T.}%
+     {B.~S.}{B.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MMBTBS1}
+  \strng{fullhash}{MMBTBS1}
+  \field{labelyear}{2012}
+  \field{sortinit}{M}
+  \field{booktitle}{50th AIAA Aerospace Sciences Meeting including the New
+  Horizons Forum and Aerospace Exposition}
+  \field{pages}{07\bibrangedash 52}
+  \field{title}{Experimental Investigation of a Turbulent Boundary Layer Using
+  Simultaneous 3-D Flow Visualization and 2-D PIV}
+  \field{year}{2012}
+\endentry
+
+\entry{meyer2014provide}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Meyer}{M.}%
+     {R.~D.}{R.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tan}{T.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Science}%
+  }
+  \strng{namehash}{MRDTG1}
+  \strng{fullhash}{MRDTG1}
+  \field{labelyear}{2014}
+  \field{sortinit}{M}
+  \field{pages}{59\bibrangedash 68}
+  \field{title}{Provide detailed and real-time indoor environmental information
+  using POD--LSE and limited measurements}
+  \field{volume}{73}
+  \field{journaltitle}{Energy and Buildings}
+  \field{year}{2014}
+\endentry
+
+\entry{mokhasi2009predictive}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Mokhasi}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rempfer}{R.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kandala}{K.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ELSEVIER SCIENCE BV}%
+  }
+  \strng{namehash}{MP+1}
+  \strng{fullhash}{MPRDKS1}
+  \field{labelyear}{2009}
+  \field{sortinit}{M}
+  \field{number}{3}
+  \field{pages}{290\bibrangedash 308}
+  \field{title}{Predictive flow-field estimation}
+  \field{volume}{238}
+  \field{journaltitle}{Physica D: Nonlinear Phenomena}
+  \field{year}{2009}
+\endentry
+
+\entry{van2015bayesian}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {Linh~Van}{L.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Laval}{L.}%
+     {Jean-Philippe}{J.-P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chainais}{C.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IOP Publishing}%
+  }
+  \strng{namehash}{NLV+1}
+  \strng{fullhash}{NLVLJPCP1}
+  \field{labelyear}{2015}
+  \field{sortinit}{N}
+  \field{number}{10}
+  \field{pages}{P10008}
+  \field{title}{A Bayesian fusion model for space-time reconstruction of finely
+  resolved velocities in turbulent flows from low resolution measurements}
+  \field{volume}{2015}
+  \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
+  \field{year}{2015}
+\endentry
+
+\entry{nguyen2010proper}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nguyen}{N.}%
+     {T.~D.}{T.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wells}{W.}%
+     {J.~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mokhasi}{M.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rempfer}{R.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IOP PUBLISHING LTD}%
+  }
+  \strng{namehash}{NTD+1}
+  \strng{fullhash}{NTDWJCMPRD1}
+  \field{labelyear}{2010}
+  \field{sortinit}{N}
+  \field{number}{11}
+  \field{pages}{115406}
+  \field{title}{Proper orthogonal decomposition-based estimations of the flow
+  field from particle image velocimetry wall-gradient measurements in the
+  backward-facing step flow}
+  \field{volume}{21}
+  \field{journaltitle}{Measurement Science and Technology}
+  \field{year}{2010}
+\endentry
+
+\entry{olshausen1996emergence}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Olshausen}{O.}%
+     {Bruno~A}{B.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Field}{F.}%
+     {David~J.}{D.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OBAFDJ1}
+  \strng{fullhash}{OBAFDJ1}
+  \field{labelyear}{1996}
+  \field{sortinit}{O}
+  \field{number}{6583}
+  \field{pages}{607\bibrangedash 609}
+  \field{title}{Emergence of simple-cell receptive field properties by learning
+  a sparse code for natural images}
+  \field{volume}{381}
+  \field{journaltitle}{Nature}
+  \field{year}{1996}
+\endentry
+
+\entry{orszag1972numerical}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Orszag}{O.}%
+     {Steven~A}{S.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patterson~Jr}{P.~J.}%
+     {GS}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {APS}%
+  }
+  \strng{namehash}{OSAPJG1}
+  \strng{fullhash}{OSAPJG1}
+  \field{labelyear}{1972}
+  \field{sortinit}{O}
+  \field{number}{2}
+  \field{pages}{76}
+  \field{title}{Numerical simulation of three-dimensional homogeneous isotropic
+  turbulence}
+  \field{volume}{28}
+  \field{journaltitle}{Physical Review Letters}
+  \field{year}{1972}
+\endentry
+
+\entry{parikh2014proximal}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Parikh}{P.}%
+     {Neal}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boyd}{B.}%
+     {Stephen~P}{S.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PNBSP+1}
+  \strng{fullhash}{PNBSP+1}
+  \field{labelyear}{2014}
+  \field{sortinit}{P}
+  \field{number}{3}
+  \field{pages}{127\bibrangedash 239}
+  \field{title}{Proximal Algorithms.}
+  \field{volume}{1}
+  \field{journaltitle}{Foundations and Trends in optimization}
+  \field{year}{2014}
+\endentry
+
+\entry{scikit-learn}{article}{}
+  \name{author}{16}{}{%
+    {{}%
+     {Pedregosa}{P.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Varoquaux}{V.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gramfort}{G.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Michel}{M.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thirion}{T.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grisel}{G.}%
+     {O.}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Blondel}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Prettenhofer}{P.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weiss}{W.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dubourg}{D.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vanderplas}{V.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Passos}{P.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cournapeau}{C.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brucher}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Perrot}{P.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Duchesnay}{D.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PF+1}
+  \strng{fullhash}{PFVGGAMVTBGOBMPPWRDVVJPACDBMPMDE1}
+  \field{labelyear}{2011}
+  \field{sortinit}{P}
+  \field{pages}{2825\bibrangedash 2830}
+  \field{title}{Scikit-learn: Machine Learning in {P}ython}
+  \field{volume}{12}
+  \field{journaltitle}{Journal of Machine Learning Research}
+  \field{year}{2011}
+\endentry
+
+\entry{prasad2000stereoscopic}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Prasad}{P.}%
+     {Ajay~K}{A.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{PAK1}
+  \strng{fullhash}{PAK1}
+  \field{labelyear}{2000}
+  \field{sortinit}{P}
+  \field{number}{2}
+  \field{pages}{103\bibrangedash 116}
+  \field{title}{Stereoscopic particle image velocimetry}
+  \field{volume}{29}
+  \field{journaltitle}{Experiments in fluids}
+  \field{year}{2000}
+\endentry
+
+\entry{protter2009generalizing}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Protter}{P.}%
+     {Matan}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elad}{E.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Takeda}{T.}%
+     {Hiroyuki}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Milanfar}{M.}%
+     {Peyman}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PM+1}
+  \strng{fullhash}{PMEMTHMP1}
+  \field{labelyear}{2009}
+  \field{sortinit}{P}
+  \field{number}{1}
+  \field{pages}{36\bibrangedash 51}
+  \field{title}{Generalizing the nonlocal-means to super-resolution
+  reconstruction}
+  \field{volume}{18}
+  \field{journaltitle}{Image Processing, IEEE Transactions on}
+  \field{year}{2009}
+\endentry
+
+\entry{ravindran2000reduced}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ravindran}{R.}%
+     {SS}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{RS1}
+  \strng{fullhash}{RS1}
+  \field{labelyear}{2000}
+  \field{sortinit}{R}
+  \field{number}{5}
+  \field{pages}{425\bibrangedash 448}
+  \field{title}{A reduced-order approach for optimal control of fluids using
+  proper orthogonal decomposition}
+  \field{volume}{34}
+  \field{journaltitle}{International journal for numerical methods in fluids}
+  \field{year}{2000}
+\endentry
+
+\entry{reynolds1883experimental}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Reynolds}{R.}%
+     {O.}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Society}%
+  }
+  \strng{namehash}{RO1}
+  \strng{fullhash}{RO1}
+  \field{labelyear}{1883}
+  \field{sortinit}{R}
+  \field{number}{224-226}
+  \field{pages}{84\bibrangedash 99}
+  \field{title}{An experimental investigation of the circumstances which
+  determine whether the motion of water shall be direct or sinuous, and of the
+  law of resistance in parallel channels}
+  \field{volume}{35}
+  \field{journaltitle}{Proceedings of the royal society of London}
+  \field{year}{1883}
+\endentry
+
+\entry{roweis1999unifying}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Roweis}{R.}%
+     {Sam}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ghahramani}{G.}%
+     {Zoubin}{Z.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MIT Press}%
+  }
+  \strng{namehash}{RSGZ1}
+  \strng{fullhash}{RSGZ1}
+  \field{labelyear}{1999}
+  \field{sortinit}{R}
+  \field{number}{2}
+  \field{pages}{305\bibrangedash 345}
+  \field{title}{A unifying review of linear Gaussian models}
+  \field{volume}{11}
+  \field{journaltitle}{Neural computation}
+  \field{year}{1999}
+\endentry
+
+\entry{rubinstein2010dictionaries}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Rubinstein}{R.}%
+     {Ron}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bruckstein}{B.}%
+     {Alfred~M}{A.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elad}{E.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{RR+1}
+  \strng{fullhash}{RRBAMEM1}
+  \field{labelyear}{2010}
+  \field{sortinit}{R}
+  \field{number}{6}
+  \field{pages}{1045\bibrangedash 1057}
+  \field{title}{Dictionaries for sparse representation modeling}
+  \field{volume}{98}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2010}
+\endentry
+
+\entry{sage1971estimation}{report}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sage}{S.}%
+     {A.~P.}{A.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Melsa}{M.}%
+     {J.~L.}{J.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SAPMJL1}
+  \strng{fullhash}{SAPMJL1}
+  \field{labelyear}{1971}
+  \field{sortinit}{S}
+  \field{title}{Estimation theory with applications to communications and
+  control}
+  \list{institution}{1}{%
+    {DTIC Document}%
+  }
+  \field{type}{techreport}
+  \field{year}{1971}
+\endentry
+
+\entry{saunders1998ridge}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Saunders}{S.}%
+     {Craig}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gammerman}{G.}%
+     {Alexander}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vovk}{V.}%
+     {Volodya}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Morgan Kaufmann}%
+  }
+  \strng{namehash}{SC+1}
+  \strng{fullhash}{SCGAVV1}
+  \field{labelyear}{1998}
+  \field{sortinit}{S}
+  \field{booktitle}{(ICML-1998) Proceedings of the 15th International
+  Conference on Machine Learning}
+  \field{pages}{515\bibrangedash 521}
+  \field{title}{Ridge regression learning algorithm in dual variables}
+  \field{year}{1998}
+\endentry
+
+\entry{scarano2013tomographic}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Scarano}{S.}%
+     {F}{F}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IOP Publishing}%
+  }
+  \strng{namehash}{SF1}
+  \strng{fullhash}{SF1}
+  \field{labelyear}{2013}
+  \field{sortinit}{S}
+  \field{number}{1}
+  \field{pages}{012001}
+  \field{title}{Tomographic PIV: principles and practice}
+  \field{volume}{24}
+  \field{journaltitle}{Measurement Science and Technology}
+  \field{year}{2013}
+\endentry
+
+\entry{schroder2015advances}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Schr{\"o}der}{S.}%
+     {A}{A}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schanz}{S.}%
+     {D}{D}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Michaelis}{M.}%
+     {D}{D}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cierpka}{C.}%
+     {C}{C}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scharnowski}{S.}%
+     {S}{S}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {K{\"a}hler}{K.}%
+     {CJ}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{SA+1}
+  \strng{fullhash}{SASDMDCCSSKC1}
+  \field{labelyear}{2015}
+  \field{sortinit}{S}
+  \field{number}{2-3}
+  \field{pages}{193\bibrangedash 209}
+  \field{title}{Advances of PIV and 4D-PTV” Shake-The-Box” for Turbulent
+  Flow Analysis--the Flow over Periodic Hills}
+  \field{volume}{95}
+  \field{journaltitle}{Flow, Turbulence and Combustion}
+  \field{year}{2015}
+\endentry
+
+\entry{shin2006generalized}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Shin}{S.}%
+     {Vladimir}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lee}{L.}%
+     {Younghee}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Choi}{C.}%
+     {Tae-Sun}{T.-S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{SV+1}
+  \strng{fullhash}{SVLYCTS1}
+  \field{labelyear}{2006}
+  \field{sortinit}{S}
+  \field{number}{2}
+  \field{pages}{257\bibrangedash 266}
+  \field{title}{Generalized Millman's formula and its application for
+  estimation problems}
+  \field{volume}{86}
+  \field{journaltitle}{Signal Processing}
+  \field{year}{2006}
+\endentry
+
+\entry{sillero2013one}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Sillero}{S.}%
+     {Juan~A}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jim{\'e}nez}{J.}%
+     {Javier}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moser}{M.}%
+     {Robert~D}{R.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AIP Publishing}%
+  }
+  \strng{namehash}{SJA+1}
+  \strng{fullhash}{SJAJJMRD1}
+  \field{labelyear}{2013}
+  \field{sortinit}{S}
+  \field{number}{10}
+  \field{pages}{105102}
+  \field{title}{One-point statistics for turbulent wall-bounded flows at
+  Reynolds numbers up to delta plus approx 2000}
+  \field{volume}{25}
+  \field{journaltitle}{Physics of Fluids (1994-present)}
+  \field{year}{2013}
+\endentry
+
+\entry{smits2013wall}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Smits}{S.}%
+     {Alexander~J}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marusic}{M.}%
+     {Ivan}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SAJMI1}
+  \strng{fullhash}{SAJMI1}
+  \field{labelyear}{2013}
+  \field{sortinit}{S}
+  \field{number}{9}
+  \field{pages}{25\bibrangedash 30}
+  \field{title}{Wall-bounded turbulence}
+  \field{volume}{66}
+  \field{journaltitle}{Phys. Today}
+  \field{year}{2013}
+\endentry
+
+\entry{spalart1986numerical}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Spalart}{S.}%
+     {Philippe~R}{P.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{SPR1}
+  \strng{fullhash}{SPR1}
+  \field{labelyear}{1986}
+  \field{sortinit}{S}
+  \field{pages}{307\bibrangedash 328}
+  \field{title}{Numerical study of sink-flow boundary layers}
+  \field{volume}{172}
+  \field{journaltitle}{Journal of Fluid Mechanics}
+  \field{year}{1986}
+\endentry
+
+\entry{spalart1988direct}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Spalart}{S.}%
+     {Philippe~R}{P.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{SPR1}
+  \strng{fullhash}{SPR1}
+  \field{labelyear}{1988}
+  \field{sortinit}{S}
+  \field{pages}{61\bibrangedash 98}
+  \field{title}{Direct simulation of a turbulent boundary layer up to R
+  $\theta$= 1410}
+  \field{volume}{187}
+  \field{journaltitle}{Journal of Fluid Mechanics}
+  \field{year}{1988}
+\endentry
+
+\entry{sutton1983determination}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Sutton}{S.}%
+     {MA}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wolters}{W.}%
+     {WJ}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Peters}{P.}%
+     {WH}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ranson}{R.}%
+     {WF}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McNeill}{M.}%
+     {SR}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{SM+1}
+  \strng{fullhash}{SMWWPWRWMS1}
+  \field{labelyear}{1983}
+  \field{sortinit}{S}
+  \field{number}{3}
+  \field{pages}{133\bibrangedash 139}
+  \field{title}{Determination of displacements using an improved digital
+  correlation method}
+  \field{volume}{1}
+  \field{journaltitle}{Image and vision computing}
+  \field{year}{1983}
+\endentry
+
+\entry{taylor2004towards}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Taylor}{T.}%
+     {JA}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Glauser}{G.}%
+     {MN}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Society of Mechanical Engineers}%
+  }
+  \strng{namehash}{TJGM1}
+  \strng{fullhash}{TJGM1}
+  \field{labelyear}{2004}
+  \field{sortinit}{T}
+  \field{number}{3}
+  \field{pages}{337\bibrangedash 345}
+  \field{title}{Towards practical flow sensing and control via POD and LSE
+  based low-dimensional tools}
+  \field{volume}{126}
+  \field{journaltitle}{Journal of fluids engineering}
+  \field{year}{2004}
+\endentry
+
+\entry{tennekes1972first}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Tennekes}{T.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lumley}{L.}%
+     {J.~L.}{J.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MIT Press}%
+  }
+  \strng{namehash}{THLJL1}
+  \strng{fullhash}{THLJL1}
+  \field{labelyear}{1972}
+  \field{sortinit}{T}
+  \field{title}{A first course in turbulence}
+  \field{year}{1972}
+\endentry
+
+\entry{tibshirani1996regression}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JSTOR}%
+  }
+  \strng{namehash}{TR1}
+  \strng{fullhash}{TR1}
+  \field{labelyear}{1996}
+  \field{sortinit}{T}
+  \field{pages}{267\bibrangedash 288}
+  \field{title}{Regression shrinkage and selection via the lasso}
+  \field{journaltitle}{Journal of the Royal Statistical Society. Series B
+  (Methodological)}
+  \field{year}{1996}
+\endentry
+
+\entry{tovsic2011dictionary}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {To{\v{s}}i{\'c}}{T.}%
+     {Ivana}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Frossard}{F.}%
+     {Pascal}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{TIFP1}
+  \strng{fullhash}{TIFP1}
+  \field{labelyear}{2011}
+  \field{sortinit}{T}
+  \field{number}{2}
+  \field{pages}{27\bibrangedash 38}
+  \field{title}{Dictionary learning}
+  \field{volume}{28}
+  \field{journaltitle}{Signal Processing Magazine, IEEE}
+  \field{year}{2011}
+\endentry
+
+\entry{van1967detection}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Trees}{T.}%
+     {H.~L.~Van}{H.~L.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {John Wiley \& Sons}%
+  }
+  \strng{namehash}{THLV1}
+  \strng{fullhash}{THLV1}
+  \field{labelyear}{1967}
+  \field{sortinit}{T}
+  \field{title}{Detection, estimation, and modulation theory, optimum array
+  processing}
+  \field{volume}{1}
+  \list{location}{1}{%
+    {NY, USA}%
+  }
+  \field{year}{1967}
+\endentry
+
+\entry{tropp2007signal}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Tropp}{T.}%
+     {Joel~A}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gilbert}{G.}%
+     {Anna~C}{A.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{TJAGAC1}
+  \strng{fullhash}{TJAGAC1}
+  \field{labelyear}{2007}
+  \field{sortinit}{T}
+  \field{number}{12}
+  \field{pages}{4655\bibrangedash 4666}
+  \field{title}{Signal recovery from random measurements via orthogonal
+  matching pursuit}
+  \field{volume}{53}
+  \field{journaltitle}{Information Theory, IEEE Transactions on}
+  \field{year}{2007}
+\endentry
+
+\entry{tu2013integration}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Tu}{T.}%
+     {J.~H.}{J.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Griffin}{G.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hart}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rowley}{R.}%
+     {C.~W.}{C.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cattafesta}{C.}%
+     {L.~N.}{L.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ukeiley}{U.}%
+     {L.~S.}{L.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{TJH+1}
+  \strng{fullhash}{TJHGJHARCWCLNULS1}
+  \field{labelyear}{2013}
+  \field{sortinit}{T}
+  \field{number}{2}
+  \field{pages}{1\bibrangedash 20}
+  \field{title}{Integration of non-time-resolved PIV and time-resolved velocity
+  point sensors for dynamic estimation of velocity fields}
+  \field{volume}{54}
+  \field{journaltitle}{Experiments in fluids}
+  \field{year}{2013}
+\endentry
+
+\entry{vonesch2008fast}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Vonesch}{V.}%
+     {C{\'e}dric}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Unser}{U.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{VCUM1}
+  \strng{fullhash}{VCUM1}
+  \field{labelyear}{2008}
+  \field{sortinit}{V}
+  \field{number}{4}
+  \field{pages}{539\bibrangedash 549}
+  \field{title}{A fast thresholded Landweber algorithm for wavelet-regularized
+  multidimensional deconvolution}
+  \field{volume}{17}
+  \field{journaltitle}{Image Processing, IEEE Transactions on}
+  \field{year}{2008}
+\endentry
+
+\entry{wang2015deep}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Wang}{W.}%
+     {Zhaowen}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Ding}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Jianchao}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Han}{H.}%
+     {Wei}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huang}{H.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WZ+1}
+  \strng{fullhash}{WZLDYJHWHT1}
+  \field{labelyear}{2015}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the IEEE International Conference on
+  Computer Vision}
+  \field{pages}{370\bibrangedash 378}
+  \field{title}{Deep Networks for Image Super-Resolution with Sparse Prior}
+  \field{year}{2015}
+\endentry
+
+\entry{wei2015hyperspectral}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Wei}{W.}%
+     {Qi}{Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bioucas-Dias}{B.-D.}%
+     {Jos{\'e}}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dobigeon}{D.}%
+     {Nicolas}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tourneret}{T.}%
+     {Jean-Yves}{J.-Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{WQ+1}
+  \strng{fullhash}{WQBDJDNTJY1}
+  \field{labelyear}{2015}
+  \field{sortinit}{W}
+  \field{number}{7}
+  \field{pages}{3658\bibrangedash 3668}
+  \field{title}{Hyperspectral and multispectral image fusion based on a sparse
+  representation}
+  \field{volume}{53}
+  \field{journaltitle}{IEEE Transactions on Geoscience and Remote Sensing}
+  \field{year}{2015}
+\endentry
+
+\entry{willert2015high}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Willert}{W.}%
+     {Christian~E}{C.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{WCE1}
+  \strng{fullhash}{WCE1}
+  \field{labelyear}{2015}
+  \field{sortinit}{W}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 17}
+  \field{title}{High-speed particle image velocimetry for the efficient
+  measurement of turbulence statistics}
+  \field{volume}{56}
+  \field{journaltitle}{Experiments in Fluids}
+  \field{year}{2015}
+\endentry
+
+\entry{yang2010image}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Yang}{Y.}%
+     {Jianchao}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wright}{W.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huang}{H.}%
+     {Thomas~S.}{T.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ma}{M.}%
+     {Yi}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{YJ+1}
+  \strng{fullhash}{YJWJHTSMY1}
+  \field{labelyear}{2010}
+  \field{sortinit}{Y}
+  \verb{doi}
+  \verb 10.1109/TIP.2010.2050625
+  \endverb
+  \field{issn}{1057-7149}
+  \field{number}{11}
+  \field{pages}{2861\bibrangedash 2873}
+  \field{title}{Image Super-Resolution Via Sparse Representation}
+  \field{volume}{19}
+  \field{journaltitle}{IEEE transactions on image processing}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{yang2012coupled}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Yang}{Y.}%
+     {Jianchao}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Zhaowen}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lin}{L.}%
+     {Zhe}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cohen}{C.}%
+     {Scott}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huang}{H.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{YJ+1}
+  \strng{fullhash}{YJWZLZCSHT1}
+  \field{labelyear}{2012}
+  \field{sortinit}{Y}
+  \verb{doi}
+  \verb 10.1109/TIP.2012.2192127
+  \endverb
+  \field{issn}{1057-7149}
+  \field{number}{8}
+  \field{pages}{3467\bibrangedash 3478}
+  \field{title}{Coupled Dictionary Training for Image Super-Resolution}
+  \field{volume}{21}
+  \field{journaltitle}{IEEE transactions on image processing}
+  \field{year}{2012}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{zeyde2012single}{incollection}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zeyde}{Z.}%
+     {Roman}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elad}{E.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Protter}{P.}%
+     {Matan}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{ZR+1}
+  \strng{fullhash}{ZREMPM1}
+  \field{labelyear}{2012}
+  \field{sortinit}{Z}
+  \field{booktitle}{Curves and Surfaces}
+  \field{pages}{711\bibrangedash 730}
+  \field{title}{On single image scale-up using sparse-representations}
+  \field{year}{2012}
+\endentry
+
+\entry{zhang2009noise}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Backer}{B.}%
+     {S.~De}{S.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scheunders}{S.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC}%
+  }
+  \strng{namehash}{ZY+1}
+  \strng{fullhash}{ZYBSDSP1}
+  \field{labelyear}{2009}
+  \field{sortinit}{Z}
+  \field{number}{11}
+  \field{pages}{3834\bibrangedash 3843}
+  \field{title}{Noise-resistant wavelet-based Bayesian fusion of multispectral
+  and hyperspectral images}
+  \field{volume}{47}
+  \field{journaltitle}{IEEE Transactions on Geoscience and Remote Sensing}
+  \field{year}{2009}
+\endentry
+
+\entry{zimmer2008rotationally}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zimmer}{Z.}%
+     {Sebastian}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Didas}{D.}%
+     {Stephan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weickert}{W.}%
+     {Joachim}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZS+1}
+  \strng{fullhash}{ZSDSWJ1}
+  \field{labelyear}{2008}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proc. 2008 International Workshop on Local and Non-Local
+  Approximation in Image Processing}
+  \field{pages}{135\bibrangedash 142}
+  \field{title}{A rotationally invariant block matching strategy improving
+  image denoising with non-local means}
+  \field{year}{2008}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

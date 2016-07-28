@@ -1,0 +1,42 @@
+\chapter*{Introduction}
+\label{chap_motivation}
+
+Turbulence is very common in daily life, science and technology. Understanding its nature and increasing our prediction capability is crucial for many applications. One of the main engineering tasks is to calculate and predict the behaviors of turbulent flows. This is essentially done with numerical simulations, since experiments are much more expensive or sometimes even impossible. Exact simulations of turbulent flows without modeling are possible only in academic contexts and limited to simple cases due to huge computational demands. Approaches with turbulence models, i.e. approximate solutions, are used more often in industries. Some only calculate mean quantities, while others approximate only large scales and model the effects of small ones. However, they are not yet satisfactory, mainly due to their incapability of predicting several flow configurations, for instance flow separation. All fails due to the ignorance or crude modeling of small scales.
+
+Small-scale turbulence is very important but not yet fully accessible. Despite advancements of computational resources and experimental techniques, having access to small-scale turbulence remains very challenging. Understanding its physics is the key to propose realistic models by parameterizing its effects on the large scales, reducing the simulation efforts to much coarser grids. The physical properties of the flow at small-scale are also important in many applications such as combustion or biology. Unfortunately, accessing those information remains very difficult. Progressing further in experimental tools is one solution but will take very long time. It requires also advancements of infrastructure to handle such tremendous amount of data. Theoretical models generating small scales from large ones could help to progress in another direction. However, as discussed later, such a model is difficult to build from turbulence theories. Despite many efforts, all theories are not yet satisfactory to fully model the behaviors of small scales. 
+
+This thesis approaches the problem of estimating small-scale information from a different perspective. Empirical models and learning algorithms are used to propose computational methods to reconstruct full-scale information from available sparse measurements. They are further adapted or developed from works in signal and image processing, taking into account the key similarities and differences between turbulence and natural images. This can be viewed as the inverse problem of seeking a higher information level out of available measurements.
+
+Outcomes of this work may improve our understandings of turbulence by giving access to information that can not be directly measured. Further demonstrations of the empirical relation between scales are shown, demonstrating how far the model can reconstruct small scales given the large ones. This is beneficial for turbulence modeling, since models can be trained from available datasets and give access to small scales in new situations. Follow-up works may use those information and improve the prediction of large scales, avoiding the use of crude turbulence models.
+
+This work is also beneficial for data compression or compressive sensing purposes. It deals with the quality of approximate reconstruction of physical quantities given a certain amount of measurements. This is directly connected to another active research domain of 3D data compression of large databases in fluid mechanics. This work characterizes the expected information level given a certain amount of measurements. Reversely, it also characterizes how many measurements are required for a certain level of desired information.
+ 
+\subsection{Organization and contributions} 
+The following parts of the thesis will be organized as follows:
+
+\textbf{Chapter 1}. \textit{Problem definition}: This chapter shortly reviews the importance of turbulence studies, especially the challenging problem of understanding and modeling small-scale turbulence. The shortage of research tools to access those information is addressed, leading to the main motivation of this thesis: \textit{to propose computational methods to reconstruct small scales from available measurements}. Two problems are addressed and solved in this thesis: estimating small scales from large scales; and fusing available measurements to access higher information level. For each problem, a spectrum of potential methods are reviewed/proposed and compared to facilitate the usage in new situations.
+	
+\textbf{Chapter 2 and 3}. \textit{Estimating small scales from large scales}: These two chapters tackle the problem of seeking a mapping function that permits to estimate small-scale information from measurements of large scales. 
+
+Chapter 2 discusses the family of regression models. It reviews conventional methods such as ordinary least squares and other regularized regression models such as ridge regression, LASSO and kernel methods. Parameter optimization via cross-validation is also discussed as the way to choose the optimal set of parameters for each model.
+
+Chapter 3 introduces the approach based on \textit{dictionary learning} method, which generalizes principal component analysis to permit sparsity and redundancy properties. To find the mapping, coupled dictionaries are learned to represent large and small scales. When only large-scale information are accessible, its representation is estimated and then combined with the dictionary of small scales learned \textit{a priori} to reconstruct those unknown details.
+
+\textbf{Chapter 4 and 5}. \textit{Fusion of complementary measurements}: These two chapters aim at proposing fusion models to combine information from multi-source measurements to estimate small-scale information. We will focus on the situation where two sources of measurements are available: the high-temporal-low-spatial and low-temporal-high-spatial resolution data. 
+
+Chapter 4 proposes a model to propagate small scales from the low-temporal-high-spatial planes to other instants in time. The model is based on a non-local means filter, where small scales are propagated in time based on the similarity between larger scales from different planes. The estimation is done using a patch-based overlapping approach.
+
+Chapter 5 proposes a Bayesian fusion model to combine the measurements in space and time. This model is constructed based on a Bayesian framework where a prior knowledge about the flow can be introduced into the estimation. Bayesian estimators are used to find the most probable high-resolution fields given the measurements. The final model is a simplified version, leading to a linear fusion model. This model contains two important ingredients, the local structures of the flow and the statistical parameters learned from data to encode the flow physics. 
+	
+\textbf{Chapter 6} compares performances of proposed models on various datasets. Detailed analyses are performed to demonstrate benefits of each models compared to simple interpolations. The configuration of complementary measurements in space and time are studied, which permit to investigate all proposed models.
+
+This work has been resulted in the following publication:
+\begin{quote}
+\citet{van2015bayesian}. ``A Bayesian fusion model for space-time reconstruction of finely resolved velocities in turbulent flows from low resolution measurements''. In: \emph{Journal of Statistical Mechanics: Theory and Experiment} 2015.10, P10008.
+\end{quote}
+and has presented at the following international/national conferences:
+\begin{itemize}
+	\item \emph{15th European Turbulence conference}, Delft, Netherlands (August 2015)
+	\item \emph{GDR Turbulence}, Grenoble, France (June 2015)
+\end{itemize}
+All codes to reproduce the results of this work are available at \url{https://github.com/linhvannguyen/PhDworks/}

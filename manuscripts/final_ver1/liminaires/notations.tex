@@ -1,0 +1,29 @@
+\begin{table}
+	\centering
+	\caption{\label{tab:summary_of_notations}Summary of notations.}
+	\begin{tabulary}{\textwidth}{l p{11cm}} \toprule
+	$ \boldsymbol{z} $  & $ NP- $dimensional vector of HTHS DNS data \\
+	$ \boldsymbol{y} $  & $ MP- $dimensional vector of HTLS measurements \\
+	$ \boldsymbol{x} $  & $ NQ- $dimensional vector of LTHS measurements \\
+	$ N $  & number of spatial points in each HTHS/LTHS snapshot \\
+	$ M $  & number of spatial points in each HTLS snapshot \\
+	$ P $  & number of HTHS or HTLS snapshots \\
+	$ Q $  & number of LTHS snapshots \\				
+	$ \varmathbb{I}_t $ & 1D cubic spline interpolator in time\\
+	$ \varmathbb{I}_s $ & 2D cubic spline interpolator in space\\
+	$ \varmathbb{S}_t $ & subsampling in time from P to Q snapshots, $ \varmathbb{S}_t \boldsymbol{z} = \boldsymbol{x}$ \\
+	$ \varmathbb{S}_s $ & subsampling in space from N to M points, $ \varmathbb{S}_s \boldsymbol{z} = \boldsymbol{y}$ \\
+	$ \varmathbb{L}_s $ & 2D 5th-order least-square spline filter in space \\
+	$ \varmathbb{L}_t $ & 1D 5th-order least-square spline filter in time \\
+	$ \Delta\kappa $ & loss of kinetic energy computed using Eq.~(\ref{eq:RMS_losses}) \\	
+	$ \epsilon $ & normalized Root Mean Square Error (NRMSE) defined in Eq.~(\ref{eq:NRMSE}) \\
+	$ |.| $ & determinant of a matrix \\
+	$\boldsymbol{u}^T$ & transpose of vector $ \boldsymbol{u} $ \\	
+	$\argmax_{\boldsymbol{z}}(.)$ & argument of the maximum,  which is $ \boldsymbol{z} $ for which the function attains its maximum\\		
+	$ \Arrowvert \boldsymbol{u} \Arrowvert^2_{\Sigma} $ & square of a Mahalanobis distance: $ \Arrowvert \boldsymbol{u} \Arrowvert^2_{\Sigma} = \boldsymbol{u}^T \Sigma^{-1} \boldsymbol{u}$\\
+	$ \Arrowvert \boldsymbol{u} \Arrowvert^2_2 $ & square of a Euclidean distance: $ \Arrowvert \boldsymbol{u} \Arrowvert^2_2 = \boldsymbol{u}^T \boldsymbol{u}$\\	
+	$\boldsymbol{n} \sim \mathscr{N}(0,\Sigma_{\boldsymbol{n}}) $ & Gaussian noise vector of zero-mean and covariance matrix $ \Sigma_{\boldsymbol{n}} $\\		
+	$\mathscr{N}(\boldsymbol{u}|\boldsymbol{\mu}_{\boldsymbol{u}},\Sigma_{\boldsymbol{n}}) $ & Gaussian distribution of variable $ \boldsymbol{u} $ that takes the mean $\boldsymbol{\mu}_{\boldsymbol{u}} $ and fluctuates due to $ \boldsymbol{n} $ of covariance $ \Sigma_{\boldsymbol{n}} $\\
+	$\mathscr{N}(\boldsymbol{u}|\boldsymbol{v})$ & distribution of $ \boldsymbol{u} $ knowing (or conditioning on) $ \boldsymbol{v} $\\	\bottomrule
+	\end{tabulary}
+\end{table}

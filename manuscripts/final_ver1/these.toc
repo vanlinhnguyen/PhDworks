@@ -1,0 +1,133 @@
+
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax
+\defcounter {refsection}{0}\relax
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {english}
+\remax@tocdepth
+\remax@tocdepth
+\remax@tocdepth
+\remax@tocdepth
+\contentsline {chapter}{Abstract}{ix}{section*.1}
+\select@language {french}
+\select@language {french}
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{Abbreviations}{xi}{chapter*.4}
+\contentsline {chapter}{Latin symbols}{xiii}{chapter*.7}
+\contentsline {chapter}{Math symbols}{xvii}{chapter*.10}
+\contentsline {chapter}{Table of contents}{xix}{chapter*.13}
+\remax@tocdepth
+\contentsline {chapter}{List of Tables}{xxi}{chapter*.15}
+\contentsline {chapter}{List of Figures}{xxv}{chapter*.17}
+\contentsline {chapter}{Introduction}{1}{chapter*.19}
+\contentsline {subsection}{Organization and contributions}{2}{section*.20}
+\remax@tocdepth
+\contentsline {chapter}{\numberline {1}Problem definition}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Turbulence}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Importance of small-scale turbulence}{7}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Limitations of turbulence research tools}{8}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Numerical simulations}{8}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Experimental techniques}{9}{subsection.1.2.2}
+\contentsline {subsubsection}{Hot Wire Anemometry}{9}{section*.23}
+\contentsline {subsubsection}{Particle Image Velocimetry}{9}{section*.24}
+\contentsline {section}{\numberline {1.3}Problem definition}{11}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Estimating high-resolution turbulent fields from low-resolution measurements}{11}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Fusion of large-scale measurements}{13}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Datasets}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}DNS data of channel flow}{16}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}DNS data of isotropic turbulence}{18}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Concluding remarks}{21}{section.1.5}
+\contentsline {chapter}{\numberline {2}Velocity reconstruction using regression}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}Regression in turbulence studies}{23}{section.2.1}
+\contentsline {section}{\numberline {2.2}Ordinary least squares (OLS)}{24}{section.2.2}
+\contentsline {section}{\numberline {2.3}Regularized linear regression}{25}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Ridge Regression (RR): L2 penalty}{26}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}LASSO: L1 penalty}{27}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Nonlinear regression}{28}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Feature mapping}{28}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Kernel ridge regression}{29}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}A framework to select model and parameters}{30}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Bias-variance trade-off}{31}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Cross-validation}{33}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Regression models for reconstruction of isotropic turbulence}{34}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Regularization parameter and shrinkage effect}{35}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Optimizing regularization parameters and model complexity via ten-fold cross-validation}{36}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Concluding remarks}{38}{section.2.7}
+\contentsline {chapter}{\numberline {3}Learning coupled dictionaries}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}From bases to dictionaries}{41}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Predefined dictionaries}{42}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Adaptive dictionaries}{42}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Proper Orthogonal Decomposition (POD) as a representation of turbulent fields}{43}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dictionary learning as a new representation}{45}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Redundant dictionary and sparse representation}{45}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Dictionary learning methods}{46}{subsection.3.3.2}
+\contentsline {subsubsection}{Alternate optimization}{47}{section*.49}
+\contentsline {subsubsection}{K-SVD}{47}{section*.50}
+\contentsline {subsubsection}{Online dictionary learning (ODL)}{48}{section*.51}
+\contentsline {section}{\numberline {3.4}Learning coupled dictionaries}{48}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Patch-based approach}{48}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}The approach}{50}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Joint learning methods}{52}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Reconstruction using learned dictionaries}{54}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Dictionary learning for isotropic turbulence fields}{55}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}On the choice of parameters}{56}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Efficiency of representations: a comparative study}{57}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Reconstruction of high resolution fields- subsampling cases}{60}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Reconstruction of high resolution fields- the downsampling case}{62}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Concluding remarks}{65}{section.3.6}
+\contentsline {chapter}{\numberline {4}Non-local similarity-based propagation model}{69}{chapter.4}
+\contentsline {section}{\numberline {4.1}Non-local means}{69}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Non-local means filter for denoising}{70}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Generalized non-local means for super-resolution}{71}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Similarity-based model to propagate small scales}{72}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Greedy propagation of small scales from key planes}{72}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Non-greedy propagation of small scales}{74}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Applying the propagation model to isotropic turbulence}{75}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The choice of model parameters}{75}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Comparing to spline interpolation}{78}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Model performances in various configurations}{80}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Concluding remarks}{82}{section.4.4}
+\contentsline {chapter}{\numberline {5}Bayesian fusion model}{85}{chapter.5}
+\contentsline {section}{\numberline {5.1}A probabilistic model}{85}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Bayes' rule}{86}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Bayesian estimates}{86}{subsection.5.1.2}
+\contentsline {subsubsection}{Maximum likelihood estimate (MLE)}{87}{section*.80}
+\contentsline {subsubsection}{Maximum a posteriori estimate (MAP)}{87}{section*.81}
+\contentsline {section}{\numberline {5.2}Bayesian fusion model}{87}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}The model}{87}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2} MAP estimation}{89}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Equivalent models}{91}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1} Linear Gaussian model}{91}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Generalized Millman formula}{92}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Model simplifications}{93}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1} Simplified covariance matrices}{93}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2} Statistical parameters estimation}{94}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Applying the Bayesian fusion model to DNS data of isotropic turbulence}{95}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Impact of subsampling ratios}{95}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Large and small scales reconstruction}{97}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Concluding remarks}{98}{section.5.6}
+\contentsline {chapter}{\numberline {6}Comparisons of model performances on various datasets}{101}{chapter.6}
+\contentsline {section}{\numberline {6.1}Reconstruction results on DNS data of isotropic turbulence}{102}{section.6.1}
+\contentsline {section}{\numberline {6.2}Reconstruction results on DNS data of channel flow}{109}{section.6.2}
+\contentsline {section}{\numberline {6.3}Concluding remarks}{113}{section.6.3}
+\contentsline {chapter}{Conclusions and perspectives}{117}{chapter*.104}
+\contentsline {subsection}{Suggestions for future works}{119}{section*.105}
+\contentsline {chapter}{Bibliography}{123}{chapter*.117}
+\contentsline {chapter}{\numberline {A}Bayesian framework}{131}{appendix.A}
+\contentsline {section}{\numberline {A.1}Derivation of Linear Gaussian models}{131}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Bayes' theorem for Gaussian variables}{131}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2} The model}{133}{subsection.A.1.2}
+\contentsline {section}{\numberline {A.2}Derivation of generalized Millman formula}{135}{section.A.2}
+\remax@tocdepth
+\contentsline {chapter}{Contents}{139}{appendix*.124}
+\select@language {french}
+\select@language {french}
+\select@language {english}
+\select@language {english}

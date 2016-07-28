@@ -1,0 +1,49 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax
+\defcounter {refsection}{0}\relax
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {french}
+\select@language {english}
+\select@language {english}
+\select@language {french}
+\select@language {french}
+\select@language {english}
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Configuration parameters of three subsampling cases in space and three in time for DNS channel flow data. The subsampling ratios of HTLS measurements are $ \sqrt {P/Q} $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ N/M$. The equivalent spacing in spanwise direction is normalized by half channel height as $ \Delta z/H $ and the spacing in time is $\Delta t$. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in equation \ref {eq:RMS_losses}.\relax }}{16}{table.caption.30}
+\contentsline {table}{\numberline {1.2}{\ignorespaces Configuration parameters of three subsampling cases in space (spanwise+vertical direction) and three in time (streamwise direction) for isotropic turbulence data. The subsampling ratios of HTLS measurements are $ \sqrt {P/Q} $ and equal in both spatial directions. The ratios of LTHS measurements in time (spanwise in this case) are $ N/M$. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in equation \ref {eq:RMS_losses}. The slopes are purely to qualify the steepness of the spectrum and have no physical meaning.\relax }}{20}{table.caption.34}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Common basis functions for kernel methods.\relax }}{30}{table.caption.40}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Notations for three different methods of coupled dictionaries learning as proposed by \citet {yang2010image,zeyde2012single}. The dimension of LR and HR patches are $ q$ and $ p$ respectively.\relax }}{54}{table.caption.54}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Set of parameters for coupled dictionaries approach (notations are consistent with Algorithm \ref {algo_SR}): sparsity constrains $ \lambda _1 $ for learning and $ \lambda _2 $ for reconstruction; dimension of LR patches $ q$ and HR patches $ p$; number of atoms $ K$; number of training patches $ m$ \relax }}{56}{table.caption.56}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Set of parameters to do simple grid search (try out all possible combinations from this set): the global filter parameter $ \sigma $, size of similarity patches $ p$, size of accumulation patches $ r$, and size of searching region $ s$. The search is performed on the DNS data of isotropic turbulence, with the subsampling ratios are $ P/Q= 3 \times 3 $ in space and $ N/M= 4 $ in time.\relax }}{75}{table.caption.71}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Configuration parameters of six testing cases. The subsampling ratios of HTLS measurements are $ \sqrt {P/Q} $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ N/M$. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in Eq.~(\ref {eq:RMS_losses}).\relax }}{81}{table.caption.76}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Configuration parameters of seven testing cases. The subsampling ratios of HTLS measurements are $ \sqrt {P/Q} $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ N/M$. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in equation \ref {eq:RMS_losses}.\relax }}{96}{table.caption.82}
+\contentsline {table}{\numberline {5.2}{\ignorespaces NRMSEs of all scales reconstruction errors for the seven cases presented in table \ref {tab:fusion_various_cases}. $\overline {\epsilon }$ and $\epsilon _{max}$ are the average and maximum NRMSE defined by equation \ref {eq:NRMSE}. $\overline {\epsilon }$ is averaged over all fields, while $\epsilon _{max}$ is computed for the most difficult positions in space and time (the most remote from all nearby measurements at local coordinates $ (\Delta y/2, \Delta z/2, \Delta T/2) $, see figure \ref {fig:element_block}). These errors are shown for reconstructed fields by spatial interpolation $ \varmathbb {I}_s \ensuremath {\operatorname {\boldsymbol {y}}}$, time interpolation $ \varmathbb {I}_t \ensuremath {\operatorname {\boldsymbol {x}}}$, linear Gaussian model (LG) using formula \ref {eq:LinearGauss_simplified} and Bayesian fusion model (BF) using formula \ref {eq:MAP_simplified}. The smallest errors in each cases are boldfaced.\relax }}{97}{table.caption.83}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Average NRMSEs $ \overline {\epsilon } $ of large and small scales (same notations in table \ref {tab:fusion_average_errors}).\relax }}{98}{table.caption.84}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Isotropic turbulence: configuration parameters of three testing cases with balanced energy losses. The subsampling ratios of HTLS measurements are $ \sqrt {P/Q} $ and equal in both spatial directions. The ratios of LTHS measurements in time (streamwise in this case) are $ N/M$. The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in Eq.~(\ref {eq:RMS_losses}).\relax }}{103}{table.caption.88}
+\contentsline {table}{\numberline {6.2}{\ignorespaces NRMSEs of all scales reconstruction errors for three cases in table \ref {tab:comparisons_various_cases}. $\overline {\epsilon }$ and $\epsilon _{max}$ are the mean and max NRMSE defined in Eq.~(\ref {eq:NRMSE}). $\overline {\epsilon }$ is averaged over all fields, while $\epsilon _{max}$ is computed for the most difficult positions in space and time (the most remote from all nearby measurements). The smallest errors in each cases are boldfaced.\relax }}{104}{table.caption.89}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Channel flow: configuration parameters of seven testing cases. The subsampling ratios of HTLS measurements are $ \sqrt {N/M} $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ P/Q $. The spacing in spanwise direction is normalized by half channel height as $ \Delta z/H $ and the spacing in time is $\Delta t$, normalized by $ H/U_{max} $ ($ U_{max} $ is the central velocity of the flow). The normalized energy losses in space $\Delta \kappa _s$ and in time $\Delta \kappa _t$ are defined in Eq.~(\ref {eq:RMS_losses}).\relax }}{109}{table.caption.95}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Channel flow: NRMSEs of all scales reconstruction errors for three cases in Table.~\ref {tab:final_various_cases_channel}. $\overline {\epsilon }$ and $\epsilon _{max}$ are the mean and max NRMSE defined in Eq.~(\ref {eq:NRMSE}). $\overline {\epsilon }$ is averaged over all space-time positions in the outer region $ y/H \in [0.25,1.75] $, while $\epsilon _{max}$ is computed for one of the most difficult position in space and time (the most remote from all nearby measurements). The smallest errors in each cases are boldfaced.\relax }}{110}{table.caption.96}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\select@language {french}
+\select@language {french}
+\select@language {english}
+\select@language {english}

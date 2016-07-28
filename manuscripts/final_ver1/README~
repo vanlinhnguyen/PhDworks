@@ -1,0 +1,12 @@
+1. This thesis is written using yathesis package. 
+The yathesis.cls here is already modified slightly for front pages.
+
+2. When compiling, remember to compile also the glossary (\makeglossary)
+for the lists of symbols to appear
+
+3. Run compress_thesepdf.sh to compress output pdf (to ebook quality, usually 
+3 times smaller than pdf by latex). Output will be ..._compressed.pdf
+
+
+
+

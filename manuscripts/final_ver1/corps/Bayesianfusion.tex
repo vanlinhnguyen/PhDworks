@@ -1,0 +1,384 @@
+\chapter{Bayesian fusion model} 
+\label{chap_BayesianFusion} 
+
+This chapter proposes a Bayesian fusion model \citep{van2015bayesian} to combine HTLS and LTHS measurements as described in section \ref{sec:probdef2}. The model takes benefit from both sources of information by searching for the most probable flow given the measurements thanks to a \textit{maximum a posteriori} estimate. Better performances are expected since space and time correlations are equally important. The model also recovers flow details inaccessible from a single source of measurement via interpolations. By integrating directly the measurements, a compromise estimate is proposed such that detailed information of the flow close to the sensors is well preserved. This approach also overcomes the limitations of simple regression, which acts as a low pass filter due to the mean square error minimization. It potentially outperforms propagation models by using the space-time measurements in a balanced manner, permitting to take benefits equally from the two sources of information. In this chapter, DNS data of isotropic turbulence described in section \ref{sec:data_isotropic} is used to investigate model performances. Further comparisons with other methods and demonstrations for DNS data of channel flow will be presented later in chapter \ref{chap_comparisons}.
+
+\section{A probabilistic model}
+Bayesian framework has been used widely from very early in communication problems \citep{van1967detection,sage1971estimation} and more recently in image processing, remote-sensing, and data fusion \citep{levitan1987maximum,ma2000simultaneous,challa2004bayesian,koks2003introduction,durrant2008multisensor,zhang2009noise,joshi2010map}. The core of the framework is Bayes' rule, which describes how the probability of a system is altered by a new evidence or measurement. One of the main application of Bayes' rule is the inference, with the aids of different Bayesian estimators. 
+
+\subsection{Bayes' rule}
+Let $ \mybold{d} $ denote a vector of observations/measurements/data, and $ \h $ denote a hypothesis. This hypothesis can be a parameter or an unknown variable to estimate, with a \textit{prior distribution} $ p(\h) $. The probability of the observation vector, also called \textit{evidence}, is $ p(\mybold{d}) $. The joint probability $ p(\mybold{d},\h) $ can be expressed as \citep{kendall1987kendall}: 
+\begin{equation}
+\begin{split}
+p(\h,\mybold{d}) &= p(\h|\mybold{d}) p(\mybold{d}) \\
+								 &= p(\mybold{d}|\h) p(\h)
+\end{split}
+\end{equation}
+where $ p(.|.)  $ is the conditional distribution of one variable given the other. Rearranging the above equation, the conditional distribution of the hypothesis knowing the data is:
+\begin{equation}
+p(\h|\mybold{d}) =  \frac{p(\mybold{d}|\h) p(\h)}{p(\mybold{d})}
+\end{equation}
+where $ p(\mybold{d}) $ is a constant. This relation is referred as \textit{Bayes's rule}, which can be rewritten as:
+\begin{equation}
+p(\h|\mybold{d}) \propto p(\mybold{d}|\h) p(\h)
+\end{equation}
+or in general:
+\begin{equation}
+[\text{posterior distribution}] \propto [\text{likelihood}]*[\text{prior distribution}]
+\end{equation}
+The prior distribution $ p(\h) $ describes our knowledge of $ \h $ without observing the data $ \mybold{d} $, while $ p(\h|\mybold{d}) $ is the corresponding knowledge after observing the data. $ p(\mybold{d}|\h) $ is \textit{likelihood} function, which measures how far the hypothesis $ \h $ explain observations $ \mybold{d} $.
+
+\subsection{Bayesian estimates}
+Bayes's rule is very simple but very powerful. Inference is one of the most important  applications. In most inference problem, either maximum likelihood estimate (MLE) or maximum a posteriori (MAP) estimate is used.
+
+\subsubsection{Maximum likelihood estimate (MLE)}
+The likelihood is the probability of the measurements $ \mybold{d} $ under the hypothesis $ \h $. For given measurements, MLE finds the hypothesis $ \h $ that maximizes the likelihood function:
+\begin{equation}
+\hat{\h} = \argmax_{\h}{ \left\lbrace p(\mybold{d}|\h) \right\rbrace}
+\end{equation}
+The resulting $ \hat{\h} $ can be considered as the one that makes the measurements the most ``probable'' or ``likely''. Alternatively, the MLE is often obtained by maximizing the \textit{log-likelihood}:
+\begin{equation}
+\hat{\h} = \argmax_{\h}{ \left\lbrace log(p(\mybold{d}|\h)) \right\rbrace}
+\end{equation}
+In many situations, an explicit expression of MLE can be obtained. 
+
+\subsubsection{Maximum a posteriori estimate (MAP)}
+In many cases, some knowledge of undergoing phenomena is known \textit{a priori}. Such knowledge can be from theory or empirical evidence, represented via the prior distribution $ p(\h) $. To find the most probable hypothesis $ \h $ given measurements $ \mybold{d} $ and some prior knowledge of $ \h $, the posterior probability $ p(\h|\mybold{d}) $ is maximized. Bayes' rule tells us how to incorporate prior knowledge into the maximization problem as: 
+\begin{equation}
+\begin{split}
+\hat{\h} &= \argmax_{\h}{ \left\lbrace p(\h|\mybold{d}) \right\rbrace} \\
+					 &= \argmax_{\h}{ \left\lbrace p(\mybold{d}|\h) p(\h) \right\rbrace}
+\end{split}
+\end{equation}
+MAP is different from MLE due to the presence of the prior probability. This prior plays the role of a regularization when dealing with ill-posed inverse problems. 
+ 
+\section{Bayesian fusion model}
+\label{sec:Bayesian_fusion_model}
+In a Bayesian approach, this section derives a fusion model to combine LTHS and HTLS measurements to reconstruct fully-resolved HTHS fields. This is done by considering all variables as random. The most probable HTLS is sought such that it maximizes a \textit{posterior} probability given the two measurements via a MAP estimate.
+ 
+\subsection{The model} 
+Let $ \x $ and $ \y $ denote LTHS and HTLS measurements, and $ \z $ denote HTHS data to reconstruct. $ \x $ and $ \y $ are directly subsampled from HTHS, i.e. $ \x = \Sub_t\z $ and $ \y = \Sub_t\z $. $ \z $, $ \x $ and $ \y $ are random, zero-mean vectors of size $ \dimsh \dimth \times 1$, $ \dimsh \dimtl \times 1$ and $\dimsl \dimth \times 1$ respectively.  $ \dimsh  $ and $ \dimsl  $ are numbers of spatial points in each snapshot, while $ \dimth $ and $ \dimtl $ are numbers of snapshots. The present work is a challenging inverse problem since we consider  $ \dimsl  \ll \dimsh  $ and $ \dimtl \ll \dimth $.
+Let ``s'' denote the subscript of operators performing in space, and ``t'' denote the subscript of those in time. $ \Interp $ is an cubic spline interpolator, $ \Sub $ is for subsampling, and $ \LPF $ is a low-pass filter to separate large scales from small scales. In the case of isotropic turbulence,  $ \LPF $ is the ideal Fourier filter thanks to the isotropic and periodic properties. In the case of channel flow,  $ \LPF $ is a least-square spline filter for its sharp cutoff response.
+
+Given LR measurements of either $ \y  $ in space or $ \x  $ in time, the fully resolved vector $ \z  $ can be estimated by single interpolations. The 1D time interpolation goes from a $ \dimsh \dimtl $ to a $ \dimsh \dimth $- dimensional space, i.e. $ \x  \mymapto \hat{\z }=\Interp_t \x  $, while the 2D space interpolation goes from a $ \dimsl \dimth$ to a $ \dimsh \dimth $- dimensional space, i.e. $ \y  \mymapto \hat{\z }=\Interp_s \y $. Let $ \dimsh \dimth $- dimensional vectors $ \h_s $ and $ \h_t $ denote the information that cannot be recovered by simple interpolations $ \Interp_s $ or $ \Interp_t $. $\z  $ can be modeled in two ways:
+\begin{align}
+	\z  &= \Interp_t\x +\h_t \label{eq:Bayes11}\\
+	\z  &= \Interp_s\y +\h_s \label{eq:Bayes12}	
+\end{align}
+Missing information $ \h_t $ and $ \h_s $ essentially feature small scales. Using either $ \x  $ or $ \y  $, it is not possible to estimate $ \h_t $ and $ \h_s $. The idea of Bayesian fusion is to combine the two models by using $ \Interp_t\x  $ in (\ref{eq:Bayes11}) to estimate the unknown $ \h_s $ in ~(\ref{eq:Bayes12}) and vice-versa.
+
+Let $\distr(\mybold{u}|\mybold{\mu}_{\mybold{u}},\Sigma_{\mybold{u}}) $ denote the multivariate Gaussian distribution of a $ \dimsh \dimth $ dimensional random vector $ \mybold{u} $ with mean value $ \mybold{\mu}_{\mybold{u}} $ and covariance matrix $\Sigma_{\mybold{u}}$.
+%varying due to a random Gaussian noise $ \mybold{n} $.
+The $ \dimsh \dimth \times \dimsh \dimth $ matrix is the expectation of $ (\mybold{u}-\mybold{\mu}_{\mybold{u}} )(\mybold{u}-\mybold{\mu}_{\mybold{u}} )^{\mytrans} $. 
+The probability density function (pdf) of $ \mybold{u} $ with a multivariate Gaussian distribution $ \distr(\mybold{u}|\mybold{\mu}_{\mybold{u}},\Sigma_{\mybold{u}}) $ is:
+\begin{equation}
+	p(\mybold{u})=\frac{1}{(2\pi)^{\dimsh \dimth/2}|\Sigma_{\mybold{u}}|^{1/2}} \myexp{-\frac{1}{2} \Mdist{\mybold{u}-\mybold{\mu}_{\mybold{u}}}{\Sigma_{\mybold{u}}}}
+	\label{eq:Bayes4}
+\end{equation} 
+where $ |.| $ denotes the matrix determinant, and $\Arrowvert \mybold{u}-\mybold{\mu}_{\mybold{u}} \Arrowvert^2_{\Sigma_{\mybold{u}}}$ is the Mahalanobis distance:
+\begin{equation}
+ \Mdist{\mybold{u}-\mybold{\mu}_{\mybold{u}}}{\Sigma_{\mybold{u}}} = \left(\mybold{u}-\mybold{\mu}_{\mybold{u}}\right)^{\mytrans} \Sigma_{\mybold{n}}^{-1}\left( \mybold{u}-\mybold{\mu}_{\mybold{u}}\right)
+\end{equation}
+Let assume that $ \Interp_t\x  $ and $ \h_t $ are approximately independent; $ \Interp_t\x  $ captures temporal large scales of $ \x  $. Similarly, $ \Interp_s\y  $ and $ \h_s $ are assumed to be approximately independent. This is not exact, since the subsamplings cause aliasing terms in each pairs of $ (\Interp_t\x , \h_t) $ and $ (\Interp_s\y , \h_s) $. Assume also that $ \h_t $ and $ \h_s $ are zero mean Gaussian processes, i.e. $ \h_t \sim \distr (0,\Sigma_{\h_t}) $ and $ \h_s \sim \distr (0,\Sigma_{\h_t}) $. Pdfs of these unknowns are modeled as:
+\begin{equation}
+	p(\h_t)=\frac{1}{(2\pi)^{\dimsh \dimth/2}|\Sigma_{\h_t}|^{1/2}} \myexp{ -\frac{1}{2} \Mdist{\h_t}{\Sigma_{\h_t}}}
+	\label{eq:Bayes5}
+\end{equation} 
+and similarly for $ p(\h_s) $. Posterior probabilities of $ \z  $ knowing either $ \x  $ or $ \y  $ are then modeled as:
+\begin{align}
+	p(\z |\x ) &\sim \distr(\z |\Interp_t\x ,\Sigma_{\h_t}) \label{eq:Bayes21} \\
+	p(\z |\y ) &\sim \distr(\z |\Interp_s\y ,\Sigma_{\h_s}) \label{eq:Bayes22}	
+\end{align}
+
+\subsection{\label{subsec:MAP_estimation} MAP estimation}
+The present Bayesian model aims to build an estimate of $ \z  $ given $ \x  $ and $ \y  $ using the probability models (\ref{eq:Bayes21}) and (\ref{eq:Bayes22}). The model uses a MAP estimate to search the most probable $ \hat{\z } $ given $ \x $ and $ \y  $ such that $ \hat{\z } $ maximizes the posterior pdf $ p(\z |\x ,\y ) $:
+\begin{equation}
+ \hat{\z }=\argmax_{\z } \:  p \left(\z |\x ,\y \right)
+ \label{eq:MAP1}
+\end{equation}
+Using Bayesian rules, one has:
+\begin{equation}
+p\left(\z |\x ,\y \right) \propto p\left(\x ,\y |\z  \right)p(\z )
+ \label{eq:MAP2}
+\end{equation}
+Assuming that $ \x  $ and $ \y  $ are independent conditioned on $ \z  $, equation \ref{eq:MAP2} becomes:
+\begin{equation}
+p\left(\z |\x ,\y \right) \propto p(\x |\z )p(\y |\z )p(\z )
+\label{eq:MAP3}
+\end{equation}
+In equation \ref{eq:MAP3}, the likelihood functions $ p(\x |\z ) $, $ p(\y |\z ) $ and the prior pdf $ p(\z ) $ appear, while only the posterior probabilities $ p(\z |\x ) $ and $ p(\z |\y ) $ are available in ~(\ref{eq:Bayes21}) and ~(\ref{eq:Bayes22}). 
+
+To complete the model, the likelihood functions can be expressed in term of the posterior pdfs and prior of $ \z  $ using Bayesian rules. Section \ref{subsec:Linear_Gaussian_model} will introduce an alternative way to estimate these functions from posterior pdfs using a linear Gaussian model. Since there is no evidence of a proper prior for the fully resolved velocity field $ \z $, it is natural to assume a ``\textit{noninformative}'' prior (also referred as ``\textit{vague}'' or ``\textit{flat}''). This prior assumes that all the values of $ \z  $ are equally likely \citep{gelman2014bayesian}. The estimation of $ \hat{\z } $ is now solely based on the measurements and not influenced by external information. The prior distribution therefore has no influence on the posterior pdfs.
+
+With the assumption of a noninformative prior, $ p(\z ) $ is constant. Using Bayes rules, the relation between the likelihood function and the posterior pdf is:
+\begin{equation}
+p\left(\z |\x \right) \propto p\left(\x |\z \right)p(\z )
+\end{equation}
+Since $ p(\z ) $ is replaced by a constant, one gets $p\left(\x |\z \right) \propto p\left(\z |\x \right)$ and $p\left(\y |\z \right) \propto p\left(\z |\y \right)$.  Equation \ref{eq:MAP3} becomes:
+\begin{equation}
+p\left(\z |\x ,\y \right) \propto p(\z |\x )p(\z |\y )
+\label{eq:MAP4}
+\end{equation}
+The MAP estimate is therefore: 
+\begin{equation}
+	\hat{\z }= \argmax_{\z } \: p(\z |\x )p(\z |\y )\
+\label{eq:MAP_5} 
+\end{equation}
+Logarithms of $ p\left(\z |\x \right) $ and $ p\left(\z |\y \right) $ are:
+\begin{align}
+	-\ln p(\z |\x ) &= \frac{1}{2}\Mdist{\z -\Interp_t\x }{\Sigma_{\h_t}} +C_1 \label{eq:MAP61}\\
+	-\ln p(\z |\y ) &= \frac{1}{2} \Mdist{\z -\Interp_s\y}{\Sigma_{\h_s}} +C_2 \label{eq:MAP62}
+\end{align}
+where $ C_1 $ and $ C_2 $ only depend on $ \Sigma_{\h_t} $ and $ \Sigma_{\h_s} $, and are independent of $ \x  $, $ \y  $ and $ \z  $. Solving the optimization problem \ref{eq:MAP_5} is equivalent to minimize the cost function:
+\begin{equation}
+	C(\z )=\frac{1}{2} \Mdist{\z -\Interp_t\x}{\Sigma_{\h_t}} + \frac{1}{2}\Mdist{\z -\Interp_s\y}{\Sigma_{\h_s}}
+\label{eq:MAP7}
+\end{equation}
+Setting the gradient of $ C(\z ) $  to zero:
+\begin{equation}
+	\frac{\partial C(\z )}{\partial \z }= \Sigma^{-1}_{\h_s} \left( \z -\Interp_s\y  \right) + \Sigma^{-1}_{\h_t} \left( \z -\Interp_t\x  \right) = 0
+\label{eq:MAP8}	
+\end{equation}
+yields:
+\begin{equation}
+	\hat{\z } = \left( \Sigma^{-1}_{\h_t} + \Sigma^{-1}_{\h_s} \right)^{-1} \left(\Sigma^{-1}_{\h_s}\Interp_s\y +\Sigma^{-1}_{\h_t}\Interp_t\x \right)
+\label{eq:MAP9}
+\end{equation}
+Applying the matrix inversion lemma \citep{kay1993fundamentals}: 
+\begin{equation}
+	(A+BD^{-1}C)^{-1}=A^{-1}-A^{-1}B(D+CA^{-1}B)^{-1}CA^{-1}
+\label{eq:inversion_lemma}	
+\end{equation}
+Equation \ref{eq:MAP9} can be rewritten as:
+\begin{equation}
+	\hat{\z } = \left( \Sigma_{\h_t} + \Sigma_{\h_s} \right)^{-1} \left(\Sigma_{\h_t}\Interp_s\y +\Sigma_{\h_s}\Interp_t\x \right)
+\label{eq:MAP10}
+\end{equation}
+Equation \ref{eq:MAP10} is the final form of the proposed Bayesian fusion model using a MAP estimate and assuming a noninformative prior of $ \z  $. Variance matrices $ \Sigma_{\h_t} $ and $ \Sigma_{\h_s} $ are parameters to be learned from the measurements. 
+
+\section{Equivalent models}
+The above section presents a Bayesian fusion model to combine two sources of measurements. In the final formula, the prior distribution is omitted. The model is similar to some other models existing in the literature. The linear Gaussian model assumes that measurements follow Gaussian distributions to estimate the likelihood functions and prior probability. The final formula is slightly different from the Bayesian model assuming a non-informative prior. Another model is the generalized Millman formula \citep{shin2006generalized}, which is studied in the context of multi-sensor fusion. The model aims at combining information from various sensors. It becomes identical to the Bayesian fusion model when the cross-covariance between estimates are neglected. We briefly recall these models below.
+
+\subsection{\label{subsec:Linear_Gaussian_model} Linear Gaussian model}
+Let consider equations \ref{eq:Bayes11} and \ref{eq:Bayes12} as the two linear models of $ \z  $. The posterior distributions $ \distr(\z |\Interp_t\x ,\Sigma_{\h_t}) $ and $ \distr(\z |\Interp_s\y ,\Sigma_{\h_s}) $ are given in equations \ref{eq:Bayes21} and \ref{eq:Bayes22}. Distributions of the measurements $ p(\Interp_s\y ) = \distr(0,\Sigma_{\Interp_s\y }) $ and $ p(\Interp_s\y ) = \distr(0,\Sigma_{\Interp_s\y }) $ are also assumed Gaussian. Using Bayes' rule for these linear variables as described in \citet{bishop2006pattern}, appendix \ref{apx_BayesGausvars_1} derives the following formulas:
+\begin{equation}
+\begin{split}
+		p(\Interp_t \x |\z ) &= \distr \left(\Interp_t \x |\Sigma_t \Sigma_{\h_t}^{-1} \z ,\Sigma_t \right) \nonumber\\
+		p(\Interp_s \y |\z ) &= \distr \left(\Interp_s \y |\Sigma_s \Sigma_{\h_s}^{-1} \z ,\Sigma_s \right) \nonumber\\
+		p(\z ) &= \distr \left(\z |0, \Sigma_{\z }\right) 
+\end{split}
+\label{eq:MAP_linearGauss1}	
+\end{equation}
+where:
+\begin{equation}
+\begin{split}
+		\Sigma_t^{-1} &= \Sigma_{\h_t}^{-1} + \Sigma_{\Interp_t\x }^{-1} \nonumber\\
+		\Sigma_s^{-1} &= \Sigma_{\h_s}^{-1} + \Sigma_{\Interp_s\y }^{-1} \nonumber\\
+		\Sigma_{\z } &= \Sigma_{\h_t}+\Sigma_{\Interp_t\x } = \Sigma_{\h_s}+\Sigma_{\Interp_s\y }
+\end{split}		
+\label{eq:MAP_linearGauss2}	
+\end{equation}
+Using the above Gaussian distributions, a MAP estimate of $ \z  $ is:
+\begin{eqnarray}
+\begin{split}
+	\hat{\z } &= \underset{\z }{argmax} \left\lbrace  p(\Interp_t\x |\z )p(\Interp_s\y |\z )p(\z ) \right\rbrace \nonumber\\
+	&= \underset{\z }{argmin} \left\lbrace -\ln p(\Interp_t\x |\z ) -\ln p(\Interp_s\y |\z ) -\ln p(\z ) \right\rbrace
+\end{split}		
+\label{eq:MAP_linearGauss3}
+\end{eqnarray}
+Taking the logarithm of above probabilities yields:
+\begin{equation}
+\begin{split}
+	-2\ln p(\Interp_t\x |\z ) &= \left(\Interp_t\x -\Sigma_t \Sigma_{\h_t}^{-1}\z  \right)^{\mytrans} \Sigma^{-1}_t \left(\Interp_t\x -\Sigma_t \Sigma_{\h_t}^{-1}\z \right) \\
+	&= \Mdist{\Sigma_t \Sigma_{\h_t}^{-1}\z -\Interp_t\x}{\Sigma_t}\\
+	-2\ln p(\Interp_s\y |\z ) &=  \left(\Interp_s\y -\Sigma_s \Sigma_{\h_s}^{-1}\z  \right)^{\mytrans} \Sigma^{-1}_s \left(\Interp_s\y -\Sigma_s \Sigma_{\h_s}^{-1}\z \right)\\
+	&= \Mdist{\Sigma_s \Sigma_{\h_s}^{-1}\z -\Interp_s\y}{\Sigma_s}\\
+	-2\ln p(\z ) &= \z ^{\mytrans} \Sigma^{-1}_z \z  = \Mdist{\z}{\Sigma_{\z }}
+\end{split}		
+\label{eq:MAP_linearGauss4}
+\end{equation}
+The cost function $ C(\z ) $ is defined as the sum of above terms:
+\begin{equation}
+	C(\z ) =\Mdist{\Sigma_t \Sigma_{\h_t}^{-1}\z -\Interp_t\x}{\Sigma_t}  + \Mdist{\Sigma_s \Sigma_{\h_s}^{-1}\z -\Interp_s\y}{\Sigma_s} + \Mdist{\z}{\Sigma_{\z }}
+\label{eq:MAP_linearGauss5}
+\end{equation}
+ The gradient of $ C(\z ) $ is computed as:
+\begin{equation}
+\begin{split}
+	\frac{\partial C(\z )}{2\partial \z } &= \Sigma^{-1}_t \left( \Sigma_t \Sigma_{\h_t}^{-1}\z -\Interp_t\x  \right) + \Sigma^{-1}_s \left( \Sigma_s \Sigma_{\h_s}^{-1}\z -\Interp_s\y  \right) +\Sigma^{-1}_{\z } \z  \nonumber\\
+	&= \left( \Sigma_{\h_t}^{-1} + \Sigma_{\h_s}^{-1} + \Sigma^{-1}_{\z } \right) \z  - \left( \Sigma^{-1}_t\Interp_t\x  + \Sigma^{-1}_s\Interp_s\y  \right)
+\end{split}	
+\label{eq:MAP_linearGauss6}	
+\end{equation}
+The estimate $ \hat{\z } $ is obtained by setting this gradient to zero so that:
+\begin{equation}
+	\hat{\z }=\left( \Sigma_{\h_t}^{-1} + \Sigma_{\h_s}^{-1} + \Sigma^{-1}_{\z } \right)^{-1} \left(\Sigma^{-1}_t\Interp_t\x  +\Sigma^{-1}_s\Interp_s\y \right)
+\label{eq:MAP_linearGauss7}
+\end{equation}
+This fusion formula has the same form of a weighted sum, with the weights are slightly different from the formula \ref{eq:MAP9}.
+
+\subsection{Generalized Millman formula}
+In the context of multisensor fusion, the Millman and Bar-Shalom-Campo formula is very common to combine the two estimates with either correlated or uncorrelated errors. This formula is generalized in \cite{shin2006generalized}, permitting to fuse multi-source measurements. This formula turns out to be similar in this context of Bayesian fusion when no prior knowledge is inserted into the model. 
+
+Let denote $ \left\lbrace \hat{\z }_1,...,\hat{\z }_K \right\rbrace  $ the K estimates of an unknown random vector $ \z  \in \R^n $. The objective of the fusion model is to find the best linear estimate via a set of coefficient matrices $ C_i $ (i=1,...,K):
+\begin{equation}
+\hat{\z }=\sum\limits_{i=1}^{K}{C_i\hat{\z }_i} \subjectto \sum\limits_{i=1}^{K}{C_i}=I_n
+\end{equation}
+The final form of GMF, as derived in appendix \ref{apx_BayesGausvars_2} is: 
+\begin{equation}
+\hat{\z }=\sum\limits_{i=1}^{K}{C_i\hat{\z }_i} \subjectto \begin{cases}
+\sum\limits_{i=1}^{K}{C_i}=I_n\\
+\sum\limits_{i,j=1}^{K-1}{C_i} \left(\Sigma_{ij}-\Sigma_{iK}\right)+C_K\left(\Sigma_{Kj}-\Sigma_{KK}\right) = 0, \:\: j=1,...,K-1
+\end{cases}
+\end{equation} 
+In the case of fusing two estimates ($ K=2 $), this becomes the Bar-Shalom-Campo formula:
+\begin{equation}
+\hat{\z }=\left(\Sigma_{22}-\Sigma_{21}\right)\left(\Sigma_{11}+\Sigma_{22}-\Sigma_{12}-\Sigma_{21}\right)^{-1} \hat{\z }_1+\left(\Sigma_{11}-\Sigma_{12}\right)\left(\Sigma_{11}+\Sigma_{22}-\Sigma_{12}-\Sigma_{21}\right)^{-1}\hat{\z }_2
+\end{equation}
+If $ \hat{\z }_1 $ and $ \hat{\z }_2 $ are uncorrelated, i.e. $ \Sigma_{12}=\Sigma_{21}=0 $, the fusion formula becomes the Millman's formula
+\begin{equation}
+\hat{\z }=\Sigma_{22}\left(\Sigma_{11}+\Sigma_{22}\right)^{-1}\hat{\z }_1+\Sigma_{11}\left(\Sigma_{11}+\Sigma_{22}\right)^{-1}\hat{\z }_2
+\end{equation}
+which is identical to the proposed Bayesian fusion model with a non-informative prior on $ \z  $.
+
+
+\section{Model simplifications}
+Though providing the full theoretical estimate of $ \hat{\z } $, equation \ref{eq:MAP10} is impractical to use as is for several reasons. The full covariance matrices $ \Sigma_{\h_t} $ and $ \Sigma_{\h_s} $, representing all the sources of correlations in space and time, cannot be estimated from only the measurements $ \x  $ and $ \y $. This is because the unknown $ \h_t $ and $ \h_s $ are only accessible at the measured positions in space and time. Also, the covariance matrices of size $ \dimsh \dimth \times \dimsh \dimth $ are very large, making them very difficult to accurately estimate and to invert. Additional assumptions on the shape of $ \Sigma_{\h_t} $ and $ \Sigma_{\h_s} $ are necessary. 
+ 
+\subsection{\label{subsec:simplified_fusion_model} Simplified covariance matrices}
+A common approach to simplify the formula \ref{eq:MAP10} is to assume $ \Sigma_{\h_s} $ and $ \Sigma_{\h_t} $ be diagonal. This simplification implies the independence between all elements of $ \h_t $ and $ \h_s $. The resulting simplified version of formula \ref{eq:MAP10} is point-wise:
+\begin{equation}	
+	\hat{\z }[i,t]=\frac{\mybold{\sigma}^2_{\h_s}[i,t]}{\mybold{\sigma}^2_{\h_s}[i,t]+\mybold{\sigma}^2_{\h_t}[i,t]}\Interp_t\x [i,t]+\frac{\mybold{\sigma}^2_{\h_t}[i,t]}{\mybold{\sigma}^2_{\h_s}[i,t]+\mybold{\sigma}^2_{\h_t}[i,t]}\Interp_s\y [i,t]
+\label{eq:MAP_simplified}	
+\end{equation}
+where  $ [i,t] $ is the index of each point in space and time respectively. The variances $ \mybold{\sigma}^2_{\h_s} $ and $ \mybold{\sigma}^2_{\h_t} $ are functions of each position in space and time. Their estimation is detailed in the next section. Equation \ref{eq:MAP_simplified} will be used to reconstruct HTHS data. As a weighted average, it proposes a compromise estimate from the measurements. With a symmetrical form in space and time, the model uses information from both measurements to correct large scales reconstruction and recover partial information at smaller scales. 
+
+Assuming diagonal covariance matrices, the linear Gaussian model in equation \ref{eq:MAP_linearGauss7} is simplified as:
+\begin{equation}
+	\begin{split}
+	\hat{\z }[i,t] =& \cfrac{\sigma^2_{\h_s}[i,t]+\cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\Interp_t\x }[i,t]}}{\sigma^2_{\h_t}[i,t]+\sigma^2_{\h_s}[i,t]
+	+ \cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\z }[i,t]}}\Interp_t\x [i,t] \\
+	+& \cfrac{\sigma^2_{\h_t}[i,t] +\cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\Interp_s\y }[i,t]}}{\sigma^2_{\h_t}[i,t]+\sigma^2_{\h_s}[i,t]+\cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\z }[i,t]}}\Interp_s\y [i,t]
+	\end{split}	
+	\label{eq:LinearGauss_simplified}	
+\end{equation} 
+The simplified linear Gaussian model slightly modifies formula \ref{eq:MAP_simplified} by introducing the three terms: $ \cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\z }[i,t]} $, $ \cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\Interp_s\y }[i,t]} $ and $ \cfrac{\sigma^2_{\h_t}[i,t]\sigma^2_{\h_s}[i,t]}{\sigma^2_{\Interp_t\x }[i,t]} $. These three terms are essentially small, since variances of $ \h_s $ and $ \h_t $ alone are relatively small compared to the variances of $ \z $, $ \Interp_s\y $ and $ \Interp_t\x $ due to the power law spectrum of turbulence.
+
+\subsection{\label{subsec:statistical_parameters_estimation} Statistical parameters estimation}
+Let $\Z$, $ \X $, $ \Y $, $ \mathbf{H}_t $, $ \mathbf{H}_s $, $ \mathbf{\Gamma}_{\h_t} $ and $ \mathbf{\Gamma}_{\h_s} $ be the matrix forms of $ \z  $, $ \x  $, $ \y  $, $ \h_t $, $ \h_s $, $\mybold{\sigma}^2_{\h_t} $ and $\mybold{\sigma}^2_{\h_s} $ respectively.  $\Z$, $ \mathbf{H}_t $, $ \mathbf{H}_s $, $ \mathbf{\Gamma}_{\h_t} $ and $ \mathbf{\Gamma}_{\h_s} $ are of size $ \dimth\times \dimsh $, while $ \X $ and $ \Y $ are of size $ \dimtl \times \dimsh $ and $ \dimth\times \dimsl $. $ \mathbf{\Gamma}_{\h_t} $ and $ \mathbf{\Gamma}_{\h_s} $ are matrices of empirical variances, which are functions of space and time $ (i,t) $. 
+
+Variance matrices are estimated from $ \mathbf{H}_t $ and $ \mathbf{H}_s $, which are available at the measurements positions only. We use:
+\begin{align}
+	\Sub_t\mathbf{H}_s &= \X- \Interp_s\Sub_s\X \\
+	\Sub_s\mathbf{H}_t &= \Y- \Interp_t\Sub_t\Y
+\end{align}
+where $ \Sub_t $ subsamples in time from $ \dimth  $ to $ \dimtl  $ time steps, and $ \Sub_s $ subsamples in space from $ \dimsh $ to $ \dimsl $ points. These $ \dimtl  $ instants and $ \dimsl $ positions are the same as for LTHS and HTLS measurements. Since the flow is approximately stationary and spatial interpolation is independent of time, $ \mathbf{\Gamma}_{\h_s} [i,t] $ becomes $ \mathbf{\Gamma}_{\h_s} [i] $, a function of spatial locations only. These variances are estimated by averaging over all time steps:
+\begin{equation}
+	\mathbf{\Gamma}_{\h_s} [i] = \cfrac{1}{\dimtl }\sum_{t=1}^{\dimtl } \left( \X[i,t]- \Interp_s\Sub_s\X[i,t] \right)^2 
+	\label{eq:variance_estimation_1}
+\end{equation}
+Variance in $ \mathbf{\Gamma}_{\h_t}$ is a function of distances $ \tau $ to the previous LTHS time step only, where $ \tau/\delta t=0,1,2,...,\dimth/\dimtl $, and $ \delta t $ is the time lag between two consecutive HTHS time steps. $ \mathbf{\Gamma}_{\h_t} $ becomes a function of space and $ \tau $ only, i.e. $ \mathbf{\Gamma}_{\h_t} [i,\tau] $. It is estimated by averaging over $ \dimtl $  blocks (of $ \dimth/\dimtl $ snapshots) bounded by two consecutive LTHS instants: 
+\begin{equation}
+	\mathbf{\Gamma}_{\h_t} [i,\tau] = \frac{1}{\dimtl}\sum_{t_\knot}\left( \Y(i,t_\knot+\tau)- \Interp_t\Sub_t\Y(i,t_\knot+\tau)\right)^2
+	\label{eq:variance_estimation_2}
+\end{equation}
+where $ t_\knot/\delta t=1,1+\dimth/\dimtl,1+2\dimth/\dimtl,...,1+(\dimtl -1)\dimth/\dimtl $. Along the homogeneous direction of the flow, $ \mathbf{\Gamma}_{\h_s} [i] $ and $ \mathbf{\Gamma}_{\h_t} [i,\tau] $ can be also averaged over all blocks defined by the four neighboring HTLS measurements (see figure \ref{fig:element_block}). The variances are then a function of positions only in non-homogeneous direction and relative distances to the four closest HTLS sensors. These estimated variances are rearranged into a vector form $\mybold{\sigma}^2_{\h_t}[i,t] $ and $\mybold{\sigma}^2_{\h_s}[i,t] $ to complete the fusion model using the simplified formula in equation \ref{eq:MAP_simplified}.
+
+\section{Applying the Bayesian fusion model to DNS data of isotropic turbulence}
+The Bayesian fusion model is applied to combine HTLS and LTHS measurements from simulated data of an isotropic turbulence as described in section \ref{sec:data_isotropic}. It is noticed that the streamwise direction is considered as time dimension, while the two spatial directions are spanwise and vertical. Both Bayesian fusion model (BF) with non-informative prior using formula \ref{eq:MAP_simplified} and the linear Gaussian model (LG) using formula \ref{eq:LinearGauss_simplified} are tested.
+
+\subsection{Impact of subsampling ratios}
+\label{subsubsec:impacts_of_subsampling_ratios} 
+
+A total of seven cases gathered in table \ref{tab:fusion_various_cases} are investigated. These cases correspond to different subsampling ratios. In space, the ratios $ \sqrt{\dimsh /\dimsl } = 3, 4 $ and $ 6 $ are equally applied in spanwise and vertical direction, corresponding to resolutions of HTLS fields $ \dimsl = 32 \times 32 $, $ 24 \times 24 $ and $ 16 \times 16 $ respectively. Subsampling ratios $ \dimth/\dimtl $ in time (streamwise) dimension are 4 ($ \dimtl = 37 \times 24$), 6 ($ \dimtl = 37 \times 16$) and 8 ($ \dimtl = 37 \times 12 $). The energy losses due to these subsamplings are estimated as in section \ref{sec:data_isotropic}. 
+
+These seven cases can be categorized into three groups. Case 1 and case 2 are when the subsampling ratios in time are more critical than those in space, reversely in case 3 and case 4. In such cases, either HTLS or LTHS measurements are more informative than the other. The interpolation from the measurements with smaller ratio is more accurate. In the last three cases, the subsamplings in space and time are balanced as the energy losses are approximately equal. The fusion model in such cases is expected to out-perform both interpolations by combining useful information from both sources.
+
+The fusion model uses equation \ref{eq:MAP_simplified} to reconstruct fully resolved velocities $ \myhat{\z } $ from $ \x $ and $ \y $. Reconstructed fields are compared with the original DNS data via the normalized root mean square error (NRMSE) (equation \ref{eq:NRMSE}). The field $\z $ is more or less difficult to estimate depending on the considered instant and position with respect to available measurements. To qualify, two types of NRMSE, the mean NRMSE $ \overline{\epsilon} $ and the maximum NRMSE $ \epsilon_{max} $, are estimated using equation \ref{eq:NRMSE}. $ \overline{\epsilon} $ is estimated over the set of points $ \varmathbb{J}$ including all space-time positions. It represents how far the reconstructed field departs from ground truth in order to evaluate reconstruction accuracy. $ \epsilon_{max} $ is estimated using all blocks (in time and in spanwise directions) between HTLS sensors (see figure \ref{fig:element_block}). The set $ \varmathbb{J} $ includes all points at the local coordinate $ (\Delta y/2, \Delta z/2, \Delta T/2 ) $. Errors of single interpolations from either measurements of HTLS or LTHS are also estimated for comparisons. 
+
+\begin{table} 
+	\caption{\label{tab:fusion_various_cases}
+	Configuration parameters of seven testing cases. The subsampling ratios of HTLS measurements are $ \sqrt{\dimsh /\dimsl } $ and equal in both spatial directions. The ratios of LTHS measurements in time are $ \dimth/\dimtl $. The normalized energy losses in space $\Delta\kappa_s$ and in time $\Delta\kappa_t$ are defined in equation \ref{eq:RMS_losses}.}
+	\vspace{.5cm}
+	\centering
+	\begin{tabular}{ccS[table-format=1.0]S[table-format=1.0]cS[table-format=1.2]S[table-format=1.2]} 
+		\toprule
+		\multirow{2}{*}{Case}&\multicolumn{1}{c}{}&\multicolumn{2}{c}{Subsampling ratios}&\multicolumn{1}{c}{}&\multicolumn{2}{c}{Energy loss}\\ 
+		\cmidrule{3-4} \cmidrule{6-7}
+		 & & {$\sqrt{\dimsh /\dimsl }$} & $\dimth/\dimtl$ & & {$\Delta\kappa_s(\%)$} & {$\Delta\kappa_t (\%)$}\\ 
+		\midrule 
+		1 &  & 3  & 8 & & 1.03 & 6.53 \\ %\addlinespace
+		2 &  & 4  & 8 & & 2.63 & 6.53 \\ %\addlinespace
+		3 &  & 6  & 4 & & 7.29 & 1.23 \\ %\addlinespace
+		4 &  & 6  & 6 & & 7.29 & 1.23 \\ %\addlinespace
+		\myrowcolour
+		5 &  & 3  & 4 & & 1.03 & 1.23 \\ %\addlinespace	 
+		\myrowcolour
+		6 &  & 4  & 6 & & 2.63 & 3.56 \\ %\addlinespace
+		\myrowcolour
+		7 &  & 6  & 8 & & 7.29 & 6.53 \\ %\addlinespace
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{\label{tab:fusion_average_errors}
+NRMSEs of all scales reconstruction errors for the seven cases presented in table \ref{tab:fusion_various_cases}. $\overline{\epsilon}$ and $\epsilon_{max}$ are the average and maximum NRMSE defined by equation \ref{eq:NRMSE}. $\overline{\epsilon}$ is averaged over all fields, while $\epsilon_{max}$ is computed for the most difficult positions in space and time (the most remote from all nearby measurements at local coordinates $ (\Delta y/2, \Delta z/2, \Delta T/2) $, see figure \ref{fig:element_block}). These errors are shown for reconstructed fields by spatial interpolation $ \Interp_s \y $, time interpolation $ \Interp_t \x $, linear Gaussian model (LG) using formula \ref{eq:LinearGauss_simplified} and Bayesian fusion model (BF) using formula \ref{eq:MAP_simplified}. The smallest errors in each cases are boldfaced.}
+\vspace{.5cm}
+\centering
+	\begin{tabular}{ccccccccccc} 
+		\toprule \multirow{2}{*}{Case}&\multicolumn{1}{c}{}&\multicolumn{4}{c}{$\overline{\epsilon}$}&\multicolumn{1}{c}{}&\multicolumn{4}{c}{$\epsilon_{max}$}\\
+		\cmidrule{3-6} \cmidrule{8-11}
+		 & & {$\Interp_s\y $} & {$\Interp_t\x $} & {LG} & {BF} & & {$\Interp_s\y $} & {$\Interp_t\x $} & {LG} & {BF}\\
+		\midrule 
+		1 & & 0.19 & 0.31 & {\textbf{0.16}} & {\textbf{0.16}} & & 0.22 & 0.42 &  {0.23} &  {\textbf{0.22}}\\
+		2 & & 0.28 & 0.31 & {\textbf{0.21}} & {\textbf{0.21}} & & 0.35 & 0.42 & {0.33} &  {\textbf{0.32}}\\
+		3 & & 0.43 & 0.13 & {\textbf{0.13}} & {\textbf{0.13}} & & 0.53 & {\textbf{0.19}} & {0.20} &  {\textbf{0.19}}\\
+		4 & & 0.43 & 0.23 & {0.22} & {\textbf{0.21}} & & 0.53 & 0.32 & {0.33} &  {\textbf{0.32}}\\
+		\myrowcolour
+		5 & & 0.19 & 0.13 & {\textbf{0.11}} & {\textbf{0.11}} & & 0.22 & 0.19 &  {\textbf{0.17}} &  {\textbf{0.17}}\\ 
+		\myrowcolour
+		6 & & 0.28 & 0.23 & {\textbf{0.18}} & {\textbf{0.18}} & & 0.35 & 0.28 &  {\textbf{0.26}} &  {\textbf{0.26}}\\
+		\myrowcolour
+		7 & & 0.43 & 0.31 & {0.27} & {\textbf{0.26}} & & 0.52 & 0.42&  {0.41} &  {\textbf{0.40}} \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+Table \ref{tab:fusion_average_errors} shows reconstruction errors in all cases. In cases 1 and 2, the energy losses due to subsampling in time are much higher than in space, and vice-versa in cases 3 and 4. In these cases, the model gives similar errors compared to the best interpolation, with smaller $ \overline{\epsilon} $ and comparable $ \epsilon_{max} $. In cases 5 to 7, the losses are due to both the subsamplings in space and time in a balanced manner. The two proposed models give similar accuracy, with $ \overline{\epsilon} $ reduced by 15$ \% $ to 25$ \% $ and $ \epsilon_{max} $ reduced by 5$ \% $ to 15$ \% $ compared to the best single interpolation. 
+ 
+Improvements were expected from the weighted average in equation \ref{eq:MAP_simplified} since it uses variances $ \mybold{\sigma}^2_s[i,t] $ and $\mybold{\sigma}^2_t[i,t] $ as parameters of the flow physics, and $ \Interp_t\x  $ and $ \Interp_s\y  $ as the specific flow information. The proposed model imposes the reconstruction to be consistent with measurements at nearby positions and proposes compromise estimates elsewhere. Simple interpolations use either HTLS or LTHS measurements only, losing information from the other sources.
+
+\subsection{Large and small scales reconstruction}
+\label{subsubsec:large_and_small_scales_reconstruction}
+\begin{table}
+\centering
+\caption{\label{tab:results_largescales}
+Average NRMSEs $ \overline{\epsilon} $ of large and small scales (same notations in table \ref{tab:fusion_average_errors}).}
+\vspace{.5cm}
+	\begin{tabular}{ccccccccccc} 
+		\toprule \multirow{2}{*}{Case}&\multicolumn{1}{c}{}&\multicolumn{4}{c}{Large scales}&\multicolumn{1}{c}{}&\multicolumn{4}{c}{Small scales}\\
+		\cmidrule{3-6} \cmidrule{8-11}
+		 & & {$\Interp_s\y $} & {$\Interp_t\x $} & {LG} & {BF} & & {$\Interp_s\y $} & {$\Interp_t\x $} & {LG} & {BF}\\
+		\midrule
+		\myrowcolour
+		5 & & 0.16 & 0.12 & {\textbf{0.09}} & {\textbf{0.09}} & & 0.98 & 0.67 & {\textbf{0.64}} & {\textbf{0.64}}\\
+		\myrowcolour
+		6 & & 0.23 & 0.19 & {\textbf{0.14}} & {\textbf{0.14}} & & 0.98 & 0.80 & {0.71} & {\textbf{0.70}}\\
+		\myrowcolour
+		7 & & 0.34 & 0.22 & {0.20} & {\textbf{0.19}} & & 0.98 & 0.81 &  {\textbf{0.72}} &  {\textbf{0.72}}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+In cases 1 to 4, both fusion models perform as the best interpolation with small improvements. This is expected since one measurement of HTLS or LTHS is much better resolved than the other. Cases 5 to 7  are the most interesting since energy losses due to subsampling in space and time are comparable. The model brings complementary information from both measurements and improves the reconstruction.
+
+The reconstructions of large and small scales are investigated in details for these three cases. Spatial 2D ideal Fourier filters $ \LPF_s $ are used to separate large scales from small scales. These filters define different cutoff wave numbers based on the subsampling ratios. The reconstructed large scales by all methods are compared to the reference $ \LPF_s\z $. Small scales are estimated using $\Interp-\LPF_s $ where $ \Interp $ is the identity matrix. Table~\ref{tab:results_largescales} shows NRMSEs estimated using equation \ref{eq:NRMSE} but normalized by the RMS of either $ \LPF_s\z $ or $(\Interp-\LPF_s)\z  $. 
+
+The proposed fusion models recover part of small scales from complementary measurements. They correct also large-scale information compared to the spatial interpolation, since subsampling degrades those scales and introduces some aliasing effects. Results are shown in table \ref{tab:results_largescales} for the most favorable cases. Fusion models give smallest error in all cases and at both large and small scales. Errors of large scale reconstructions are reduced by 20 to 50 $ \% $ compared to the best single interpolation, while these improvements are smaller for small scales reconstruction (5 to 25 $ \% $). Note that the reconstruction error remains very high for small scales. Also, a good reconstruction of large scales is surprisingly challenging despite the theoretical claims that large scales should be accurately reconstructed by interpolations. 
+
+\section{Concluding remarks}
+This chapter proposes a Bayesian fusion model using a MAP estimate to reconstruct high resolution velocities of a turbulent channel flow from low resolution measurements in space and time. It searches for the most probable field given available measurements. This approach yields a simple but efficient weighted average formula in equation~(\ref{eq:MAP_simplified}). Weighting coefficients are learned from measurements and encode the physics of the flow. The fusion of available measurements improves the large scale reconstruction and recovers some details at small-scale.
+
+Numerical experiments using a DNS database of isotropic turbulence at a moderate Reynolds number illustrate the efficiency and robustness of the proposed method. Low resolution measurements are extracted to learn model parameters, while original data are used as the ground truth to estimate reconstruction errors. The model is tested in various cases with different subsampling ratios. Results are compared against cubic spline interpolations. Bayesian fusion always produces the most accurate reconstruction. The best results are obtained when missing spatial and temporal information are of the same order of magnitude. The fusion model provides a better large scale reconstruction compared to the interpolation. Small scales below the cutoff frequency are more difficult to recover. The error remains high, since only a certain amount of small scale details are reconstructed. This is one more reason in favor of using either some relevant physical model or some  sophisticated learning procedure to "guess" small scales.
+
+Next chapter will compare the performances of various methods we have presented. The analyses are on both the two datasets of isotropic turbulence and channel flow. 
