@@ -2,7 +2,7 @@
 
 This repos synthesizes all codes and data to reproduce our results in the thesis: 
 
-Reconstruction of finely resolved velocity fields in turbulent flows from low resolution measurements
+*Reconstruction of finely resolved velocity fields in turbulent flows from low resolution measurements*
 
 ## Main parts
 
