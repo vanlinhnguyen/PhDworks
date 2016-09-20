@@ -1,0 +1,22 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {2}{Problem definition}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Context of the present work}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{The two addressed problems}{16}{0}{1}
+\beamer@subsectionintoc {2}{3}{Datasets for numerical experiments}{24}{0}{1}
+\beamer@sectionintoc {3}{The proposed approaches}{26}{0}{2}
+\beamer@subsectionintoc {3}{1}{Related approaches}{26}{0}{2}
+\beamer@subsectionintoc {3}{2}{Mapping functions between large and small scales}{29}{0}{2}
+\beamer@subsectionintoc {3}{3}{Fusion of complementary measurements}{38}{0}{2}
+\beamer@sectionintoc {4}{Analyses of models performances}{46}{0}{3}
+\beamer@subsectionintoc {4}{1}{On isotropic turbulence dataset}{47}{0}{3}
+\beamer@subsectionintoc {4}{2}{On turbulent channel flow dataset}{52}{0}{3}
+\beamer@sectionintoc {5}{Conclusions and perspectives}{58}{0}{4}
+\beamer@subsectionintoc {5}{1}{Conclusions}{58}{0}{4}
+\beamer@subsectionintoc {5}{2}{Suggestions for future works}{59}{0}{4}
+\beamer@subsectionintoc {5}{3}{Contributions}{61}{0}{4}
+\beamer@sectionintoc {6}{Appendices}{62}{1}{5}
+\beamer@subsectionintoc {6}{1}{References}{62}{1}{5}
+\beamer@subsectionintoc {6}{2}{Regression}{65}{1}{5}
+\beamer@subsectionintoc {6}{3}{Dictionary learning}{66}{1}{5}
+\beamer@subsectionintoc {6}{4}{Bayesian fusion}{67}{1}{5}
+\beamer@subsectionintoc {6}{5}{Results}{68}{1}{5}

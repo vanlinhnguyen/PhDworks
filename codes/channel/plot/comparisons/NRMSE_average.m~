@@ -1,0 +1,109 @@
+clear all; close all; clc;
+
+Ny=257;Nz=288; Nt=10000;
+
+
+%%%%%%%%%%%%%%%%%%%%%% TIME: 04; SPACE: 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compute errors
+% idsy_all_Z=4:254; % indices of lager box in y-dir, middle at yid= 128
+% idsz_all_Z=4:284; % indices of lager box in z-dir
+% idsy_all_Y= 4:space_spacing:254; % indices of equivalent HWs in the grid of HWs
+% idsz_all_Y= 4:space_spacing:284; % indices of equivalent HWs in the grid of HWs
+fprintf('compute errors TIME: 04  SPACE: 05\n');
+
+t_off=2; % indicate the first PIV snapshot as starting snapshot 
+outer_id_y_fulldomain=60:200; % HWs (in y) are at 2 lines at yid=124 and 134
+outer_id_z_fulldomain=14:274; % HWs (in z) are at 4:5:284
+
+nc1=netcdf('/data/DNSDATA/github/Bayesianfusion/Ufluc_40Hz.nc','r');
+nc2 = netcdf('/data/DNSDATA/github/Bayesianfusion/Uinterp_spatialspacing_05.nc','r');
+nc3=netcdf('/data/DNSDATA/github/Bayesianfusion/Uinterp_timespacing_04.nc','r');
+nc4=netcdf('/data/DNSDATA/github/Bayesianfusion/FusedData_40Hz_alldomain_diagCov_timespacing_04_spacespacing_05.nc','r');
+nc5=netcdf('/data/DNSDATA/github/Bayesianfusion/RR_sspacing05_tspacing04.nc','r');
+Nt = nc4('Nt').itsDimsize;
+
+err_interp_spatial_time_04_space_05=0; 
+err_interp_temporal_time_04_space_05=0; 
+err_RR_time_04_space_05=0;
+err_MAP_time_04_space_05=0;
+for t=1:Nt 
+    x_nonoise=nc1{'Uall'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);
+    x_interp_spatial=nc2{'Uinterp'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);  
+    x_interp_temporal=nc3{'Uinterp'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain); 
+    x_MAP=nc4{'Zhat_all'}(t,outer_id_y_fulldomain,outer_id_z_fulldomain);
+    x_RR=nc5{'Urec'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);
+
+    err_interp_spatial_time_04_space_05=err_interp_spatial_time_04_space_05 + 1/Nt*sqrt(sum((x_nonoise(:)-x_interp_spatial(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+    err_interp_temporal_time_04_space_05=err_interp_temporal_time_04_space_05 + 1/Nt*sqrt(sum((x_nonoise(:)-x_interp_temporal(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+    err_RR_time_04_space_05=err_RR_time_04_space_05 + 1/Nt*sqrt(sum((x_nonoise(:)-x_RR(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+    err_MAP_time_04_space_05=err_MAP_time_04_space_05 + 1/Nt*sqrt(sum((x_nonoise(:)-x_MAP(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+end
+close(nc1); close(nc2); close(nc3); close(nc4); close(nc5); 
+
+%%%%%%%%%%%%%%%%%%%%%% TIME: 10; SPACE: 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compute errors
+fprintf('compute errors TIME: 10  SPACE: 10\n');
+t_off=5; % indicate the first PIV snapshot as starting snapshot 
+outer_id_y_fulldomain=60:200; % HWs (in y) are at 2 lines at yid=124 and 134
+outer_id_z_fulldomain=14:274; % HWs (in z) are at 4:5:284
+LTHS_t = t_off:10:Nt;
+
+nc1=netcdf('/data/DNSDATA/github/Bayesianfusion/Ufluc_40Hz.nc','r');
+% nc2 = netcdf('/data/DNSDATA/github/Bayesianfusion/Uinterp_spatialspacing_10.nc','r');
+% nc3=netcdf('/data/DNSDATA/github/Bayesianfusion/Uinterp_timespacing_10.nc','r');
+% nc4=netcdf('/data/DNSDATA/github/Bayesianfusion/fused/variousspacings/FusedData_40Hz_alldomain_diagCn_timespacing_10_spacespacing_10_improper.nc','r');
+nc5=netcdf('/data/DNSDATA/github/Bayesianfusion/RR_sspacing10_tspacing10.nc','r');
+
+err_interp_spatial_time_10_space_10=0; 
+err_interp_temporal_time_10_space_10=0; 
+err_MAP_time_10_space_10=0;
+err_RR_time_10_space_10=0;
+
+for t=1:numel(t_off:LTHS_t(end))
+    x_nonoise=nc1{'Uall'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);
+%     x_interp_spatial=nc2{'Uinterp'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);  
+%     x_interp_temporal=nc3{'Uinterp'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain); 
+%     x_MAP=nc4{'Zhat_all'}(t,outer_id_y_MAP,outer_id_z_MAP);
+%     err_interp_spatial_time_10_space_10=err_interp_spatial_time_10_space_10 + 1/Nt*sqrt(sum((x_nonoise(:)-x_interp_spatial(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+%     err_interp_temporal_time_10_space_10=err_interp_temporal_time_10_space_10 + 1/Nt*sqrt(sum((x_nonoise(:)-x_interp_temporal(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+%     err_MAP_time_10_space_10=err_MAP_time_10_space_10 + 1/Nt*sqrt(sum((x_nonoise(:)-x_MAP(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+
+    x_RR=nc5{'Urec'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);
+    err_RR_time_10_space_10=err_RR_time_10_space_10 + 1/Nt*sqrt(sum((x_nonoise(:)-x_RR(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+end
+close(nc1); close(nc2); close(nc3); close(nc4); close(nc5); 
+
+
+%%%%%%%%%%%%%%%%%%%%%% TIME: 20; SPACE: 20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Compute errors
+fprintf('compute errors TIME: 20  SPACE: 20\n');
+
+t_off=10; % indicate the first PIV snapshot as starting snapshot 
+outer_id_y_fulldomain=60:200; % HWs (in y) are at 2 lines at yid=124 and 134
+outer_id_z_fulldomain=14:274; % HWs (in z) are at 4:5:284
+LTHS_t = t_off:10:Nt;
+
+nc1=netcdf('/data/DNSDATA/github/Bayesianfusion/data/Ufluc_40Hz.nc','r');
+% nc2 = netcdf('/data/DNSDATA/github/Bayesianfusion/Uinterp_spatialspacing_20.nc','r');
+% nc3=netcdf('/data/DNSDATA/github/Bayesianfusion/Uinterp_timespacing_20.nc','r');
+% nc4=netcdf('/data/DNSDATA/github/Bayesianfusion/fused/variousspacings/FusedData_40Hz_alldomain_diagCn_timespacing_20_spacespacing_20_improper.nc','r');
+nc5=netcdf('/data/DNSDATA/github/Bayesianfusion/RR_sspacing20_tspacing20.nc','r');
+
+err_interp_spatial_time_20_space_20=0; 
+err_interp_temporal_time_20_space_20=0; 
+err_MAP_time_20_space_20=0;
+err_RR_time_20_space_20=0;
+for t=1:numel(t_off:LTHS_t(end))
+    x_nonoise=nc1{'Uall'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);
+%     x_interp_spatial=nc2{'Uinterp'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);  
+%     x_interp_temporal=nc3{'Uinterp'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain); 
+%     x_MAP=nc4{'Zhat_all'}(t,outer_id_y_MAP,outer_id_z_MAP);
+%     err_interp_spatial_time_20_space_20=err_interp_spatial_time_20_space_20 + 1/Nt*sqrt(sum((x_nonoise(:)-x_interp_spatial(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+%     err_interp_temporal_time_20_space_20=err_interp_temporal_time_20_space_20 + 1/Nt*sqrt(sum((x_nonoise(:)-x_interp_temporal(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+%     err_MAP_time_20_space_20=err_MAP_time_20_space_20 + 1/Nt*sqrt(sum((x_nonoise(:)-x_MAP(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+
+    x_RR=nc5{'Urec'}(t+t_off-1,outer_id_y_fulldomain,outer_id_z_fulldomain);
+    err_RR_time_20_space_20=err_RR_time_20_space_20 + 1/Nt*sqrt(sum((x_nonoise(:)-x_RR(:)).^2))/sqrt(sum((x_nonoise(:)).^2));
+end
+close(nc1); close(nc2); close(nc3); close(nc4); close(nc5); 
+

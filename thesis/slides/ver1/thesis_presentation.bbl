@@ -1,0 +1,74 @@
+\begin{thebibliography}{}
+
+\bibitem[Bonnet et~al., 1994]{bonnet1994stochastic}
+Bonnet, J.~P., Cole, D.~R., Delville, J., Glauser, M.~N., and Ukeiley, L.~S.
+  (1994).
+\newblock Stochastic estimation and proper orthogonal decomposition:
+  complementary techniques for identifying structure.
+\newblock {\em Experiments in fluids}, 17(5):307--314.
+
+\bibitem[Buades et~al., 2005]{buades2005review}
+Buades, A., Coll, B., and Morel, J.-M. (2005).
+\newblock A review of image denoising algorithms, with a new one.
+\newblock {\em Multiscale Modeling \& Simulation}, 4(2):490--530.
+
+\bibitem[Corpetti et~al., 2002]{corpetti2002dense}
+Corpetti, T., M{\'e}min, {\'E}., and P{\'e}rez, P. (2002).
+\newblock Dense estimation of fluid flows.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  24(3):365--380.
+
+\bibitem[Coudert et~al., 2011]{coudert2011double}
+Coudert, S., Foucaut, J.~M., Kostas, J., Stanislas, M., Braud, P., Fourment,
+  C., Delville, J., Tutkun, M., Mehdi, F., Johansson, P., and George, W.~K.
+  (2011).
+\newblock Double large field stereoscopic piv in a high reynolds number
+  turbulent boundary layer.
+\newblock {\em Experiments in Fluids}, 50(1):1--12.
+
+\bibitem[Dekou et~al., 2016]{Dekou2016}
+Dekou, R., Foucaut, J.-M., Roux, S., Stanislas, M., and Delville, J. (2016).
+\newblock Large scale organization of a near wall turbulent boundary layer.
+\newblock {\em International Journal of Heat and Fluid Flow}.
+
+\bibitem[Durgesh and Naughton, 2010]{durgesh2010multi}
+Durgesh, V. and Naughton, J.~W. (2010).
+\newblock Multi-time-delay lse-pod complementary approach applied to unsteady
+  high-reynolds-number near wake flow.
+\newblock {\em Experiments in fluids}, 49(3):571--583.
+
+\bibitem[Hardie et~al., 2004]{hardie2004map}
+Hardie, R.~C., Eismann, M.~T., and Wilson, G.~L. (2004).
+\newblock Map estimation for hyperspectral image resolution enhancement using
+  an auxiliary sensor.
+\newblock {\em IEEE Transactions on Image Processing}, 13(9):1174--1184.
+
+\bibitem[Papadakis et~al., 2010]{papadakis2010data}
+Papadakis, N., M{\'e}min, {\'E}., Cuzol, A., and Gengembre, N. (2010).
+\newblock Data assimilation with the weighted ensemble kalman filter.
+\newblock {\em Tellus A}, 62(5):673--697.
+
+\bibitem[Protter et~al., 2009]{protter2009generalizing}
+Protter, M., Elad, M., Takeda, H., and Milanfar, P. (2009).
+\newblock Generalizing the nonlocal-means to super-resolution reconstruction.
+\newblock {\em Image Processing, IEEE Transactions on}, 18(1):36--51.
+
+\bibitem[Schneiders et~al., 2014]{schneiders2014time}
+Schneiders, J.~F., Dwight, R.~P., and Scarano, F. (2014).
+\newblock Time-supersampling of 3d-piv measurements with vortex-in-cell
+  simulation.
+\newblock {\em Experiments in Fluids}, 55(3):1--15.
+
+\bibitem[Tu et~al., 2013]{tu2013integration}
+Tu, J.~H., Griffin, J., Hart, A., Rowley, C.~W., Cattafesta, L.~N., and
+  Ukeiley, L.~S. (2013).
+\newblock Integration of non-time-resolved piv and time-resolved velocity point
+  sensors for dynamic estimation of velocity fields.
+\newblock {\em Experiments in fluids}, 54(2):1--20.
+
+\bibitem[Yang et~al., 2010]{yang2010image}
+Yang, J., Wright, J., Huang, T.~S., and Ma, Y. (2010).
+\newblock Image super-resolution via sparse representation.
+\newblock {\em IEEE transactions on image processing}, 19(11):2861--2873.
+
+\end{thebibliography}
